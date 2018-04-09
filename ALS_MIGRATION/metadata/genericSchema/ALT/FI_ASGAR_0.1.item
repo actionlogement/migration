@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_afmMslzOEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_afmMs1zOEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_afmMs1zOEeemX5EPzo0lzA" dataManager="_afmMslzOEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_afmMtFzOEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uhfJQHXeEeezorU47F1TZQ" name="ascas_num" label="ascas_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_uhfJQXXeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uhfJQnXeEeezorU47F1TZQ" name="asris_cod" label="asris_cod" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_uhfJQ3XeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uhfJRHXeEeezorU47F1TZQ" name="asgar_mntpri" label="asgar_mntpri" length="6" precision="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_uhfJRXXeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uhfJRnXeEeezorU47F1TZQ" name="asgar_taupra" label="asgar_taupra" length="4" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_uhfJR3XeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uhfJSHXeEeezorU47F1TZQ" name="asgar_taucou" label="asgar_taucou" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_uhfJSXXeEeezorU47F1TZQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

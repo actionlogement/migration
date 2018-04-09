@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_quxfIlzQEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_quxfI1zQEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_quxfI1zQEeemX5EPzo0lzA" dataManager="_quxfIlzQEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_quxfJFzQEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_N17RMF2kEee_spTw2WopPg" name="toesf_num" label="toesf_num" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_quxfJVzQEeemX5EPzo0lzA" name="tosfi_num" id="110890" label="tosfi_num" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_quxfJlzQEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_quxfJ1zQEeemX5EPzo0lzA" name="tocre_cod" id="110891" label="tocre_cod" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_quxfKFzQEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_quxfKVzQEeemX5EPzo0lzA" name="tosfi_annref" id="110892" label="tosfi_annref" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_quxfKlzQEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_quxfK1zQEeemX5EPzo0lzA" name="tosfi_nbr" id="110893" label="tosfi_nbr" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_quxfLFzQEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_quxfLVzQEeemX5EPzo0lzA" name="tosfi_mnt" id="110894" label="tosfi_mnt" length="8" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_quxfLlzQEeemX5EPzo0lzA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

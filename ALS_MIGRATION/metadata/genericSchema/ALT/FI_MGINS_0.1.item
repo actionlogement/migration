@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_zNB24XXUEeezorU47F1TZQ" name="repository.metadataGenericSchema" dataPackage="_zNB24nXUEeezorU47F1TZQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_zNB24nXUEeezorU47F1TZQ" name="repository.metadataGenericSchema" dataManager="_zNB24XXUEeezorU47F1TZQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_zNB243XUEeezorU47F1TZQ" id="_xg5sQHXUEeezorU47F1TZQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zNB25HXUEeezorU47F1TZQ" name="mgins_cod" label="mgins_cod" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_zNB25XXUEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zNB25nXUEeezorU47F1TZQ" name="mgins_codpos" label="mgins_codpos" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_zNB253XUEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zNB26HXUEeezorU47F1TZQ" name="mgins_libcom" label="mgins_libcom" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_zNB26XXUEeezorU47F1TZQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

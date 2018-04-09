@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_8B9lklzNEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_8B9lk1zNEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_8B9lk1zNEeemX5EPzo0lzA" dataManager="_8B9lklzNEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_8B9llFzNEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cZvgwHXeEeezorU47F1TZQ" name="acech_num" label="acech_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_cZvgwXXeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cZvgwnXeEeezorU47F1TZQ" name="aclch_num" label="aclch_num" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_cZvgw3XeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cZvgxHXeEeezorU47F1TZQ" name="actch_cod" label="actch_cod" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_cZvgxXXeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cZvgxnXeEeezorU47F1TZQ" name="aclch_mntcin" label="aclch_mntcin" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_cZvgx3XeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cZvgyHXeEeezorU47F1TZQ" name="aclch_mntmen" label="aclch_mntmen" length="7" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_cZvgyXXeEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cZvgynXeEeezorU47F1TZQ" name="aclch_temope" label="aclch_temope" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_cZvgy3XeEeezorU47F1TZQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

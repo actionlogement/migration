@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_MHAWglzOEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_MHAWg1zOEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_MHAWg1zOEeemX5EPzo0lzA" dataManager="_MHAWglzOEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_MHAWhFzOEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MHAWhVzOEeemX5EPzo0lzA" name="ascas_num" id="9223" label="ascas_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_MHAWhlzOEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MHAWh1zOEeemX5EPzo0lzA" name="pepre_num" id="9224" label="pepre_num" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_MHAWiFzOEeemX5EPzo0lzA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Oqo7clzPEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_Oqo7c1zPEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_Oqo7c1zPEeemX5EPzo0lzA" dataManager="_Oqo7clzPEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Oqo7dFzPEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oqo7dVzPEeemX5EPzo0lzA" name="cxpla_num" id="53814" label="cxpla_num" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Oqo7dlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oqo7d1zPEeemX5EPzo0lzA" name="bidos_num" id="53815" label="bidos_num" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Oqo7eFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oqo7eVzPEeemX5EPzo0lzA" name="cxpla_mntech" id="53816" label="cxpla_mntech" length="5" precision="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Oqo7elzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oqo7e1zPEeemX5EPzo0lzA" name="cxpla_pech" id="53817" label="cxpla_pech" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Oqo7fFzPEeemX5EPzo0lzA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

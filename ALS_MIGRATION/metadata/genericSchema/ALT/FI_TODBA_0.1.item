@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_2wmHslzPEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_2wmHs1zPEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_2wmHs1zPEeemX5EPzo0lzA" dataManager="_2wmHslzPEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_2wmHtFzPEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2wmHtVzPEeemX5EPzo0lzA" name="todba_num" id="83268" label="todba_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_2wmHtlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2wmHt1zPEeemX5EPzo0lzA" name="togdo_codetab" id="83269" label="togdo_codetab" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_2wmHuFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2wmHuVzPEeemX5EPzo0lzA" name="todba_lib" id="83270" label="todba_lib" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_2wmHulzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2wmHu1zPEeemX5EPzo0lzA" name="todba_com" id="83271" label="todba_com" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_2wmHvFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2wmHvVzPEeemX5EPzo0lzA" name="todba_rib" id="83272" label="todba_rib" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_2wmHvlzPEeemX5EPzo0lzA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_8VSfUlzPEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_8VSfU1zPEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_8VSfU1zPEeemX5EPzo0lzA" dataManager="_8VSfUlzPEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_8VSfVFzPEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8VSfVVzPEeemX5EPzo0lzA" name="todba_num" id="83571" label="todba_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_8VSfVlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8VSfV1zPEeemX5EPzo0lzA" name="todbi_bic" id="83572" label="todbi_bic" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_8VSfWFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8VSfWVzPEeemX5EPzo0lzA" name="todbi_iban" id="83573" label="todbi_iban" length="29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_8VSfWlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8VSfW1zPEeemX5EPzo0lzA" name="todbi_lib" id="83574" label="todbi_lib" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_8VSfXFzPEeemX5EPzo0lzA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

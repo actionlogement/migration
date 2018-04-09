@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_BZAVAlzJEeeGxrV1EfHTUw" comment="connectionComment" label="connectionLabel" dataPackage="_BZAVA1zJEeeGxrV1EfHTUw"/>
+  <TalendMetadata:GenericPackage xmi:id="_BZAVA1zJEeeGxrV1EfHTUw" dataManager="_BZAVAlzJEeeGxrV1EfHTUw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_BZAVBFzJEeeGxrV1EfHTUw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZAVBVzJEeeGxrV1EfHTUw" name="totie_cod" id="300850" label="totie_cod" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BZAVBlzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZAVB1zJEeeGxrV1EfHTUw" name="acdos_num" id="300851" label="acdos_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BZAVCFzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZAVCVzJEeeGxrV1EfHTUw" name="actpa_cod" id="300852" label="actpa_cod" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BZAVClzJEeeGxrV1EfHTUw"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Q0kuEl1sEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_Q0kuE11sEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_Q0kuE11sEeemX5EPzo0lzA" dataManager="_Q0kuEl1sEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Q0kuFF1sEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q0kuFV1sEeemX5EPzo0lzA" name="todfo_num" id="304411" label="todfo_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Q0kuFl1sEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q0kuF11sEeemX5EPzo0lzA" name="totie_cod" id="304412" label="totie_cod" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Q0kuGF1sEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q0kuGV1sEeemX5EPzo0lzA" name="tofop_dtf" id="304413" label="tofop_dtf" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Q0kuGl1sEeemX5EPzo0lzA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

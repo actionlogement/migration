@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_LBtawl1wEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_LBtaw11wEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_LBtaw11wEeemX5EPzo0lzA" dataManager="_LBtawl1wEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_LBtaxF1wEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LBtaxV1wEeemX5EPzo0lzA" name="bidos_num" id="351631" label="bidos_num" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_LBtaxl1wEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LBtax11wEeemX5EPzo0lzA" name="caint_num" id="351632" label="caint_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_LBtayF1wEeemX5EPzo0lzA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

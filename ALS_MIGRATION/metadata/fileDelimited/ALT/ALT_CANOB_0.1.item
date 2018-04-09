@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_fPPqcVZyEeesPII_CnKnww" name="ALT_CANOB" dataPackage="_fPPqclZyEeesPII_CnKnww" Server="Localhost 127.0.0.1" FilePath="//Vm-gfid01/PARTAGE_GFI/FichierCSV/ECHANTILLON/Aliance/ALIANCE_CANOB_20170515233121.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;Ñ&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_fPPqclZyEeesPII_CnKnww" name="default" dataManager="_fPPqcVZyEeesPII_CnKnww">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_fPPqc1ZyEeesPII_CnKnww" id="_bSh9QFZyEeesPII_CnKnww" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fPPqdFZyEeesPII_CnKnww" label="canob_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fPPqdVZyEeesPII_CnKnww" label="caint_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fPPqdlZyEeesPII_CnKnww" label="canob_lib" length="150" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fPPqd1ZyEeesPII_CnKnww" label="canob_datcre" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fPPqeFZyEeesPII_CnKnww" label="canob_uticre" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
