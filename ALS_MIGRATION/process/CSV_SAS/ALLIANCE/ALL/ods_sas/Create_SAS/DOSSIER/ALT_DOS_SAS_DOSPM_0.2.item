@@ -378,8 +378,8 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms2048M -Xmx10G " show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="2944" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1472" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -432,7 +432,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/HANABLI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace_talend/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -602,7 +602,7 @@
       <column comment="" key="false" length="255" name="value" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1728">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -876,14 +876,14 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1856">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="2368">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du chargement de la table cible - &quot;+TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;&#xA;context.NB_LIGNES_LUES=(((Integer)globalMap.get(&quot;tMSSqlInput_4_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_4_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlInput_6_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_6_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlInput_7_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_7_NB_LINE&quot;)));&#xA;&#xA;context.NB_LIGNES_INS= ((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;));&#xA;&#xA;context.NB_LIGNES_REJ=(((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_INSERTED&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_INSERTED&quot;)));&#xA;&#xA;context.NB_LIGNES_FIL=(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_3_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_3_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_5_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_5_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_7_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_7_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_8_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_8_NB_LINE&quot;)));&#xA;&#xA;&#xA;System.out.println(&quot;   Nombre de lignes lues :&quot;+context.NB_LIGNES_LUES);&#xA;System.out.println(&quot;   Nombre de lignes insérées :&quot;+context.NB_LIGNES_INS);&#xA;System.out.println(&quot;   Nombre de lignes rejetées :&quot;+context.NB_LIGNES_REJ);&#xA;System.out.println(&quot;   Nombre de lignes filtrées :&quot;+context.NB_LIGNES_FIL);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du chargement de la table cible - &quot;+TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;&#xA;context.NB_LIGNES_LUES=(((Integer)globalMap.get(&quot;tMSSqlInput_4_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_4_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlInput_6_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_6_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlInput_7_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_7_NB_LINE&quot;)));&#xA;&#xA;context.NB_LIGNES_INS= ((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;));&#xA;&#xA;context.NB_LIGNES_REJ=(((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_INSERTED&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_INSERTED&quot;)));&#xA;&#xA;context.NB_LIGNES_FIL=(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_3_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_3_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_5_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_5_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_7_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_7_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_8_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_8_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_9_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_9_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_10_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_10_NB_LINE&quot;)));&#xA;&#xA;&#xA;System.out.println(&quot;   Nombre de lignes lues :&quot;+context.NB_LIGNES_LUES);&#xA;System.out.println(&quot;   Nombre de lignes insérées :&quot;+context.NB_LIGNES_INS);&#xA;System.out.println(&quot;   Nombre de lignes rejetées :&quot;+context.NB_LIGNES_REJ);&#xA;System.out.println(&quot;   Nombre de lignes filtrées :&quot;+context.NB_LIGNES_FIL);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1856">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2368">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_6" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
@@ -893,7 +893,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_6"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="1984">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="2496">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_7" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
@@ -943,7 +943,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1728">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -1023,7 +1023,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1728">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_3" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1104,7 +1104,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1728">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_4" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -1830,7 +1830,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="1728">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_5" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -1910,7 +1910,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="1728">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_6" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -3707,7 +3707,580 @@
       <column comment="" key="false" length="250" name="numdos" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="1728">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="1888">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_11" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_SAS" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ODS_ACDOS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_ACDOS.acdos_num,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_ACDOS.totie_codsoc&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_ACDOS&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="acdos_num"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totie_codsoc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_ACDOS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_11">
+      <column comment="" key="false" length="250" name="acdos_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="totie_codsoc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1888">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_xWpS8PIpEee1ztNDt5SeIQ-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Out1" name="Out1">
+      <column comment="" key="false" length="250" name="acdos_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="caint_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="Fil_1">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Out1">
+        <mapperTableEntries name="acdos_num" expression="Ln_In_ACDOS.acdos_num " type="id_String" nullable="true"/>
+        <mapperTableEntries name="caint_num" expression="Ln_In_CACTR.caint_num " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Fil_1" activateCondensedTool="true" rejectInnerJoin="true">
+        <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIC_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_1" expression="&quot;acdos_num&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_1" expression="Ln_In_ACDOS.acdos_num " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MESSAGE" expression="&quot;Absence de jointure entre CACTR et ACDOS&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_ACDOS" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="acdos_num" type="id_String" nullable="true"/>
+        <mapperTableEntries name="totie_codsoc" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_CACTR" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="caint_num" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cactr_num" expression="Ln_In_ACDOS.acdos_num " type="id_String" nullable="true" operator="="/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1888">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_17" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_xWpS8PIpEee1ztNDt5SeIQ-tMap_17-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OUt2" name="OUt2">
+      <column comment="" key="false" length="250" name="acdos_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="C_REFPM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="Fil_2">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="OUt2">
+        <mapperTableEntries name="acdos_num" expression="Out1.acdos_num " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFPM" expression="Ln_In_CXEXT.C_REFPM " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Fil_2" activateCondensedTool="true" rejectInnerJoin="true">
+        <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIC_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_1" expression="&quot;caint_num&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_1" expression="Out1.caint_num " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MESSAGE" expression="&quot;Absence de jointure entre CACTR et CXEXT&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="acdos_num" type="id_String" nullable="true"/>
+        <mapperTableEntries name="caint_num" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_CXEXT" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="caint_num" expression="Out1.caint_num " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="C_REFPM" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1888">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_17" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_xWpS8PIpEee1ztNDt5SeIQ-tMap_17-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OUt2" name="OUt2">
+      <column comment="" key="false" length="250" name="acdos_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="C_REFPM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="Fil_2">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="OUt2">
+        <mapperTableEntries name="acdos_num" expression="Out1.acdos_num " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFPM" expression="Ln_In_CXEXT.C_REFPM " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Fil_2" activateCondensedTool="true" rejectInnerJoin="true">
+        <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIC_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_1" expression="&quot;caint_num&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_1" expression="Out1.caint_num " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MESSAGE" expression="&quot;Absence de jointure entre CACTR et CXEXT&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="acdos_num" type="id_String" nullable="true"/>
+        <mapperTableEntries name="caint_num" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_CXEXT" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="caint_num" expression="Out1.caint_num " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="C_REFPM" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="-50" offsetLabelY="-6" posX="480" posY="2016">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_9" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;PIV_&quot;+&quot;ALT_SAS_DOSPM_DONNEES_FILTREES_7.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gSgOMXLBEeezorU47F1TZQ - SAS_DONNEES_FILTREES" show="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;-|-&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.ENCODING"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="TEXT" name="LABEL" value="Sf_Out_PIV_ALT_SAS_DONNEES_FILTREES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="tMSSqlOutputBulk_9">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1728">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_12" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ODS_CACTR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CACTR.caint_num,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CACTR.cactr_num&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CACTR&#xD;&#xA;where \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CACTR.cactr_dom='GP'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="caint_num"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cactr_num"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ODS_CACTR" name="tMSSqlInput_12">
+      <column comment="" key="false" length="250" name="caint_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="cactr_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1888">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_15" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_xWpS8PIpEee1ztNDt5SeIQ-tMap_15-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SAS_DOSPM" name="Ln_Out_ST">
+      <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="50" name="C_REFPM" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="50" name="C_TYPEDOSPM" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_COM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Ln_Out_ST">
+        <mapperTableEntries name="C_REFDOS" expression="OUt2.acdos_num " type="id_String"/>
+        <mapperTableEntries name="C_REFPM" expression="OUt2.C_REFPM " type="id_String"/>
+        <mapperTableEntries name="C_TYPEDOSPM" expression="&quot;SSTRT&quot;" type="id_String"/>
+        <mapperTableEntries name="L_COM" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="OUt2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="acdos_num" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFPM" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="2016">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_10" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;PIV_&quot;+&quot;ALT_SAS_DOSPM_DONNEES_FILTREES_8.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gSgOMXLBEeezorU47F1TZQ - SAS_DONNEES_FILTREES" show="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;-|-&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.ENCODING"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="TEXT" name="LABEL" value="Sf_Out_PIV_ALT_SAS_DONNEES_FILTREES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="tMSSqlOutputBulk_10">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1728">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_13" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ODS_CXEXT&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT          \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CXEXT.caint_num,&#xD;&#xA;case when  &#x9;&#x9; \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CXEXT.cxext_consensus ='T' then  '1036082'&#xD;&#xA;     when &#x9;          \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CXEXT.cxext_recoauto = 'T'  then '1036711'&#xD;&#xA;     when&#x9;              \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CXEXT.cxext_recocash = 'T'  then  '1036711'&#xD;&#xA;&#x9; end C_REFPM&#xD;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CXEXT&#xD;&#xA;where   \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CXEXT.cxext_consensus ='T'&#xD;&#xA;&#x9;  or      \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CXEXT.cxext_recoauto = 'T'&#xD;&#xA;&#x9;   or     \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_CXEXT. cxext_recocash = 'T'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="caint_num"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFPM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_13">
+      <column comment="" key="false" length="50" name="caint_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="C_REFPM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_7" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
@@ -3787,7 +4360,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1952" posY="1728">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1952" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_8" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -3867,11 +4440,11 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="11" offsetLabelY="0" posX="128" posY="2112">
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="11" offsetLabelY="0" posX="128" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="2112">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;DATE_FIN_EXECUTION&quot;"/>
@@ -3881,7 +4454,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_2"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="2112">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -3918,13 +4491,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="2112">
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlClose_1" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="TEXT" name="LABEL" value="SAS_ALT_CLOSE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="2" offsetLabelY="10" posX="1056" posY="2112">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="2" offsetLabelY="10" posX="1056" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -3969,14 +4542,14 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="2112">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du job : &quot;+jobName + &quot; - &quot;+ TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;System.out.println(&quot;-------------------------------------------------------------------------&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="2112">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="java.io.PrintStream pwErr = System.err;&#xA;pwErr.close();&#xA;System.setErr((java.io.PrintStream) globalMap.get(&quot;FLUX_ERR&quot;)); &#xA;java.io.File fichier = new java.io.File((String)globalMap.get(&quot;CONTEXT_LOG_ERR_NAME&quot;));&#xA;if (fichier.length()==0) {&#xA;&#x9;fichier.delete();&#xA;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -3984,7 +4557,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="1856">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="2368">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Des erreurs ont été rencontrées et insérées dans la table SAS_ERREUR&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -4052,7 +4625,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_1"/>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1856">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="2368">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_2" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
@@ -4060,7 +4633,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_2"/>
   </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="2112">
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlClose_2" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
     <elementParameter field="TEXT" name="LABEL" value="ODS_CLOSE"/>
@@ -4089,19 +4662,179 @@
     <elementParameter field="TEXT" name="LABEL" value="FIL_CONNECTION"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="2112">
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="2624">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlClose_3" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
     <elementParameter field="TEXT" name="LABEL" value="FIL_CLOSE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1856">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="2368">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_3" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="COMMIT_FIL"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_3"/>
+  </node>
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2208" posY="2240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_9" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_SAS" show="false"/>
+    <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_DONNEES_FILTREES&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before bulk insert" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gSgOMXLBEeezorU47F1TZQ - SAS_DONNEES_FILTREES" show="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM TABLE&quot;" show="false"/>
+    <elementParameter field="FILE" name="REMOTE_FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;PIV_&quot;+&quot;ALT_SAS_DOSPM_DONNEES_FILTREES_7.csv&quot;"/>
+    <elementParameter field="FILE" name="OUTPUT_FILE_NAME" value="&quot;C:/Users/besancon/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/mssql_bulk.txt&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION" value="INSERT"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="TEXT" name="FIELDS_TERMINATED_BY" value="&quot;-|-&quot;"/>
+    <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="tMSSqlBulkExec_9">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2464" posY="2240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_10" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_SAS" show="false"/>
+    <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_DONNEES_FILTREES&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before bulk insert" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gSgOMXLBEeezorU47F1TZQ - SAS_DONNEES_FILTREES" show="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM TABLE&quot;" show="false"/>
+    <elementParameter field="FILE" name="REMOTE_FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;PIV_&quot;+&quot;ALT_SAS_DOSPM_DONNEES_FILTREES_8.csv&quot;"/>
+    <elementParameter field="FILE" name="OUTPUT_FILE_NAME" value="&quot;C:/Users/besancon/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/mssql_bulk.txt&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION" value="INSERT"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="TEXT" name="FIELDS_TERMINATED_BY" value="&quot;-|-&quot;"/>
+    <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="tMSSqlBulkExec_10">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
   </node>
   <connection connectorName="FLOW" label="Ln_In_SAS_P_Contextes_CTX" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -4261,7 +4994,12 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_FI_ALT_UGBAI_2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Ln_Out_Inner_2" lineStyle="0" metaname="Ln_Out_Inner_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_8" target="tMap_9">
+  <connection connectorName="FLOW" label="Ln_Fil_Inner_2" lineStyle="0" metaname="Ln_Fil_Inner_2" offsetLabelX="-3" offsetLabelY="17" outputId="1" source="tMap_8" target="tMSSqlOutputBulk_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Fil_Inner_2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_Out_Inner_2" lineStyle="0" metaname="Ln_Out_Inner_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_8" target="tMap_9">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="actpa_cod"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -4280,11 +5018,6 @@
     <elementParameter field="CHECK" name="USEROWLABEL" value="false" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Out_Inner_2" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Ln_Fil_Inner_2" lineStyle="0" metaname="Ln_Fil_Inner_2" offsetLabelX="-3" offsetLabelY="17" outputId="2" source="tMap_8" target="tMSSqlOutputBulk_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Fil_Inner_2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_Out_RG_All_2" lineStyle="10" mergeOrder="2" metaname="Ln_Out_RG_All_2" offsetLabelX="0" offsetLabelY="0" source="tMap_9" target="tUnite_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -4612,7 +5345,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Out_Inner_5" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Ln_Fil_Inner_6" lineStyle="0" metaname="Ln_Fil_Inner_6" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_12" target="tMSSqlOutputBulk_7">
+  <connection connectorName="FLOW" label="Ln_Fil_Inner_6" lineStyle="0" metaname="Ln_Fil_Inner_6" offsetLabelX="42" offsetLabelY="36" outputId="2" source="tMap_12" target="tMSSqlOutputBulk_7">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="VAL_COL_1"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -4688,8 +5421,51 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Out_NUMTIERS" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="Ln_In_ACDOS" lineStyle="0" metaname="tMSSqlInput_11" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_11" target="tMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_ACDOS" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out1" lineStyle="0" metaname="Out1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_6" target="tMap_17">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Fil_1" lineStyle="0" metaname="Fil_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_6" target="tMSSqlOutputBulk_9">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Fil_1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="OUt2" lineStyle="0" metaname="OUt2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_17" target="tMap_15">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUt2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Fil_2" lineStyle="0" metaname="Fil_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_17" target="tMSSqlOutputBulk_10">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Fil_2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="OUt2" lineStyle="0" metaname="OUt2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_17" target="tMap_15">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUt2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Fil_2" lineStyle="0" metaname="Fil_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_17" target="tMSSqlOutputBulk_10">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Fil_2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_In_CACTR" lineStyle="8" metaname="tMSSqlInput_12" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_12" target="tMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_CACTR" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_Out_ST" lineStyle="10" mergeOrder="5" metaname="Ln_Out_ST" offsetLabelX="0" offsetLabelY="0" source="tMap_15" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Out_ST" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_In_CXEXT" lineStyle="8" metaname="tMSSqlInput_13" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_13" target="tMap_17">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_CXEXT" show="false"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlBulkExec_7" target="tMSSqlBulkExec_8">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk32" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_8" offsetLabelX="0" offsetLabelY="0" source="tMSSqlBulkExec_8" target="tMSSqlBulkExec_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk36" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tSetGlobalVar_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
@@ -4739,6 +5515,9 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlCommit_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_3" target="tJava_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk35" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_9" offsetLabelX="0" offsetLabelY="0" source="tMSSqlBulkExec_9" target="tMSSqlBulkExec_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk37" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -5013,6 +5792,20 @@
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_3" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Commit SAS"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_9" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Alimentation de la bdd"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_10" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Alimentation de la bdd"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
