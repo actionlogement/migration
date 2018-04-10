@@ -81,4 +81,5 @@
   <contextParameter xmi:id="_VKJsGDvaEeiwPZ9KQ6OIWQ" comment="Nom du fichier GPRAN" name="V_FIC_GPRAN" prompt="V_FIC_GPRAN?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_VKJsGTvaEeiwPZ9KQ6OIWQ" comment="Nom du fichier GPRAP" name="V_FIC_GPRAP" prompt="V_FIC_GPRAP?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_VKJsGjvaEeiwPZ9KQ6OIWQ" comment="Nom du fichier MGCUT" name="V_FIC_MGCUT" prompt="V_FIC_MGCUT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_RKZuEDydEeiCp_su1k3Ekg" comment="Nom du fichier CXEXT" name="V_FIC_CXEXT" prompt="V_FIC_CXEXT?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
