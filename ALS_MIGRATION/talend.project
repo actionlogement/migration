@@ -1504,6 +1504,120 @@
       <relatedItems xmi:id="_HGEkL0b8Eeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - SAS_DONNEES_FILTREES" version="Latest" type="schema"/>
       <relatedItems xmi:id="_HGEkMEb8Eeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - SAS_DOSSIER_SOLDES" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_zCbNoEb_Eeiie_nSVIAy9Q">
+      <baseItem xmi:id="_zCbNoUb_Eeiie_nSVIAy9Q" id="_XQUAAPVaEeeQobPuLzsruA" version="0.2" type="job"/>
+      <relatedItems xmi:id="_zCbNokb_Eeiie_nSVIAy9Q" id="_gSgOMHLBEeezorU47F1TZQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNo0b_Eeiie_nSVIAy9Q" id="_3OG6kFWyEeeBpLqBktjAUg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNpEb_Eeiie_nSVIAy9Q" id="_Dkh6oP9aEeenj6uLdO0ZhA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNpUb_Eeiie_nSVIAy9Q" id="_k3DOsAUBEeiTIoMnIi5eAg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNpkb_Eeiie_nSVIAy9Q" id="_MgkfUHLCEeezorU47F1TZQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNp0b_Eeiie_nSVIAy9Q" id="_v2TzMPX7EeeQobPuLzsruA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNqEb_Eeiie_nSVIAy9Q" id="_Pu4hUFpLEeexZ_9Dmewfzg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_zCbNqUb_Eeiie_nSVIAy9Q" id="_fBodMFpMEeexZ_9Dmewfzg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_zCbNqkb_Eeiie_nSVIAy9Q" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNq0b_Eeiie_nSVIAy9Q" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNrEb_Eeiie_nSVIAy9Q" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNrUb_Eeiie_nSVIAy9Q" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNrkb_Eeiie_nSVIAy9Q" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNr0b_Eeiie_nSVIAy9Q" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNsEb_Eeiie_nSVIAy9Q" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNsUb_Eeiie_nSVIAy9Q" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNskb_Eeiie_nSVIAy9Q" id="_2-UDwPYTEeeIQdWa2bcjSg - TIE_PERSPHYS" version="Latest" type="schema"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_zCbNs0b_Eeiie_nSVIAy9Q">
+      <baseItem xmi:id="_zCbNtEb_Eeiie_nSVIAy9Q" id="_Op48wPVaEeeQobPuLzsruA" version="0.2" type="job"/>
+      <relatedItems xmi:id="_zCbNtUb_Eeiie_nSVIAy9Q" id="_gSgOMHLBEeezorU47F1TZQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNtkb_Eeiie_nSVIAy9Q" id="_3OG6kFWyEeeBpLqBktjAUg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNt0b_Eeiie_nSVIAy9Q" id="_Dkh6oP9aEeenj6uLdO0ZhA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNuEb_Eeiie_nSVIAy9Q" id="_k3DOsAUBEeiTIoMnIi5eAg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNuUb_Eeiie_nSVIAy9Q" id="_MgkfUHLCEeezorU47F1TZQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNukb_Eeiie_nSVIAy9Q" id="_v2TzMPX7EeeQobPuLzsruA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_zCbNu0b_Eeiie_nSVIAy9Q" id="_Pu4hUFpLEeexZ_9Dmewfzg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_zCbNvEb_Eeiie_nSVIAy9Q" id="_fBodMFpMEeexZ_9Dmewfzg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_zCbNvUb_Eeiie_nSVIAy9Q" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNvkb_Eeiie_nSVIAy9Q" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNv0b_Eeiie_nSVIAy9Q" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNwEb_Eeiie_nSVIAy9Q" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNwUb_Eeiie_nSVIAy9Q" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNwkb_Eeiie_nSVIAy9Q" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNw0b_Eeiie_nSVIAy9Q" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNxEb_Eeiie_nSVIAy9Q" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_zCbNxUb_Eeiie_nSVIAy9Q" id="_2-UDwPYTEeeIQdWa2bcjSg - TIE_ROLE" version="Latest" type="schema"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_PI7d8EcDEeiie_nSVIAy9Q">
+      <baseItem xmi:id="_PI7d8UcDEeiie_nSVIAy9Q" id="_NgCToDQiEei_QZ6YxmPxjQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_PI7d8kcDEeiie_nSVIAy9Q" id="_gSgOMHLBEeezorU47F1TZQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PI7d80cDEeiie_nSVIAy9Q" id="_3OG6kFWyEeeBpLqBktjAUg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PI7d9EcDEeiie_nSVIAy9Q" id="_xa6lEFdAEeesPII_CnKnww" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PI7d9UcDEeiie_nSVIAy9Q" id="_Dkh6oP9aEeenj6uLdO0ZhA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PI7d9kcDEeiie_nSVIAy9Q" id="_MgkfUHLCEeezorU47F1TZQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PI7d90cDEeiie_nSVIAy9Q" id="_fBodMFpMEeexZ_9Dmewfzg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_PI7d-EcDEeiie_nSVIAy9Q" id="_Pu4hUFpLEeexZ_9Dmewfzg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_PI7d-UcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_PI7d-kcDEeiie_nSVIAy9Q" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7d-0cDEeiie_nSVIAy9Q" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7d_EcDEeiie_nSVIAy9Q" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7d_UcDEeiie_nSVIAy9Q" id="StringModify" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7d_kcDEeiie_nSVIAy9Q" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7d_0cDEeiie_nSVIAy9Q" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7eAEcDEeiie_nSVIAy9Q" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7eAUcDEeiie_nSVIAy9Q" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7eAkcDEeiie_nSVIAy9Q" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI7eA0cDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TOESF" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eBEcDEeiie_nSVIAy9Q" id="_A5EqoPFcEee1ztNDt5SeIQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eBUcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_BIDOS" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eBkcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TOCRE" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eB0cDEeiie_nSVIAy9Q" id="_Gz6P8BGeEeirU4h95QQg7g - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eCEcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TOPSP" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eCUcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TODFO" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eCkcDEeiie_nSVIAy9Q" id="_ueWb0PCXEeepo4ZwEjQ-tQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eC0cDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TOPHR" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eDEcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TOFOP" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eDUcDEeiie_nSVIAy9Q" id="_tVbFgFZzEeesPII_CnKnww - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eDkcDEeiie_nSVIAy9Q" id="_A3cRgBGeEeirU4h95QQg7g - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eD0cDEeiie_nSVIAy9Q" id="_3j4bcBGdEeirU4h95QQg7g - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eEEcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TORSM" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eEUcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_CAEND" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eEkcDEeiie_nSVIAy9Q" id="_vJK9ADyfEeiCp_su1k3Ekg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eE0cDEeiie_nSVIAy9Q" id="_iBHNgOcfEeecqrP7uh32JA - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eFEcDEeiie_nSVIAy9Q" id="_LRZXEPFhEee1ztNDt5SeIQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eFUcDEeiie_nSVIAy9Q" id="_W8ipAPE0Eee1ztNDt5SeIQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eFkcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TOSFI" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eF0cDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_TOESO" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eGEcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_ACXFER" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eGUcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_CAOBS" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eGkcDEeiie_nSVIAy9Q" id="_1iNqcPE3Eee1ztNDt5SeIQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eG0cDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_ACDSP" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eHEcDEeiie_nSVIAy9Q" id="_yF5QYPE-Eee1ztNDt5SeIQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eHUcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_ACARC" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eHkcDEeiie_nSVIAy9Q" id="_9u4AIPXoEeeIQdWa2bcjSg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eH0cDEeiie_nSVIAy9Q" id="_ouVTcOcfEeecqrP7uh32JA - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eIEcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_ACNTA" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eIUcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_ACPFI" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eIkcDEeiie_nSVIAy9Q" id="_7lOJ8BGdEeirU4h95QQg7g - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eI0cDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_CXALE" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eJEcDEeiie_nSVIAy9Q" id="_m6EwcKLXEeePUtdDk8_5Vw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eJUcDEeiie_nSVIAy9Q" id="_JBsL0PFBEee1ztNDt5SeIQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI7eJkcDEeiie_nSVIAy9Q" id="_gSgOMXLBEeezorU47F1TZQ - ODS_CAINT" version="Latest" type="schema"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_TDMeoEcEEeiie_nSVIAy9Q">
+      <baseItem xmi:id="_TDMeoUcEEeiie_nSVIAy9Q" id="_9uxy8CtxEei0-J6-04vGDA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_TDMeokcEEeiie_nSVIAy9Q" id="_gSgOMHLBEeezorU47F1TZQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_TDMeo0cEEeiie_nSVIAy9Q" id="_9z2hgPugEeeRo_gLjTRF4A" version="Latest" type="context"/>
+      <relatedItems xmi:id="_TDMepEcEEeiie_nSVIAy9Q" id="_3OG6kFWyEeeBpLqBktjAUg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_TDMepUcEEeiie_nSVIAy9Q" id="_Dkh6oP9aEeenj6uLdO0ZhA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_TDMepkcEEeiie_nSVIAy9Q" id="_k3DOsAUBEeiTIoMnIi5eAg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_TDMep0cEEeiie_nSVIAy9Q" id="_MgkfUHLCEeezorU47F1TZQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_TDMeqEcEEeiie_nSVIAy9Q" id="_Pu4hUFpLEeexZ_9Dmewfzg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_TDMeqUcEEeiie_nSVIAy9Q" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TDMeqkcEEeiie_nSVIAy9Q" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TDMeq0cEEeiie_nSVIAy9Q" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TDMerEcEEeiie_nSVIAy9Q" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TDMerUcEEeiie_nSVIAy9Q" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TDMerkcEEeiie_nSVIAy9Q" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TDMer0cEEeiie_nSVIAy9Q" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TDMesEcEEeiie_nSVIAy9Q" id="Relational" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_7fOtwEbyEeiie_nSVIAy9Q" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_7fOtwUbyEeiie_nSVIAy9Q" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_7fOtwkbyEeiie_nSVIAy9Q" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
