@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_rQQzkEO3Eei0CuQfk9LjWA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_rQQzkUO3Eei0CuQfk9LjWA" comment="Répertoire source des fichiers" name="V_REP_RACINE" prompt="V_REP_RACINE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzkkO3Eei0CuQfk9LjWA" comment="Sous-répertoire des fichiers GIC" name="V_SS_REP_GIC" prompt="V_SS_REP_GIC?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzk0O3Eei0CuQfk9LjWA" comment="Encodage du fichier" name="ENCODING" prompt="ENCODING?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzlEO3Eei0CuQfk9LjWA" comment="Nombre de lignes en entête" name="HEADER" prompt="HEADER?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQQzlUO3Eei0CuQfk9LjWA" comment="Nombre de lignes en fin de fichier" name="FOOTER" prompt="FOOTER?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQQzlkO3Eei0CuQfk9LjWA" comment="Séparateur de champs" name="FIELD_SEPARATOR" prompt="FIELD_SEPARATOR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzl0O3Eei0CuQfk9LjWA" comment="Séparateur de lignes" name="ROW_SEPARATOR" prompt="ROW_SEPARATOR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzmEO3Eei0CuQfk9LjWA" comment="Entourage du texte" name="ROW_ENTOURAGE" prompt="ROW_ENTOURAGE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzmUO3Eei0CuQfk9LjWA" comment="Caractère d'échappement" name="ROW_ECHAP" prompt="ROW_ECHAP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzmkO3Eei0CuQfk9LjWA" comment="Nom du fichier DOSSIER" name="V_FIC_DOSSIER" prompt="V_FIC_DOSSIER?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzm0O3Eei0CuQfk9LjWA" comment="Nom du fichier INDDOS" name="V_FIC_INDDOS" prompt="V_FIC_INDDOS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQznEO3Eei0CuQfk9LjWA" comment="Nom du fichier INDIV" name="V_FIC_INDIV" prompt="V_FIC_INDIV?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQznUO3Eei0CuQfk9LjWA" comment="Répertoire des fichiers temporaires" name="V_REP_FICH_TMP" prompt="V_REP_FICH_TMP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQznkO3Eei0CuQfk9LjWA" comment="Nom du fichier BAILLEUR" name="V_FIC_BAILLEUR" prompt="V_FIC_BAILLEUR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzn0O3Eei0CuQfk9LjWA" comment="Nom du fichier EVENT" name="V_FIC_EVENT" prompt="V_FIC_EVENT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzoEO3Eei0CuQfk9LjWA" comment="Nom du fichier DOSCONV" name="V_FIC_DOSCONV" prompt="V_FIC_DOSCONV?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzoUO3Eei0CuQfk9LjWA" comment="Nom du fichier HISTCPTA" name="V_FIC_HISTCPTA" prompt="V_FIC_HISTCPTA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzokO3Eei0CuQfk9LjWA" comment="Nom du fichier OPEVENT" name="V_FIC_OPEVENT" prompt="V_FIC_OPEVENT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzo0O3Eei0CuQfk9LjWA" comment="Nom du fichier SITE" name="V_FIC_SITE" prompt="V_FIC_SITE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzpEO3Eei0CuQfk9LjWA" comment="Nom du fichierTYPASS" name="V_FIC_TYPASS" prompt="V_FIC_TYPASS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzpUO3Eei0CuQfk9LjWA" comment="Nom du fichier ASSP" name="V_FIC_ASSP" prompt="V_FIC_ASSP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzpkO3Eei0CuQfk9LjWA" comment="Nom du fichier PRET" name="V_FIC_PRET" prompt="V_FIC_PRET?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzp0O3Eei0CuQfk9LjWA" comment="Nom du fichier FACTURE" name="V_FIC_FACTURE" prompt="V_FIC_FACTURE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzqEO3Eei0CuQfk9LjWA" comment="Nom du fichier PRETHG" name="V_FIC_PRETHG" prompt="V_FIC_PRETHG?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzqUO3Eei0CuQfk9LjWA" comment="Nom du fichier DOMC" name="V_FIC_DOMC" prompt="V_FIC_DOMC?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzqkO3Eei0CuQfk9LjWA" comment="Nom du fichier RIB_PM" name="V_FIC_RIB_PM" prompt="V_FIC_RIB_PM?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzq0O3Eei0CuQfk9LjWA" comment="Fichier temp" name="V_FIC_TEMP" prompt="V_FIC_TEMP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzrEO3Eei0CuQfk9LjWA" comment="Repertoire temp" name="V_REP_TMP" prompt="V_REP_TMP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzrUO3Eei0CuQfk9LjWA" comment="Nom du fichier BANQUE" name="V_FIC_BANQUE" prompt="V_FIC_BANQUE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzrkO3Eei0CuQfk9LjWA" comment="Nom du fichier BAREME" name="V_FIC_BAREME" prompt="V_FIC_BAREME?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzr0O3Eei0CuQfk9LjWA" comment="Nom du fichier GUICH" name="V_FIC_GUICH" prompt="V_FIC_GUICH?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzsEO3Eei0CuQfk9LjWA" comment="Nom du fichier LIGPLAN" name="V_FIC_LIGPLAN" prompt="V_FIC_LIGPLAN?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzsUO3Eei0CuQfk9LjWA" comment="Nom du fichier LIGTA" name="V_FIC_LIGTA" prompt="V_FIC_LIGTA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzskO3Eei0CuQfk9LjWA" comment="Nom du fichier PLANRAT" name="V_FIC_PLANRAT" prompt="V_FIC_PLANRAT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzs0O3Eei0CuQfk9LjWA" comment="Nom du fichier temporaire  pour ligneta" name="V_FIC_LIGNETA_temp" prompt="V_FIC_LIGNETA_temp?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQztEO3Eei0CuQfk9LjWA" comment="Séparateur des lignes pour un fichier temporaire du BULK" name="ROW_SEPARATOR_BULK" prompt="ROW_SEPARATOR_BULK?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQztUO3Eei0CuQfk9LjWA" comment="Séparateur des champs pour un fichier temporaire avec BULK" name="FIELD_SEPARATOR_BULK" prompt="FIELD_SEPARATOR_BULK?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQztkO3Eei0CuQfk9LjWA" comment="" name="V_REP_TEMP" prompt="V_REP_TEMP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzt0O3Eei0CuQfk9LjWA" comment="Nom du fichier TELEPHONE" name="V_FIC_TELEPHONE" prompt="V_FIC_TELEPHONE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzuEO3Eei0CuQfk9LjWA" comment="Nom du fichier ADRESSE_AFNOR" name="V_FIC_ADRESSE_AFNOR" prompt="V_FIC_ADRESSE_AFNOR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzuUO3Eei0CuQfk9LjWA" comment="Nom du fichier AGENDA" name="V_FIC_AGENDA" prompt="V_FIC_AGENDA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzukO3Eei0CuQfk9LjWA" comment="Nom du fichier PALIERS" name="V_FIC_PALIERS" prompt="V_FIC_PALIERS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzu0O3Eei0CuQfk9LjWA" comment="Nom du fichier temporaire LIGNETA" name="V_FIC_TEMP_LIGNETA" prompt="V_FIC_TEMP_LIGNETA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzvEO3Eei0CuQfk9LjWA" comment="Nom du fichier MIG_DOSSOLDE" name="V_FIC_MIG_DOSSOLDE" prompt="V_FIC_MIG_DOSSOLDE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzvUO3Eei0CuQfk9LjWA" comment="Nom du fichier INDTIERS" name="V_FIC_INDTIERS" prompt="V_FIC_INDTIERS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzvkO3Eei0CuQfk9LjWA" comment="Repertoire ES LOANS" name="V_REP_ES_LOANS" prompt="V_REP_ES_LOANS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzv0O3Eei0CuQfk9LjWA" comment="Nom du fichier DOSEXTERN" name="V_FIC_DOSEXTERN" prompt="V_FIC_DOSEXTERN?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzwEO3Eei0CuQfk9LjWA" comment="Nom du fichier MIG_APPEL" name="V_FIC_APPEL" prompt="V_FIC_APPEL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzwUO3Eei0CuQfk9LjWA" comment="Nom du fichier MIG_PREL" name="V_FIC_PREL" prompt="V_FIC_PREL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzwkO3Eei0CuQfk9LjWA" comment="Nom du fichier ENGAGEMENT" name="V_FIC_ENGAGEMENT" prompt="V_FIC_ENGAGEMENT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzw0O3Eei0CuQfk9LjWA" comment="Nom du fichier REPLIAISASH" name="V_FIC_REPLIAISASH" prompt="V_FIC_REPLIAISASH?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQQzxEO3Eei0CuQfk9LjWA" comment="Paramètre d'option de chagement de SAS_MOG" name="PARAM_CHARGESASMOG" prompt="PARAM_CHARGESASMOG?" promptNeeded="true" type="id_String" value="O"/>
+  <contextParameter xmi:id="_rQQzxUO3Eei0CuQfk9LjWA" comment="Préfixe du fichier csv" name="PARAM_NOMREPCSV" prompt="PARAM_NOMREPCSV?" promptNeeded="true" type="id_String" value="TEST"/>
+  <contextParameter xmi:id="_rQQzxkO3Eei0CuQfk9LjWA" comment="" name="V_FIC_PERTE" prompt="V_FIC_PERTE?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

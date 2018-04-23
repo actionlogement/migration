@@ -13,6 +13,7 @@
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Login" prompt="CRISTAL_SQL_CONTEXTE_Login?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="talend_dev1"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Password" prompt="CRISTAL_SQL_CONTEXTE_Password?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Port" prompt="CRISTAL_SQL_CONTEXTE_Port?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_FIL" prompt="CRISTAL_SQL_CONTEXTE_Schema_FIL?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="FIL"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_ODS" prompt="CRISTAL_SQL_CONTEXTE_Schema_ODS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="ODS"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_REF" prompt="CRISTAL_SQL_CONTEXTE_Schema_REF?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="REF"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_SAS" prompt="CRISTAL_SQL_CONTEXTE_Schema_SAS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
@@ -66,6 +67,7 @@
     <contextParameter comment="Nom du fichier CARUM" name="V_FIC_CARUM" prompt="V_FIC_CARUM?" promptNeeded="false" repositoryContextId="_xa6lEFdAEeesPII_CnKnww" type="id_String" value=""/>
     <contextParameter comment="Nom du fichier CXALE" name="V_FIC_CXALE" prompt="V_FIC_CXALE?" promptNeeded="false" repositoryContextId="_xa6lEFdAEeesPII_CnKnww" type="id_String" value=""/>
     <contextParameter comment="Nom du fichier CXECH" name="V_FIC_CXECH" prompt="V_FIC_CXECH?" promptNeeded="false" repositoryContextId="_xa6lEFdAEeesPII_CnKnww" type="id_String" value=""/>
+    <contextParameter comment="Nom du fichier CXEXT" name="V_FIC_CXEXT" prompt="V_FIC_CXEXT?" promptNeeded="false" repositoryContextId="_xa6lEFdAEeesPII_CnKnww" type="id_String" value=""/>
     <contextParameter comment="Nom du fichier CXICT" name="V_FIC_CXICT" prompt="V_FIC_CXICT?" promptNeeded="false" repositoryContextId="_xa6lEFdAEeesPII_CnKnww" type="id_String" value=""/>
     <contextParameter comment="Nom du fichier CXPLA" name="V_FIC_CXPLA" prompt="V_FIC_CXPLA?" promptNeeded="false" repositoryContextId="_xa6lEFdAEeesPII_CnKnww" type="id_String" value=""/>
     <contextParameter comment="Nom du fichier DOSSIER_SOLDES" name="V_FIC_DOSSIER_SOLDES" prompt="V_FIC_DOSSIER_SOLDES?" promptNeeded="false" repositoryContextId="_xa6lEFdAEeesPII_CnKnww" type="id_String" value=""/>
@@ -146,8 +148,8 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms2048M -Xmx8192M " show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1280" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="128" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1707" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -253,14 +255,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-384">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Début du job : &quot;+jobName + &quot; - &quot;+TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-224">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;DATE_DEBUT_JOB&quot;"/>
@@ -271,7 +273,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="576">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+ context.V_FIC_ACDOS);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);&#xA;&#xA;&#xA;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -550,7 +552,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="448">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_ACDOS"/>
@@ -697,7 +699,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="448">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_1" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_ACDOS.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -728,7 +730,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="864">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_ACPAR"/>
@@ -851,7 +853,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="864">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_2" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_ACPAR.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -878,7 +880,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1280">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_ACDFI"/>
@@ -1277,7 +1279,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1280">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_3" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_ACDFI.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -1350,7 +1352,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1696">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_ACSLO"/>
@@ -1431,7 +1433,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1696">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_4" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_ACSLO.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -1451,7 +1453,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="2112">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_6" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_CAGES"/>
@@ -1562,7 +1564,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2112">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_5" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_CAGES.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -1587,7 +1589,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="2528">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_7" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_CACTR"/>
@@ -1710,7 +1712,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2528">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_6" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_CACTR.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -1737,7 +1739,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="2944">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_8" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_DOSSIER_SOLDES"/>
@@ -1849,7 +1851,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="2944">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1908,7 +1910,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2944">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_7" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_DOSSIER_SOLDES.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -1933,7 +1935,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="3392">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_9" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_MGINS"/>
@@ -2032,7 +2034,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="3392">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_8" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_MGINS.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -2055,7 +2057,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="3808">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_10" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_MGADR"/>
@@ -2220,7 +2222,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="3808">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_9" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_MGADR.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -2254,7 +2256,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="3" offsetLabelY="0" posX="32" posY="4224">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="3" offsetLabelY="0" posX="32" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_11" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_PEPRE"/>
@@ -2569,7 +2571,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="4224">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_10" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_PEPRE.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -2628,7 +2630,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="5088">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_13" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_TODPP"/>
@@ -2871,7 +2873,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="5088">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_12" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_TODPP.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -2918,7 +2920,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="5504">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1728">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_14" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_UGCMJ"/>
@@ -3023,7 +3025,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="5504">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1728">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_13" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_UGCMJ.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -3047,7 +3049,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="5920">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1728">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_15" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_UGBAI"/>
@@ -3278,7 +3280,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="5920">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="1728">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_14" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_UGBAI.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -3323,7 +3325,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="6240">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="2048">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du job : &quot;+jobName + &quot; - &quot;+ TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;System.out.println(&quot;-------------------------------------------------------------------------&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -3341,7 +3343,7 @@
       <column comment="" key="false" length="2" name="ugdeb_libgloy" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="4672">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_12" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_TOTAD"/>
@@ -3500,7 +3502,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="4672">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_11" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;ALT_ODS_TOTAD.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -3553,9 +3555,10 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
     <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Connexion_ODS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="576">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -3608,14 +3611,14 @@
       <column comment="" key="false" length="250" name="mgnop_bail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="576">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_1" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_1"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="992">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -3664,14 +3667,14 @@
       <column comment="" key="false" length="250" name="acpar_datmaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="992">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_2" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_2"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1408">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_3" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -3766,14 +3769,14 @@
       <column comment="" key="false" length="250" name="acdfi_datemb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1408">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_3" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_3"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1824">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_4" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -3815,14 +3818,14 @@
       <column comment="" key="false" length="250" name="acslo_utimaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1824">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_4" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_4"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="2240">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_5" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -3869,14 +3872,14 @@
       <column comment="" key="false" length="250" name="cages_datmaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="2240">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_5" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_5"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="2656">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_6" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -3925,14 +3928,14 @@
       <column comment="" key="false" length="250" name="cactr_datmaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="2656">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_6" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_6"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="3072">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_7" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -3979,14 +3982,14 @@
       <column comment="" key="false" length="250" name="solde_balance" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="3072">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_7" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_7"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="3520">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_8" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -4031,14 +4034,14 @@
       <column comment="" key="false" length="250" name="mgins_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="3520">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_8" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_8"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="3936">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_9" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -4094,14 +4097,14 @@
       <column comment="" key="false" length="250" name="mgadr_datmaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="3936">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_9" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_9"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="4384">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_10" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -4182,14 +4185,14 @@
       <column comment="" key="false" length="250" name="pepre_mntacc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="4384">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_10" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_10"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="4800">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_11" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -4244,14 +4247,14 @@
       <column comment="" key="false" length="250" name="totad_utimaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="4800">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_11" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_11"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="5216">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_12" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -4320,14 +4323,14 @@
       <column comment="" key="false" length="250" name="todpp_utimaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="5216">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_12" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_12"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="5632">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1856">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_13" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -4373,14 +4376,14 @@
       <column comment="" key="false" length="250" name="ugcmj_datmaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="5632">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1856">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_13" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_13"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="6048">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1856">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_14" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -4447,101 +4450,101 @@
       <column comment="" key="false" length="250" name="lgt_mobij" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="6048">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1856">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_14" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_14"/>
   </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="6240">
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="2048">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="6240">
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="2048">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlClose_1" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-13" offsetLabelY="1" posX="32" posY="4960">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-13" offsetLabelY="1" posX="1248" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_TODPP"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_TODPP"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-12" offsetLabelY="0" posX="32" posY="3680">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-12" offsetLabelY="0" posX="1248" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_2" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_MGADR"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_MGADR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-14" offsetLabelY="4" posX="32" posY="4544">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-14" offsetLabelY="4" posX="640" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_3" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_TOTAD"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_TOTAD"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="32" posY="2400">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="1248" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_7" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_CACTR"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_CACTR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-14" offsetLabelY="4" posX="32" posY="1152">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-14" offsetLabelY="4" posX="1248" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_8" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_ACDFI"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_ACDFI"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="32" posY="5792">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="640" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_9" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_UGBAI"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_UGBAI"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-14" offsetLabelY="4" posX="32" posY="1984">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-14" offsetLabelY="4" posX="640" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_10" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_CAGES"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_CAGES"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="32" posY="1568">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="32" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_11" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_ACSLO"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_ACSLO"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-32" offsetLabelY="0" posX="32" posY="2816">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-32" offsetLabelY="0" posX="32" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_12" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_DOSSIER_SOLDES"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_DOSSIER_SOLDES"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-8" offsetLabelY="4" posX="32" posY="4096">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-8" offsetLabelY="4" posX="32" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_13" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_PEPRE"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_PEPRE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="32" posY="5376">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="32" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_14" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_UGCMJ"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_UGCMJ"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-14" offsetLabelY="4" posX="32" posY="736">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-14" offsetLabelY="4" posX="640" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_4" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_ACPAR"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_ACPAR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="32" posY="320">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="32" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_5" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_ACDOS"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_ACDOS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-12" offsetLabelY="0" posX="32" posY="3264">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="-12" offsetLabelY="0" posX="640" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_6" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_MGINS"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_FI_ALT_MGINS"/>
@@ -4555,196 +4558,196 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="992">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+ context.V_FIC_ACPAR);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_2_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_2_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1408">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+ context.V_FIC_ACDFI);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_3_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_3_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1824">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_ACSLO);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;));&#xA;&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_7"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="2240">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_CAGES);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_5_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_5_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_8"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="2656">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_CACTR);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_6_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_6_NB_LINE&quot;));&#xA;&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_9"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="3072">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_DOSSIER_SOLDES);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_7_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_7_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_10"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="3520">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_MGINS);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_8_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_8_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_11"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="3936">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_12" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_MGADR);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_9_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_9_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_12"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="4384">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_PEPRE);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_10_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_10_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_13"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="4800">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_14" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_TOTAD);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_11_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_11_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_14"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="5216">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_15" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_TODPP);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_12_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_12_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_15"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="-10" offsetLabelY="2" posX="416" posY="5632">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="-10" offsetLabelY="2" posX="384" posY="1856">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_16" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_UGCMJ);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_13_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_13_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_16"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="-10" offsetLabelY="2" posX="416" posY="6048">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="-10" offsetLabelY="2" posX="1024" posY="1856">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_17" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Chargement du fichier source : &quot;+context.V_FIC_UGBAI);&#xA;&#xA;context.NB_LIGNES_INS=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_14_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_14_NB_LINE&quot;));&#xA;&#xA;System.out.println(&quot;   Nombre de lignes insérées : &quot;+context.NB_LIGNES_INS);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_17"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="320">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_18" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_ACDOS+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_18"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="736">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_19" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_ACPAR+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_19"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="1152">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_20" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_ACDFI+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_20"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1568">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_21" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_ACSLO+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_21"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="1984">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_22" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_CAGES+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_22"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="2400">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_23" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_CACTR+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_23"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="2816">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_24" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(context.V_REP_RACINE+context.V_SS_REP_ALT+context.V_FIC_DOSSIER_SOLDES);&#xA;System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_DOSSIER_SOLDES+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_24"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="3264">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_25" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_MGINS+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_25"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="3680">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_26" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_MGADR+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_26"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="4096">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_27" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_PEPRE+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_27"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="4544">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_28" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_TOTAD+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_28"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="4960">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_29" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_TODPP+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_29"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="5376">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_30" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_UGCMJ+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_30"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="5792">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_31" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;** Warning : Le fichier &quot;+context.V_FIC_UGBAI+&quot; n'existe pas **&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_31"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="6240">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="2048">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_32" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="java.io.PrintStream pwErr = System.err;&#xA;pwErr.close();&#xA;System.setErr((java.io.PrintStream) globalMap.get(&quot;FLUX_ERR&quot;)); &#xA;java.io.File fichier = new java.io.File((String)globalMap.get(&quot;CONTEXT_LOG_ERR_NAME&quot;));&#xA;if (fichier.length()==0) {&#xA;&#x9;fichier.delete();&#xA;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -4752,7 +4755,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_32"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="-1" offsetLabelY="-1" posX="448" posY="6240">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="-1" offsetLabelY="-1" posX="512" posY="2048">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -4789,7 +4792,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="6240">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="2048">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
@@ -4804,7 +4807,7 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFixedFlowInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSetGlobalVar_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="-18" source="tJava_1" target="tSetGlobalVar_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk43" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_In_Categorie" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tContextLoad_1">
@@ -4867,7 +4870,7 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_3" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_3" target="tRunJob_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_3" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_3" target="tJava_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_3" offsetLabelX="-3" offsetLabelY="-22" source="tSetGlobalVar_3" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_Out_ACDOS" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="6" offsetLabelY="2" source="tFileInputDelimited_2" target="tMSSqlOutputBulk_1">
@@ -19808,7 +19811,7 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_12" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_12" target="tMSSqlBulkExec_11">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk39" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_1" target="tSetGlobalVar_3">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="1" offsetLabelY="-22" source="tMSSqlConnection_1" target="tSetGlobalVar_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlBulkExec_1" target="tMSSqlCommit_1">
@@ -20029,13 +20032,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Log Debut"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Initialisation variables debut"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
@@ -20044,28 +20051,38 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Chargement du contexte - Partie 1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Chargement du contexte - Partie 2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Chargement du contexte - Partie 3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_3" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Initialisation"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Mise à jour du suivi d'execution du job"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
@@ -20144,8 +20161,10 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Connexion SAS"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>

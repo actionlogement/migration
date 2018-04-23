@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_rQjHcEO3Eei0CuQfk9LjWA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_rQjHcUO3Eei0CuQfk9LjWA" comment="Emplacement du fichier de contexte" name="V_FIC_CONTEXT_INIT" prompt="V_FIC_CONTEXT_INIT?" promptNeeded="false" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL_GIC.txt"/>
+  <contextParameter xmi:id="_rQjHckO3Eei0CuQfk9LjWA" comment="Liste des catégories de contexte" name="V_LIST_CATEGORIES" prompt="V_LIST_CATEGORIES?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQjHc0O3Eei0CuQfk9LjWA" comment="Date de début d'exécution" name="V_DDEB_EXECUTION" prompt="V_DDEB_EXECUTION?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_rQjHdEO3Eei0CuQfk9LjWA" comment="Nom du job" name="V_NOM_JOB" prompt="V_NOM_JOB?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQjHdUO3Eei0CuQfk9LjWA" comment="Nom du pic" name="V_NOM_PIC" prompt="V_NOM_PIC?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQjHdkO3Eei0CuQfk9LjWA" comment="Etape du traitement" name="V_ETAPE" prompt="V_ETAPE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQjHd0O3Eei0CuQfk9LjWA" comment="Etat du traitement" name="V_ETAT" prompt="V_ETAT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rQjHeEO3Eei0CuQfk9LjWA" comment="Date de fin d'exécution" name="V_DFIN_EXECUTION" prompt="V_DFIN_EXECUTION?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_rQjHeUO3Eei0CuQfk9LjWA" comment="Nombre de lignes source" name="V_NB_LIGNES_SOURCE" prompt="V_NB_LIGNES_SOURCE?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQjHekO3Eei0CuQfk9LjWA" comment="Nombre de lignes insérées" name="V_NB_LIGNES_INSEREES" prompt="V_NB_LIGNES_INSEREES?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQjHe0O3Eei0CuQfk9LjWA" comment="Nombre de lignes filtrées" name="V_NB_LIGNES_FILTREES" prompt="V_NB_LIGNES_FILTREES?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQjHfEO3Eei0CuQfk9LjWA" comment="Nombre de lignes en erreur" name="V_NB_LIGNES_ERREUR" prompt="V_NB_LIGNES_ERREUR?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQjHfUO3Eei0CuQfk9LjWA" comment="Nombre de lignes source" name="NB_LIGNES_LUES" prompt="NB_LIGNES_LUES?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQjHfkO3Eei0CuQfk9LjWA" comment="Nombre de lignes insérées" name="NB_LIGNES_INS" prompt="NB_LIGNES_INS?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQjHf0O3Eei0CuQfk9LjWA" comment="Nombre de lignes rejetées" name="NB_LIGNES_REJ" prompt="NB_LIGNES_REJ?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQjHgEO3Eei0CuQfk9LjWA" comment="Nombre de lignes filtrées" name="NB_LIGNES_FIL" prompt="NB_LIGNES_FIL?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rQjHgUO3Eei0CuQfk9LjWA" comment="Les types de produits à extraire pour ES LOANS" name="V_FICH_CONTEXT_TYPPROD" prompt="V_FICH_CONTEXT_TYPPROD?" promptNeeded="false" type="id_String" value="C:\Cristal\Contextes\FICH_CONTEXT_TYPPROD.txt"/>
+</talendfile:ContextType>

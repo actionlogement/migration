@@ -6,15 +6,25 @@
     <contextParameter comment="" name="CRI_SQL_Login" prompt="CRI_SQL_Login?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="talend_dev1"/>
     <contextParameter comment="" name="CRI_SQL_Password" prompt="CRI_SQL_Password?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
     <contextParameter comment="" name="CRI_SQL_Port" prompt="CRI_SQL_Port?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_DOS" prompt="CRI_SQL_Schema_DOS?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="DOS"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_GRC" prompt="CRI_SQL_Schema_GRC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="GRC"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_LOC" prompt="CRI_SQL_Schema_LOC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="LOCATIF"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_MDP" prompt="CRI_SQL_Schema_MDP?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="MDP"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_OGR" prompt="CRI_SQL_Schema_OGR?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="OGR"/>
     <contextParameter comment="" name="CRI_SQL_Schema_REC" prompt="CRI_SQL_Schema_REC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="REC"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_TIERS" prompt="CRI_SQL_Schema_TIERS?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="TIERS"/>
     <contextParameter comment="" name="CRI_SQL_Server" prompt="CRI_SQL_Server?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="STOL-SQLW-PR001"/>
-    <contextParameter comment="" name="V_FIC_CONTEXT_INIT_CRISTAL" prompt="V_FIC_CONTEXT_INIT_CRISTAL?" promptNeeded="false" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL.txt"/>
+    <contextParameter comment="" name="V_FIC_CONTEXT_INIT_CRISTAL" prompt="V_FIC_CONTEXT_INIT_CRISTAL?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL.txt"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_AdditionalParams" prompt="CRISTAL_SQL_CONTEXTE_AdditionalParams?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="INSTANCE=DEVE01"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Database" prompt="CRISTAL_SQL_CONTEXTE_Database?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Login" prompt="CRISTAL_SQL_CONTEXTE_Login?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="talend_dev1"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Password" prompt="CRISTAL_SQL_CONTEXTE_Password?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Port" prompt="CRISTAL_SQL_CONTEXTE_Port?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema" prompt="CRISTAL_SQL_CONTEXTE_Schema?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_FIL" prompt="CRISTAL_SQL_CONTEXTE_Schema_FIL?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="FIL"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_ODS" prompt="CRISTAL_SQL_CONTEXTE_Schema_ODS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="ODS"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_REF" prompt="CRISTAL_SQL_CONTEXTE_Schema_REF?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="REF"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_SAS" prompt="CRISTAL_SQL_CONTEXTE_Schema_SAS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Server" prompt="CRISTAL_SQL_CONTEXTE_Server?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="STOL-SQLW-PR001"/>
     <contextParameter comment="Nombre de lignes filtrées" name="NB_LIGNES_FIL" prompt="NB_LIGNES_FIL?" promptNeeded="false" repositoryContextId="_MgkfUHLCEeezorU47F1TZQ" type="id_Integer" value="0"/>
     <contextParameter comment="Nombre de lignes insérées" name="NB_LIGNES_INS" prompt="NB_LIGNES_INS?" promptNeeded="false" repositoryContextId="_MgkfUHLCEeezorU47F1TZQ" type="id_Integer" value="0"/>
@@ -111,7 +121,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/HANABLI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace_talend/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -329,7 +339,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
@@ -338,7 +348,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_DEBL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.D_DEBL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_MNT,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_DEST,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_MODEREG,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.L_BANQUECHQ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_CHEQUE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.D_ANNUL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_MOTIFANNUL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_MNTINTERCAL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_DURINTERCAL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.D_DEMANDEMEJ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.D_DEBUTIMPAYEMEJ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_NBMOISIMPAYEMEJ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_MNTLOYERSDUS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.L_COM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.I_DEBL_CRIS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_MNT_ASSINTER,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_RANG_DEBLOC,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_TYPEDES,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.L_LIBVOI1,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.L_LIBVOI2,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.L_LIBVOI3,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_CODPOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.C_CODCOM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.L_NOM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE.N_MNT_DEBL&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DEBLOCAGE&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_DEBLOCAGE.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_DEBL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.D_DEBL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_MNT,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_DEST,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_MODEREG,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.L_BANQUECHQ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_CHEQUE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.D_ANNUL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_MOTIFANNUL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_MNTINTERCAL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_DURINTERCAL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.D_DEMANDEMEJ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.D_DEBUTIMPAYEMEJ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_NBMOISIMPAYEMEJ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_MNTLOYERSDUS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.L_COM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.I_DEBL_CRIS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_MNT_ASSINTER,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_RANG_DEBLOC,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_TYPEDES,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.L_LIBVOI1,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.L_LIBVOI2,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.L_LIBVOI3,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_CODPOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.C_CODCOM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.L_NOM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE.N_MNT_DEBL&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DEBLOCAGE&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_DEBLOCAGE.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -563,7 +573,7 @@
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true">
+      <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="vI_DEBLOCAGE" expression="Numeric.sequence(&quot;I_DEBLOCAGE&quot;, ((Integer)globalMap.get(&quot;I_DEBL_CRIS&quot;)), 1) " type="id_Integer"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_DEBLOCAGE_00">
@@ -573,7 +583,7 @@
         <mapperTableEntries name="D_DEBL" expression="Ln_In_DEBLOCAGE_02.D_DEBL " type="id_Date"/>
         <mapperTableEntries name="N_MNTINTERCAL" expression="Ln_In_DEBLOCAGE_02.N_MNTINTERCAL " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="N_DURINTERCAL" expression="Ln_In_DEBLOCAGE_02.N_DURINTERCAL " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="I_DEBL_CRIS" expression="Ln_In_DEBLOCAGE_02.I_DEBL_CRIS " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="I_DEBL_CRIS" expression="new BigDecimal(Var.vI_DEBLOCAGE )" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="N_RANG_DEBLOC" expression="Ln_In_DEBLOCAGE_02.N_RANG_DEBLOC " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="L_LIBVOI1" expression="Ln_In_DEBLOCAGE_02.L_LIBVOI1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="L_LIBVOI2" expression="Ln_In_DEBLOCAGE_02.L_LIBVOI2 " type="id_String" nullable="true"/>
@@ -1140,7 +1150,7 @@
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="Ln_In_DOSSIER_02">
         <mapperTableEntries name="C_REFDOS" expression="Ln_In_DOSSIER_01.C_REFDOS " type="id_String"/>
-        <mapperTableEntries name="I_DOS" expression="Ln_In_DOSSIER_01.I_DOSSIER_CRIS " type="id_BigDecimal"/>
+        <mapperTableEntries name="I_DOS" expression="new BigDecimal(Var.vI_DOS)" type="id_BigDecimal"/>
         <mapperTableEntries name="I_DOSSIER_CRIS" expression="Ln_In_DOSSIER_01.I_DOSSIER_CRIS " type="id_BigDecimal" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="Ln_In_DOSSIER_01" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -1218,7 +1228,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Ln_out_DEBLOCAGE_02" name="Ln_Out_REC_LIGNEPRODUIT">
+    <metadata connector="FLOW" label="Ln_out_DEBLOCAGE_02" name="Ln_out_REC_LP">
       <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1331,7 +1341,7 @@
     <nodeData xsi:type="MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Ln_Out_REC_LIGNEPRODUIT">
+      <outputTables sizeState="INTERMEDIATE" name="Ln_out_REC_LP">
         <mapperTableEntries name="C_REFDOS" expression="Ln_Out_DOSSIER.C_REFDOS " type="id_String"/>
         <mapperTableEntries name="C_REFPROD" expression="Ln_Out_DOSSIER.C_REFPROD " type="id_String"/>
         <mapperTableEntries name="N_MNT" expression="Ln_Out_DOSSIER.N_MNT " type="id_BigDecimal"/>
@@ -1458,255 +1468,148 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="576">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_x27gAPVfEeeQobPuLzsruA-tMap_7-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_PRODUIT&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.I_PRODUIT_CRIS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.c_refdoscris&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_PRODUIT.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFPROD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_PRODUIT_CRIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_refdoscris"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Ln_out_DEBLOCAGE_03" name="Ln_out_REC_GLDEBL">
+    <metadata connector="FLOW" name="tMSSqlInput_5">
       <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="true" length="50" name="C_REFPROD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="18" name="N_MNT" nullable="false" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="18" name="I_PRODUIT_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="D_DEBL" nullable="false" pattern="&quot;yyyyMMdd'T'hh:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="16" name="c_refdoscris" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="18" name="N_MNTINTERCAL" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="18" name="N_DURINTERCAL" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="18" name="I_DEBL_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column key="false" length="18" name="N_RANG_DEBLOC" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column key="false" length="800" name="L_LIBVOI1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column key="false" length="800" name="L_LIBVOI2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column key="false" length="800" name="C_CODPOS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column key="false" length="800" name="C_CODCOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column key="false" length="800" name="L_NOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="18" name="I_LGNPDT" nullable="false" pattern="" precision="8" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="I_NUMDEMRMB" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_11" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_DOSSIER&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.I_DOSSIER_CRIS&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_DOSSIER.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOSSIER_CRIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_11">
+      <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="18" name="I_DOSSIER_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="D_DATMAJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="C_UTIMAJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DATCRE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="C_UTICRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="8000" name="C_MODEREG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
-    <metadata connector="FLOW" label="CRISTAL_DONNEES_FILTREES" name="Ln_Fil_Inner_05">
-      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <additionalProperties key="Comment" value=""/>
     </metadata>
-    <nodeData xsi:type="MapperData">
-      <uiProperties/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Ln_out_REC_GLDEBL">
-        <mapperTableEntries name="C_REFDOS" expression="Ln_Out_REC_LIGNEPRODUIT.C_REFDOS " type="id_String"/>
-        <mapperTableEntries name="C_REFPROD" expression="Ln_Out_REC_LIGNEPRODUIT.C_REFPROD " type="id_String"/>
-        <mapperTableEntries name="N_MNT" expression="Ln_Out_REC_LIGNEPRODUIT.N_MNT " type="id_BigDecimal"/>
-        <mapperTableEntries name="D_DEBL" expression="Ln_Out_REC_LIGNEPRODUIT.D_DEBL " type="id_Date"/>
-        <mapperTableEntries name="N_MNTINTERCAL" expression="Ln_Out_REC_LIGNEPRODUIT.N_MNTINTERCAL " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_DURINTERCAL" expression="Ln_Out_REC_LIGNEPRODUIT.N_DURINTERCAL " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="I_DEBL_CRIS" expression="Ln_Out_REC_LIGNEPRODUIT.I_DEBL_CRIS " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_RANG_DEBLOC" expression="Ln_Out_REC_LIGNEPRODUIT.N_RANG_DEBLOC " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="L_LIBVOI1" expression="Ln_Out_REC_LIGNEPRODUIT.L_LIBVOI1 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="L_LIBVOI2" expression="Ln_Out_REC_LIGNEPRODUIT.L_LIBVOI2 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_CODPOS" expression="Ln_Out_REC_LIGNEPRODUIT.C_CODPOS " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_CODCOM" expression="Ln_Out_REC_LIGNEPRODUIT.C_CODCOM " type="id_String" nullable="true"/>
-        <mapperTableEntries name="L_NOM" expression="Ln_Out_REC_LIGNEPRODUIT.L_NOM " type="id_String" nullable="true"/>
-        <mapperTableEntries name="I_LGNPDT" expression="Ln_Out_REC_LIGNEPRODUIT.I_LGNPDT " type="id_BigDecimal"/>
-        <mapperTableEntries name="I_DOS" expression="Ln_Out_REC_LIGNEPRODUIT.I_DOS " type="id_BigDecimal"/>
-        <mapperTableEntries name="I_NUMDEMRMB" expression="Ln_In_REC_GLDEBL.I_NUMDEMRMB " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="I_DOSSIER_CRIS" expression="Ln_Out_REC_LIGNEPRODUIT.I_DOSSIER_CRIS " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="D_DATMAJ" expression="Ln_Out_REC_LIGNEPRODUIT.D_DATMAJ " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C_UTIMAJ" expression="Ln_Out_REC_LIGNEPRODUIT.C_UTIMAJ " type="id_String" nullable="true"/>
-        <mapperTableEntries name="D_DATCRE" expression="Ln_Out_REC_LIGNEPRODUIT.D_DATCRE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C_UTICRE" expression="Ln_Out_REC_LIGNEPRODUIT.C_UTICRE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_MODEREG" expression="Ln_Out_REC_LIGNEPRODUIT.C_MODEREG " type="id_String" nullable="true"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Ln_Fil_Inner_05" rejectInnerJoin="true">
-        <mapperTableEntries name="NOM_JOB" expression="&quot;&quot;+jobName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIC_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="NOM_COL_1" expression="&quot;I_DEBL&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_1" expression="Ln_Out_REC_LIGNEPRODUIT.I_DEBL_CRIS.toString() " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NOM_COL_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NOM_COL_3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NOM_COL_4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NOM_COL_5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MESSAGE" expression="&quot;Pas de correspondance entre REC_LIGNEPRODUIT et REC_GLDEBL !&quot;" type="id_String" nullable="true"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_Out_REC_LIGNEPRODUIT" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="C_REFDOS" type="id_String"/>
-        <mapperTableEntries name="C_REFPROD" type="id_String"/>
-        <mapperTableEntries name="N_MNT" type="id_BigDecimal"/>
-        <mapperTableEntries name="D_DEBL" type="id_Date"/>
-        <mapperTableEntries name="N_MNTINTERCAL" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_DURINTERCAL" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="I_DEBL_CRIS" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_RANG_DEBLOC" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="L_LIBVOI1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="L_LIBVOI2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_CODPOS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_CODCOM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="L_NOM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I_LGNPDT" type="id_BigDecimal"/>
-        <mapperTableEntries name="I_DOS" type="id_BigDecimal"/>
-        <mapperTableEntries name="I_DOSSIER_CRIS" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="D_DATMAJ" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C_UTIMAJ" type="id_String" nullable="true"/>
-        <mapperTableEntries name="D_DATCRE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C_UTICRE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_MODEREG" type="id_String" nullable="true"/>
-      </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_REC_GLDEBL" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="I_DEBL" expression="Ln_Out_REC_LIGNEPRODUIT.I_DEBL_CRIS " type="id_BigDecimal" operator="="/>
-        <mapperTableEntries name="I_NUMDEMRMB" type="id_BigDecimal" nullable="true"/>
-      </inputTables>
-    </nodeData>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="704">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_3" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.V_REP_TEMP+&quot;GIC_DONNEES_FIL_DEMANDEREMB5.csv&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;-|-&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.ENCODING"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
-    <elementParameter field="TEXT" name="LABEL" value="Sf_Out_REC_DONNEES_FIL_05"/>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRI_SQL_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRI_SQL_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REC&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRI_SQL_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRI_SQL_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudF/ccsLlQZCKWLqmQc9sKZVuQdNUVbzr0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REC_LIGNEPRODUIT&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT C_REFDOS,&#xD;&#xA;&#x9;&#x9;I_DOS,&#xD;&#xA;&#x9;&#x9;I_LGNPDT&#xD;&#xA;FROM&#x9;REC.REC_LIGNEPRODUIT&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRI_SQL_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_LGNPDT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="CRISTAL_DONNEES_FILTREES" name="tMSSqlOutputBulk_3">
-      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+    <metadata connector="FLOW" name="tMSSqlInput_6">
+      <column comment="" key="false" length="16" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="3" name="I_LGNPDT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -1779,9 +1682,6 @@
       <column comment="" key="false" length="10" name="I_COR" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="I_NUMDEMRMB" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="18" name="I_DOSSIER_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1847,41 +1747,40 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_DOS_INTERVENANT">
-        <mapperTableEntries name="C_REFDOS" expression="Ln_out_REC_GLDEBL.C_REFDOS" type="id_String"/>
-        <mapperTableEntries name="C_REFPROD" expression="Ln_out_REC_GLDEBL.C_REFPROD" type="id_String"/>
-        <mapperTableEntries name="N_MNT" expression="Ln_out_REC_GLDEBL.N_MNT" type="id_BigDecimal"/>
-        <mapperTableEntries name="D_DEBL" expression="Ln_out_REC_GLDEBL.D_DEBL" type="id_Date"/>
-        <mapperTableEntries name="N_MNTINTERCAL" expression="Ln_out_REC_GLDEBL.N_MNTINTERCAL" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_DURINTERCAL" expression="Ln_out_REC_GLDEBL.N_DURINTERCAL" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="I_DEBL_CRIS" expression="Ln_out_REC_GLDEBL.I_DEBL_CRIS" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_RANG_DEBLOC" expression="Ln_out_REC_GLDEBL.N_RANG_DEBLOC" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="L_LIBVOI1" expression="Ln_out_REC_GLDEBL.L_LIBVOI1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="L_LIBVOI2" expression="Ln_out_REC_GLDEBL.L_LIBVOI2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_CODPOS" expression="Ln_out_REC_GLDEBL.C_CODPOS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_CODCOM" expression="Ln_out_REC_GLDEBL.C_CODCOM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="L_NOM" expression="Ln_out_REC_GLDEBL.L_NOM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I_LGNPDT" expression="Ln_out_REC_GLDEBL.I_LGNPDT" type="id_BigDecimal"/>
-        <mapperTableEntries name="I_DOS" expression="Ln_out_REC_GLDEBL.I_DOS" type="id_BigDecimal"/>
+        <mapperTableEntries name="C_REFDOS" expression="Ln_out_REC_LP.C_REFDOS" type="id_String"/>
+        <mapperTableEntries name="C_REFPROD" expression="Ln_out_REC_LP.C_REFPROD" type="id_String"/>
+        <mapperTableEntries name="N_MNT" expression="Ln_out_REC_LP.N_MNT" type="id_BigDecimal"/>
+        <mapperTableEntries name="D_DEBL" expression="Ln_out_REC_LP.D_DEBL" type="id_Date"/>
+        <mapperTableEntries name="N_MNTINTERCAL" expression="Ln_out_REC_LP.N_MNTINTERCAL" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_DURINTERCAL" expression="Ln_out_REC_LP.N_DURINTERCAL" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="I_DEBL_CRIS" expression="Ln_out_REC_LP.I_DEBL_CRIS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_RANG_DEBLOC" expression="Ln_out_REC_LP.N_RANG_DEBLOC" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="L_LIBVOI1" expression="Ln_out_REC_LP.L_LIBVOI1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_LIBVOI2" expression="Ln_out_REC_LP.L_LIBVOI2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CODPOS" expression="Ln_out_REC_LP.C_CODPOS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CODCOM" expression="Ln_out_REC_LP.C_CODCOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_NOM" expression="Ln_out_REC_LP.L_NOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I_LGNPDT" expression="Ln_out_REC_LP.I_LGNPDT" type="id_BigDecimal"/>
+        <mapperTableEntries name="I_DOS" expression="Ln_out_REC_LP.I_DOS" type="id_BigDecimal"/>
         <mapperTableEntries name="C_TYPITV" expression="Ln_In_DOS_INTERVENANT.C_TYPITV " type="id_String"/>
         <mapperTableEntries name="I_ROLITV" expression="Ln_In_DOS_INTERVENANT.I_ROLITV " type="id_BigDecimal"/>
         <mapperTableEntries name="I_COR" expression="Ln_In_DOS_INTERVENANT.I_COR " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="I_NUMDEMRMB" expression="Ln_out_REC_GLDEBL.I_NUMDEMRMB " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="I_DOSSIER_CRIS" expression="Ln_out_REC_GLDEBL.I_DOSSIER_CRIS " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="D_DATMAJ" expression="Ln_out_REC_GLDEBL.D_DATMAJ " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C_UTIMAJ" expression="Ln_out_REC_GLDEBL.C_UTIMAJ " type="id_String" nullable="true"/>
-        <mapperTableEntries name="D_DATCRE" expression="Ln_out_REC_GLDEBL.D_DATCRE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C_UTICRE" expression="Ln_out_REC_GLDEBL.C_UTICRE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_MODEREG" expression="Ln_out_REC_GLDEBL.C_MODEREG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="I_DOSSIER_CRIS" expression="Ln_out_REC_LP.I_DOSSIER_CRIS " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="D_DATMAJ" expression="Ln_out_REC_LP.D_DATMAJ " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C_UTIMAJ" expression="Ln_out_REC_LP.C_UTIMAJ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="D_DATCRE" expression="Ln_out_REC_LP.D_DATCRE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C_UTICRE" expression="Ln_out_REC_LP.C_UTICRE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_MODEREG" expression="Ln_out_REC_LP.C_MODEREG " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Fil_Inner_06" rejectInnerJoin="true">
         <mapperTableEntries name="NOM_JOB" expression="&quot;&quot;+jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NOM_COL_1" expression="&quot;I_DOS&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_1" expression="Ln_out_REC_GLDEBL.I_DOS.toString() " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_1" expression="Ln_out_REC_LP.I_DOS.toString() " type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="VAL_COL_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_3" type="id_String" nullable="true"/>
@@ -1892,7 +1791,7 @@
         <mapperTableEntries name="VAL_COL_5" type="id_String" nullable="true"/>
         <mapperTableEntries name="MESSAGE" expression="&quot;Pas de correspondance entre REC_LIGNEPRODUIT et DOS_INTERVENANT !&quot;" type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_out_REC_GLDEBL" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_out_REC_LP" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="C_REFDOS" type="id_String"/>
         <mapperTableEntries name="C_REFPROD" type="id_String"/>
         <mapperTableEntries name="N_MNT" type="id_BigDecimal"/>
@@ -1908,7 +1807,6 @@
         <mapperTableEntries name="L_NOM" type="id_String" nullable="true"/>
         <mapperTableEntries name="I_LGNPDT" type="id_BigDecimal"/>
         <mapperTableEntries name="I_DOS" type="id_BigDecimal"/>
-        <mapperTableEntries name="I_NUMDEMRMB" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="I_DOSSIER_CRIS" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="D_DATMAJ" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C_UTIMAJ" type="id_String" nullable="true"/>
@@ -1917,7 +1815,7 @@
         <mapperTableEntries name="C_MODEREG" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="Ln_In_DOS_INTERVENANT" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="I_DOS" expression="Ln_out_REC_GLDEBL.I_DOS " type="id_BigDecimal" operator="="/>
+        <mapperTableEntries name="I_DOS" expression="Ln_out_REC_LP.I_DOS " type="id_BigDecimal" operator="="/>
         <mapperTableEntries name="C_TYPITV" type="id_String"/>
         <mapperTableEntries name="I_ROLITV" type="id_BigDecimal"/>
         <mapperTableEntries name="I_COR" type="id_BigDecimal" nullable="true"/>
@@ -1991,12 +1889,6 @@
       <column comment="" key="true" length="10" name="I_COO" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="6" name="C_TYPCOO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="I_NUMDEMRMB" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="18" name="I_DOSSIER_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -2063,7 +1955,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_TIE_COORD" expressionFilter="&quot;RIB&quot;.equals(Ln_In_TIE_COORD.C_TYPCOO)" activateExpressionFilter="true">
         <mapperTableEntries name="C_REFDOS" expression="Ln_Out_DOS_INTERVENANT.C_REFDOS " type="id_String"/>
@@ -2084,8 +1976,6 @@
         <mapperTableEntries name="C_TYPITV" expression="Ln_Out_DOS_INTERVENANT.C_TYPITV " type="id_String"/>
         <mapperTableEntries name="I_ROLITV" expression="Ln_Out_DOS_INTERVENANT.I_ROLITV " type="id_BigDecimal"/>
         <mapperTableEntries name="I_COO" expression="Ln_In_TIE_COORD.I_COO " type="id_BigDecimal"/>
-        <mapperTableEntries name="C_TYPCOO" expression="Ln_In_TIE_COORD.C_TYPCOO " type="id_String"/>
-        <mapperTableEntries name="I_NUMDEMRMB" expression="Ln_Out_DOS_INTERVENANT.I_NUMDEMRMB " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="I_DOSSIER_CRIS" expression="Ln_Out_DOS_INTERVENANT.I_DOSSIER_CRIS " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="D_DATMAJ" expression="Ln_Out_DOS_INTERVENANT.D_DATMAJ " type="id_Date" nullable="true"/>
         <mapperTableEntries name="C_UTIMAJ" expression="Ln_Out_DOS_INTERVENANT.C_UTIMAJ " type="id_String" nullable="true"/>
@@ -2128,7 +2018,6 @@
         <mapperTableEntries name="C_TYPITV" type="id_String"/>
         <mapperTableEntries name="I_ROLITV" type="id_BigDecimal"/>
         <mapperTableEntries name="I_COR" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="I_NUMDEMRMB" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="I_DOSSIER_CRIS" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="D_DATMAJ" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C_UTIMAJ" type="id_String" nullable="true"/>
@@ -2475,10 +2364,10 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_TIE_RIB">
-        <mapperTableEntries name="I_NUMDEMRMB" expression="Ln_Out_TIE_COORD.I_NUMDEMRMB " type="id_BigDecimal"/>
+        <mapperTableEntries name="I_NUMDEMRMB" expression="Ln_Out_TIE_COORD.I_DEBL_CRIS " type="id_BigDecimal"/>
         <mapperTableEntries name="D_DEMRMB" expression="Ln_Out_TIE_COORD.D_DEBL " type="id_Date"/>
         <mapperTableEntries name="C_ORI" expression="&quot;PRT&quot;" type="id_String"/>
         <mapperTableEntries name="N_MNT" expression="Ln_Out_TIE_COORD.N_MNT " type="id_BigDecimal" nullable="true"/>
@@ -2496,7 +2385,7 @@
         <mapperTableEntries name="D_ANN" expression="null" type="id_Date" nullable="true"/>
         <mapperTableEntries name="I_UTIDEMRMB" expression="new BigDecimal(Ln_Out_TIE_COORD.C_UTICRE) " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="C_TYPPAI" expression="Ln_Out_TIE_COORD.C_MODEREG " type="id_String"/>
-        <mapperTableEntries name="C_CODBANRMB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CODBANRMB" expression="((String)globalMap.get(&quot;CODBANRMB&quot;))  " type="id_String" nullable="true"/>
         <mapperTableEntries name="D_DATMAJ" expression="Ln_Out_TIE_COORD.D_DATMAJ " type="id_Date" nullable="true"/>
         <mapperTableEntries name="C_UTIMAJ" expression="Ln_Out_TIE_COORD.C_UTIMAJ " type="id_String" nullable="true"/>
         <mapperTableEntries name="D_DATCRE" expression="Ln_Out_TIE_COORD.D_DATCRE " type="id_Date" nullable="true"/>
@@ -2566,8 +2455,6 @@
         <mapperTableEntries name="C_TYPITV" type="id_String"/>
         <mapperTableEntries name="I_ROLITV" type="id_BigDecimal"/>
         <mapperTableEntries name="I_COO" type="id_BigDecimal"/>
-        <mapperTableEntries name="C_TYPCOO" type="id_String"/>
-        <mapperTableEntries name="I_NUMDEMRMB" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="I_DOSSIER_CRIS" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="D_DATMAJ" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C_UTIMAJ" type="id_String" nullable="true"/>
@@ -3553,16 +3440,18 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2880" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;CRISTAL_ERREUR&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -3572,15 +3461,15 @@
     <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="NOM_JOB" show="false"/>
     <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
     <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -3884,198 +3773,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_5" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_PRODUIT&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.I_PRODUIT_CRIS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.c_refdoscris&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_PRODUIT.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFPROD"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_PRODUIT_CRIS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="c_refdoscris"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlInput_5">
-      <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="50" name="C_REFPROD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="18" name="I_PRODUIT_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="16" name="c_refdoscris" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_11" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_DOSSIER&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DOSSIER.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DOSSIER.I_DOSSIER_CRIS&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DOSSIER&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_DOSSIER.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOSSIER_CRIS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlInput_11">
-      <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="18" name="I_DOSSIER_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_6" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRI_SQL_Server"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRI_SQL_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REC&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRI_SQL_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRI_SQL_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudF/ccsLlQZCKWLqmQc9sKZVuQdNUVbzr0="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REC_LIGNEPRODUIT&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT C_REFDOS,&#xD;&#xA;&#x9;&#x9;I_DOS,&#xD;&#xA;&#x9;&#x9;I_LGNPDT&#xD;&#xA;FROM&#x9;REC.REC_LIGNEPRODUIT&#xD;&#xA;WHERE EXISTS   (SELECT * FROM  &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE &#xD;&#xA;REC.REC_LIGNEPRODUIT.D_DATCRE = &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN.c_valeur and&#xD;&#xA;C_CODE ='REP_DATE')&#xD;&#xA;and EXISTS   (SELECT * FROM  &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE &#xD;&#xA;REC.REC_LIGNEPRODUIT.C_UTICRE = &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN.c_valeur and&#xD;&#xA;C_CODE ='REP_USER')&#xD;&#xA;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRI_SQL_AdditionalParams"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_LGNPDT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlInput_6">
-      <column comment="" key="false" length="16" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_LGNPDT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_7" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRI_SQL_Server"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRI_SQL_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REC&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRI_SQL_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRI_SQL_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudF/ccsLlQZCKWLqmQc9sKZVuQdNUVbzr0="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REC_GLDEBL&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="  &#xD;&#xA;&quot;SELECT REC.REC_GLDEBL.I_DEBL,&#xD;&#xA;&#x9;&#x9;REC.REC_GLDEBL.I_NUMDEMRMB&#xD;&#xA;FROM&#x9;REC.REC_GLDEBL&#xD;&#xA;WHERE D_DATCRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE C_CODE ='REP_DATE')&#xD;&#xA;  AND C_UTICRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE C_CODE = 'REP_USER')&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRI_SQL_AdditionalParams"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_DEBL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_NUMDEMRMB"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="REC_GLDEBL" name="tMSSqlInput_7">
-      <column comment="" key="true" length="10" name="I_DEBL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="I_NUMDEMRMB" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="352">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_8" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1" show="false"/>
@@ -4092,7 +3790,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT LOCATIF.DOS_INTERVENANT.I_DOS,&#xD;&#xA;&#x9;&#x9;LOCATIF.DOS_INTERVENANT.C_TYPITV,&#xD;&#xA;&#x9;&#x9;LOCATIF.DOS_INTERVENANT.I_ROLITV,&#xD;&#xA;&#x9;&#x9;LOCATIF.DOS_INTERVENANT.I_COR&#xD;&#xA;FROM&#x9;LOCATIF.DOS_INTERVENANT&#xD;&#xA;WHERE D_DATCRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE C_CODE ='REP_DATE')&#xD;&#xA;  AND C_UTICRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE C_CODE = 'REP_USER')&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT LOCATIF.DOS_INTERVENANT.I_DOS,&#xD;&#xA;&#x9;&#x9;LOCATIF.DOS_INTERVENANT.C_TYPITV,&#xD;&#xA;&#x9;&#x9;LOCATIF.DOS_INTERVENANT.I_ROLITV,&#xD;&#xA;&#x9;&#x9;LOCATIF.DOS_INTERVENANT.I_COR&#xD;&#xA;FROM&#x9;LOCATIF.DOS_INTERVENANT&#xD;&#xA;WHERE D_DATCRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Database+&quot;.REF.REF_PARAMGEN WHERE C_CODE ='REP_DATE')&#xD;&#xA;  AND C_UTICRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Database+&quot;.REF.REF_PARAMGEN WHERE C_CODE = 'REP_USER')&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -4129,7 +3827,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1920" posY="352">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1984" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_9" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1" show="false"/>
@@ -4146,7 +3844,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT TIERS.TIE_COORD.I_ROL,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_COORD.I_COO,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_COORD.D_DEB,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_COORD.C_TYPCOO&#xD;&#xA;FROM&#x9;TIERS.TIE_COORD&#xD;&#xA;WHERE D_DATCRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE C_CODE ='REP_DATE')&#xD;&#xA;  AND C_UTICRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE C_CODE = 'REP_USER')&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT TIERS.TIE_COORD.I_ROL,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_COORD.I_COO,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_COORD.D_DEB,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_COORD.C_TYPCOO&#xD;&#xA;FROM&#x9;TIERS.TIE_COORD&#xD;&#xA;WHERE D_DATCRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Database+&quot;.REF.REF_PARAMGEN WHERE C_CODE ='REP_DATE')&#xD;&#xA;  AND C_UTICRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Database+&quot;.REF.REF_PARAMGEN WHERE C_CODE = 'REP_USER')&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -4183,7 +3881,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="352">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2304" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_12" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -4200,7 +3898,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT TIERS.TIE_RIB.I_COO,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_DOMBAN,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_CODGUI,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.N_COMPTE,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_CLERIB,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_IBANPAY,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_IBANBIC&#xD;&#xA;FROM&#x9;TIERS.TIE_RIB&#xD;&#xA;WHERE D_DATCRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE C_CODE ='REP_DATE')&#xD;&#xA;  AND C_UTICRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_PARAMGEN WHERE C_CODE = 'REP_USER')&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT TIERS.TIE_RIB.I_COO,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_DOMBAN,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_CODGUI,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.N_COMPTE,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_CLERIB,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_IBANPAY,&#xD;&#xA;&#x9;&#x9;TIERS.TIE_RIB.C_IBANBIC&#xD;&#xA;FROM&#x9;TIERS.TIE_RIB&#xD;&#xA;WHERE D_DATCRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Database+&quot;.REF.REF_PARAMGEN WHERE C_CODE ='REP_DATE')&#xD;&#xA;  AND C_UTICRE IN (SELECT c_valeur FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Database+&quot;.REF.REF_PARAMGEN WHERE C_CODE = 'REP_USER')&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -4459,7 +4157,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -4740,7 +4438,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
@@ -4749,7 +4447,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_PK,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Categorie,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Key,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Value,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Desc,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_DateCreat,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_DateModif&#xA;FROM&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX&#xD;&#xA;WHERE &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Categorie IN (&quot; +&quot;'&quot;+ context.V_LIST_CATEGORIES +&quot;'&quot;+ &quot;)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_PK,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Categorie,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Key,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Value,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Desc,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_DateCreat,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_DateModif&#xA;FROM&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX&#xD;&#xA;WHERE &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Categorie IN (&quot; +&quot;'&quot;+ context.V_LIST_CATEGORIES +&quot;'&quot;+ &quot;)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -4903,7 +4601,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -4981,7 +4679,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -5059,7 +4757,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -5137,7 +4835,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -5215,7 +4913,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -5293,7 +4991,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -5365,13 +5063,11 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
@@ -5523,12 +5219,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
@@ -5538,7 +5232,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.CRISTAL_ERREUR &#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.CRISTAL_ERREUR &#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -5563,12 +5257,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
@@ -5578,7 +5270,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.CRISTAL_DONNEES_FILTREES&#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.CRISTAL_DONNEES_FILTREES&#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -5601,7 +5293,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="-384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;SAS_DOSSIER_ACTIF&quot;,&quot;select * from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.SAS_DOSSIER_ACTIF  where ( b_evt='T' or b_solde='T' or b_engage='T' or b_plan='T' or b_solde='T' )&quot;); "/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;SAS_DOSSIER_ACTIF&quot;,&quot;select * from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.SAS_DOSSIER_ACTIF  where ( b_evt='T' or b_solde='T' or b_engage='T' or b_plan='T' or b_solde='T' )&quot;); "/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_8"/>
@@ -5770,67 +5462,55 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_DOSSIER_02" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Ln_Out_REC_LIGNEPRODUIT" lineStyle="0" metaname="Ln_Out_REC_LIGNEPRODUIT" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_5" target="tMap_7">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="C_UTIMAJ"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="C_UTICRE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="D_DATMAJ"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="D_DATCRE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="I_LGNPDT_1"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="I_DOSSIER_CRIS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="C_MODEREG"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="Ln_out_REC_LP" lineStyle="0" metaname="Ln_out_REC_LP" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_5" target="tMap_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Out_REC_LIGNEPRODUIT" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_out_REC_LP" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_Fil_Inner_04" lineStyle="0" metaname="Ln_Fil_Inner_04" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_5" target="tMSSqlOutputBulk_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Fil_Inner_04" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Ln_out_REC_GLDEBL" lineStyle="0" metaname="Ln_out_REC_GLDEBL" offsetLabelX="-2" offsetLabelY="-1" outputId="1" source="tMap_7" target="tMap_8">
+  <connection connectorName="FLOW" label="Ln_In_PRODUIT_01" lineStyle="0" metaname="tMSSqlInput_5" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_5" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="I_NUMDEMRMB"/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_REFDOS_1"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="C_UTIMAJ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="N_MNTPRET"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="C_UTICRE"/>
+      <elementValue elementRef="TRACE_COLUMN" value="c_refdoscris"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="D_DATMAJ"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="D_DATCRE"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_PRODUIT_01" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_In_DOSSIER_01" lineStyle="0" metaname="tMSSqlInput_11" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_11" target="tMap_13">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="C_REFDOS"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="I_DOSSIER_CRIS"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="C_MODEREG"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_DOSSIER_01" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_In_REC_LIGNEPRODUIT" lineStyle="8" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tMap_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="I_LGNPDT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="I_DOS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_REFPRET"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_out_REC_GLDEBL" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Ln_Fil_Inner_05" lineStyle="0" metaname="Ln_Fil_Inner_05" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_7" target="tMSSqlOutputBulk_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Fil_Inner_05" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_REC_LIGNEPRODUIT" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_Out_DOS_INTERVENANT" lineStyle="0" metaname="Ln_Out_DOS_INTERVENANT" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_8" target="tMap_10">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -6279,66 +5959,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="ASS_DATA_KO_02" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Ln_In_PRODUIT_01" lineStyle="0" metaname="tMSSqlInput_5" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_5" target="tMap_3">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="C_REFDOS_1"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="N_MNTPRET"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="c_refdoscris"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_PRODUIT_01" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Ln_In_DOSSIER_01" lineStyle="0" metaname="tMSSqlInput_11" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_11" target="tMap_13">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="C_REFDOS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="I_DOSSIER_CRIS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_DOSSIER_01" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Ln_In_REC_LIGNEPRODUIT" lineStyle="8" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tMap_5">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="I_LGNPDT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="I_DOS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="C_REFPRET"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_REC_LIGNEPRODUIT" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Ln_In_REC_GLDEBL" lineStyle="8" metaname="tMSSqlInput_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_7" target="tMap_7">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="I_COR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="I_ROLITV"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="D_DEB"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="C_TYPITV"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_REC_GLDEBL" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="Ln_In_DOS_INTERVENANT" lineStyle="8" metaname="tMSSqlInput_8" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_8" target="tMap_8">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="C_TYPTIE"/>
@@ -6573,7 +6193,7 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -6661,7 +6281,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>

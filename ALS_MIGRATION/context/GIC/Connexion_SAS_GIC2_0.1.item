@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_rPqWoEO3Eei0CuQfk9LjWA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_rPqWoUO3Eei0CuQfk9LjWA" comment="" name="CRISTAL_SQL_CONTEXTE2_AdditionalParams" prompt="CRISTAL_SQL_CONTEXTE2_AdditionalParams?" promptNeeded="false" type="id_String" value="INSTANCE=SQLEXPRESS2"/>
+  <contextParameter xmi:id="_rPqWokO3Eei0CuQfk9LjWA" comment="" name="CRISTAL_SQL_CONTEXTE2_Server" prompt="CRISTAL_SQL_CONTEXTE2_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_rPqWo0O3Eei0CuQfk9LjWA" comment="" name="CRISTAL_SQL_CONTEXTE2_Schema" prompt="CRISTAL_SQL_CONTEXTE2_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rPqWpEO3Eei0CuQfk9LjWA" comment="" name="CRISTAL_SQL_CONTEXTE2_Port" prompt="CRISTAL_SQL_CONTEXTE2_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_rPqWpUO3Eei0CuQfk9LjWA" comment="" name="CRISTAL_SQL_CONTEXTE2_Database" prompt="CRISTAL_SQL_CONTEXTE2_Database?" promptNeeded="false" type="id_String" value="SAS_GIC"/>
+  <contextParameter xmi:id="_rPqWpkO3Eei0CuQfk9LjWA" comment="" name="CRISTAL_SQL_CONTEXTE2_Login" prompt="CRISTAL_SQL_CONTEXTE2_Login?" promptNeeded="false" type="id_String" value="talend_dev1"/>
+  <contextParameter xmi:id="_rPqWp0O3Eei0CuQfk9LjWA" comment="" name="CRISTAL_SQL_CONTEXTE2_Password" prompt="CRISTAL_SQL_CONTEXTE2_Password?" promptNeeded="false" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
+</talendfile:ContextType>

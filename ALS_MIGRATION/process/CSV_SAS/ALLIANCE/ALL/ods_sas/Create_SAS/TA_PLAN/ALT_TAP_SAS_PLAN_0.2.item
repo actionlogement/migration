@@ -393,8 +393,8 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms2048M -Xmx8G " show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="2944" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1472" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -1902,7 +1902,7 @@
         <mapperTableEntries name="todba_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="caadp_jour" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_BIDOS" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_BIDOS" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="bidos_num" expression="row9.bidos_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="bidos_eta" expression="" type="id_String" nullable="true"/>
       </inputTables>
@@ -2239,7 +2239,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_Inner_3">
         <mapperTableEntries name="acdos_num" expression="Ln_Out_Inner_2.acdos_num " type="id_String" nullable="true"/>
@@ -2568,12 +2568,12 @@
         <mapperTableEntries name="cxpla_pech" expression="row2.cxpla_pech " type="id_String" nullable="true"/>
         <mapperTableEntries name="caint_num" expression="Ln_In_FI_ALT_CXICT.caint_num " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Fil1">
-        <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Fil1" activateCondensedTool="true" rejectInnerJoin="true">
+        <mapperTableEntries name="NOM_JOB" expression="&quot;&quot;+jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" expression="context.V_FIC_CXPLA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="NOM_COL_1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUM_LIGNE" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_1" expression="&quot;BIDOS_NUM&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_1" expression="row2.bidos_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="VAL_COL_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_3" type="id_String" nullable="true"/>
@@ -2582,7 +2582,7 @@
         <mapperTableEntries name="VAL_COL_4" type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_5" type="id_String" nullable="true"/>
         <mapperTableEntries name="VAL_COL_5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MESSAGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MESSAGE" expression="&quot;Pas de jointure entre  CXPLAT et CXICT &quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="cxpla_num" type="id_String" nullable="true"/>
@@ -2714,7 +2714,7 @@
         <mapperTableEntries name="caint_num" expression="Ln_Out_Ft_DOM.caint_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="cactr_num" expression="Ln_Out_Ft_DOM.cactr_num " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="INNER_fil1">
+      <outputTables sizeState="INTERMEDIATE" name="INNER_fil1" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" expression="context.V_FIC_CXPLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
@@ -2867,7 +2867,7 @@
         <mapperTableEntries name="acdos_num" expression="Ln_In_FI_ALT_ACDOS.acdos_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="cactr_num" expression="row4.cactr_num " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Inner_Fil_3">
+      <outputTables sizeState="INTERMEDIATE" name="Inner_Fil_3" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" expression="context.V_FIC_CXPLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" expression="" type="id_Integer" nullable="true"/>
@@ -2891,7 +2891,7 @@
         <mapperTableEntries name="caint_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="cactr_num" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_FI_ALT_ACDOS" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_FI_ALT_ACDOS" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="acdos_num" expression="row4.cactr_num " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="totie_codsoc" type="id_String" nullable="true"/>
       </inputTables>
@@ -3019,7 +3019,7 @@
         <mapperTableEntries name="cactr_num" expression="row5.cactr_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="pepre_num" expression="Ln_In_FI_ALT_PEPRE.pepre_num " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Inner_Fil_4">
+      <outputTables sizeState="INTERMEDIATE" name="Inner_Fil_4" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" expression="context.V_FIC_CXPLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
@@ -3716,7 +3716,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value="&quot;context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP&quot;"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP"/>
     <elementParameter field="IMAGE" name="PREVIEW" value="_BClksCaeEeiWPaL9SWXA7Q-tMap_4-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
@@ -3814,7 +3814,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_Table_2">
         <mapperTableEntries name="C_REFDOS" expression="row10.C_REFDOS " type="id_String"/>
@@ -3864,7 +3864,7 @@
         <mapperTableEntries name="N_JOUR" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="C_PREL" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_COMBIPROD" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true" persistent="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_COMBIPROD" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="C_REFDOS" expression="row10.C_REFDOS " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="C_REFPRET" expression="row10.C_REFPROD" type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="C_REFPROD" type="id_String" nullable="true"/>
@@ -4604,7 +4604,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="PLANFI_DATA_KO_02">
         <mapperTableEntries name="NOM_JOB" expression="&quot;&quot;+jobName " type="id_String" nullable="true"/>
@@ -4891,6 +4891,63 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2112" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_4" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;PIV_&quot;+&quot;ALT_SAS_PLAN_DONNEES_FILTREES_3.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;-|-&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.ENCODING"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="TEXT" name="LABEL" value="Sf_Out_PIV_ALT_SAS_DONNEES_FILTREES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="tMSSqlOutputBulk_4">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_6" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -5009,7 +5066,7 @@
         <mapperTableEntries name="pecgp_num" expression="Ln_In_PECGP.pecgp_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="acdos_num" expression="Ln_In_PEPRE.acdos_num " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Ln_Inner_1">
+      <outputTables sizeState="INTERMEDIATE" name="Ln_Inner_1" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" expression="&quot;ODS_PECGP&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
@@ -5149,7 +5206,7 @@
         <mapperTableEntries name="pecgp_num" expression="out2.pecgp_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="acdos_num" expression="Ln_In_ACDOS.acdos_num " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Inner_join2">
+      <outputTables sizeState="INTERMEDIATE" name="Inner_join2" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" expression="&quot;ODS_PECGP&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" expression="" type="id_Integer" nullable="true"/>
@@ -5170,7 +5227,7 @@
         <mapperTableEntries name="pecgp_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="acdos_num" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_ACDOS" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_ACDOS" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="acdos_num" expression="out2.acdos_num " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="totie_codsoc" type="id_String" nullable="true"/>
       </inputTables>
@@ -5290,7 +5347,7 @@
         <mapperTableEntries name="pecgp_num" expression="out3.pecgp_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="acdos_num" expression="out3.acdos_num " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Inner_FIL">
+      <outputTables sizeState="INTERMEDIATE" name="Inner_FIL" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" expression="&quot;ODS_PECGP&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
@@ -5335,7 +5392,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_ACDFI.acdos_num&quot;&#xA;+&quot; &#xA;FROM&#x9; \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_ACDFI&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_ACDFI.acdos_num&quot;&#xA;+&quot; &#xA;FROM&#x9; \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_ACDFI&#xD;&#xA;WHERE&#xD;&#xA;EXISTS (SELECT * FROM REF.[REF_CORRPROD] WHERE &#xD;&#xA;REF_CORRPROD.C_OPESCE = ODS_ACDFI.MGNOP_COD&#xD;&#xA;AND REF_CORRPROD.C_PRODCODCRI='GARAN' )&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -5425,7 +5482,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out5">
         <mapperTableEntries name="pepre_num" expression="out4.pepre_num " type="id_String" nullable="true"/>
@@ -5433,7 +5490,7 @@
         <mapperTableEntries name="acdos_num" expression="out4.acdos_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="mgppe_codpro" expression="Ln_In_PERAP.mgppe_codpro " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Inner">
+      <outputTables sizeState="INTERMEDIATE" name="Inner" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIC_NAME" expression="&quot;ODS_PECGP&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
@@ -5454,7 +5511,7 @@
         <mapperTableEntries name="pecgp_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="acdos_num" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_PERAP" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_PERAP" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="pepre_num" expression="out4.pepre_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="mgppe_codpro" type="id_String" nullable="true"/>
       </inputTables>
@@ -5584,12 +5641,12 @@
         <mapperTableEntries name="mgppe_codpro" expression="out5.mgppe_codpro " type="id_String" nullable="true"/>
         <mapperTableEntries name="caint_num" expression="Ln_In_cactr.caint_num " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Ln_Inner3">
-        <mapperTableEntries name="NOM_JOB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIC_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="NOM_COL_1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_1" type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Ln_Inner3" activateCondensedTool="true" rejectInnerJoin="true">
+        <mapperTableEntries name="NOM_JOB" expression="jobName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIC_NAME" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUM_LIGNE" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NOM_COL_1" expression="&quot;ACDOS_NUM&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_1" expression="out5.acdos_num " type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="VAL_COL_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_3" type="id_String" nullable="true"/>
@@ -5598,7 +5655,7 @@
         <mapperTableEntries name="VAL_COL_4" type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_5" type="id_String" nullable="true"/>
         <mapperTableEntries name="VAL_COL_5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MESSAGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MESSAGE" expression="&quot;Pas de jointure entre CACTR et  ACDOS&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="pepre_num" type="id_String" nullable="true"/>
@@ -5606,7 +5663,7 @@
         <mapperTableEntries name="acdos_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="mgppe_codpro" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_cactr" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_cactr" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="caint_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="cactr_dom" type="id_String" nullable="true"/>
         <mapperTableEntries name="cactr_num" expression="out5.acdos_num " type="id_String" nullable="true" operator="="/>
@@ -6040,7 +6097,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out2" activateCondensedTool="true">
         <mapperTableEntries name="C_REFDOS" expression="Ln_Out.acdos_num " type="id_String"/>
@@ -6152,7 +6209,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="l">
         <mapperTableEntries name="C_REFDOS" expression="Ln_Out2.C_REFDOS" type="id_String"/>
@@ -6595,7 +6652,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#x9;pepre_num,&#xD;&#xA;&#x9;&#x9;pecgp_num,&#xD;&#xA;&#x9;&#x9;isnull(min(pelig_datech),null) D_DEB,&#xD;&#xA;&#x9;&#x9;isnull(max(pelig_datech),null) D_FIN,&#xD;&#xA;&#x9;&#x9;count(*)  N_NBREECH,&#xD;&#xA;&#x9;&#x9;isnull(sum(&#x9;isnull(pelig_mnt1,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt2,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt3,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt4,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt5,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt6,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt7,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt8,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt9,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt10,0)&#xD;&#xA;&#x9;&#x9;&#x9;) ,0 )as N_TOTALECH&#xD;&#xA;FROM&#x9;ODS.ODS_PELIG&#xD;&#xA;GROUP BY pepre_num,pecgp_num&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#x9;pepre_num,&#xD;&#xA;&#x9;&#x9;pecgp_num,&#xD;&#xA;&#x9;&#x9;isnull(cast (min(pelig_datech) as datetime),null) D_DEB,&#xD;&#xA;&#x9;&#x9;isnull(cast(max(pelig_datech) as datetime),null) D_FIN,&#xD;&#xA;&#x9;&#x9;count(*)  N_NBREECH,&#xD;&#xA;&#x9;&#x9;isnull(sum(&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt2,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt3,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt4,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt5,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt6,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt7,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt8,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt9,0)+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;isnull(pelig_mnt10,0)&#xD;&#xA;&#x9;&#x9;&#x9;) ,0 )as N_TOTALECH&#xD;&#xA;FROM&#x9;ODS.ODS_PELIG p&#xD;&#xA;WHERE EXISTS &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(SELECT&#x9;*&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;FROM&#x9;ODS.ODS_PECGP a , ods.ods_PEPRE b,ods.ods_acdfi c, REF.REF_CORRPROD d&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;WHERE&#x9;a.pepre_num = b.pepre_num&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and b.acdos_num = c.acdos_num&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and c.MGNOP_COD = d.C_OPESCE&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and d.C_PRODCODCRI='GARAN'&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and p.pecgp_num = a.pecgp_num and p.pepre_num = b.pepre_num)&#xD;&#xA;GROUP BY pepre_num,pecgp_num&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -7247,64 +7304,6 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="C_PREL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2112" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_4" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;PIV_&quot;+&quot;ALT_SAS_PLAN_DONNEES_FILTREES_3.csv&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;-|-&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.ENCODING"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
-    <elementParameter field="TEXT" name="LABEL" value="Sf_Out_PIV_ALT_SAS_DONNEES_FILTREES"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="SAS_DONNEES_FILTREES" name="tMSSqlOutputBulk_4">
-      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -8080,7 +8079,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_Fil_Inner_3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_Out_RG_All" lineStyle="10" mergeOrder="1" metaname="Ln_Out_RG_All" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tUnite_1">
@@ -9603,11 +9601,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_15" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Alimentation de la bdd"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_4" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>

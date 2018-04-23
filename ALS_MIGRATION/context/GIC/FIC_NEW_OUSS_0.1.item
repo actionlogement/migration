@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_rP94oEO3Eei0CuQfk9LjWA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_rP94oUO3Eei0CuQfk9LjWA" comment="Nom du fichier DOSBENEFOND" name="V_FIC_DOSBENEFOND" prompt="V_FIC_DOSBENEFOND?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94okO3Eei0CuQfk9LjWA" comment="Nom du fichier BENEFICIAIRE" name="V_FIC_BENEFICIAIRE" prompt="V_FIC_BENEFICIAIRE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94o0O3Eei0CuQfk9LjWA" comment="Nom du fichier CPTFLUX" name="V_FIC_CPTFLUX" prompt="V_FIC_CPTFLUX?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94pEO3Eei0CuQfk9LjWA" comment="Nom du fichier DBLP" name="V_FIC_DBLP" prompt="V_FIC_DBLP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94pUO3Eei0CuQfk9LjWA" comment="Nom du fichier RIB_PM" name="V_FIC_RIBPM" prompt="V_FIC_RIBPM?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94pkO3Eei0CuQfk9LjWA" comment=" Nom du fichier TIERS" name="V_FIC_TIERS" prompt="V_FIC_TIERS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94p0O3Eei0CuQfk9LjWA" comment="Nom du fichier DOSARC" name="V_FIC_DOSARC" prompt="V_FIC_DOSARC?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94qEO3Eei0CuQfk9LjWA" comment="Nom du fichier DOSCOMP" name="V_FIC_DOSCOMP" prompt="V_FIC_DOSCOMP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94qUO3Eei0CuQfk9LjWA" comment="Nom du fichier ARCHIVAGE" name="V_FIC_ARCHIVAGE" prompt="V_FIC_ARCHIVAGE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94qkO3Eei0CuQfk9LjWA" comment="Nom du fichier REF ASSURANCE" name="V_FIC_REF_ASSURANCE" prompt="V_FIC_REF_ASSURANCE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rP94q0O3Eei0CuQfk9LjWA" comment="Nom du fichier SINISTRE" name="V_FIC_SINISTRE" prompt="V_FIC_SINISTRE?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

@@ -179,7 +179,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/HANABLI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace_talend/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -240,7 +240,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-448">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Début du job : &quot;+jobName + &quot; - &quot;+TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -248,7 +248,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-288">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;DATE_DEBUT_JOB&quot;"/>
@@ -260,7 +260,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-128">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Début du chargement de la table cible - &quot;+TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -268,14 +268,14 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="576">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du chargement de la table cible - &quot;+TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;&#xA;context.NB_LIGNES_LUES=(((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;)));&#xA;&#xA;context.NB_LIGNES_INS= ((Integer)globalMap.get(&quot;tMSSqlOutputBulk_2_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_2_NB_LINE&quot;));&#xA;&#xA;context.NB_LIGNES_REJ=(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;)));&#xA;&#xA;context.NB_LIGNES_FIL=((Integer)globalMap.get(&quot;tMSSqlOutputBulk_3_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_3_NB_LINE&quot;));&#xA;&#xA;&#xA;System.out.println(&quot;   Nombre de lignes lues :&quot;+context.NB_LIGNES_LUES);&#xA;System.out.println(&quot;   Nombre de lignes insérées :&quot;+context.NB_LIGNES_INS);&#xA;System.out.println(&quot;   Nombre de lignes rejetées :&quot;+context.NB_LIGNES_REJ);&#xA;System.out.println(&quot;   Nombre de lignes filtrées :&quot;+context.NB_LIGNES_FIL);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
   </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="11" offsetLabelY="0" posX="128" posY="832">
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="11" offsetLabelY="0" posX="128" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -529,7 +529,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="832">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_3" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;DATE_FIN_EXECUTION&quot;"/>
@@ -539,14 +539,14 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_3"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="576">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Des erreurs ont été rencontrées et insérées dans la table SAS_ERREUR&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="704">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_4" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
@@ -556,7 +556,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_4"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="832">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -664,7 +664,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="576">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_5" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
@@ -674,7 +674,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_5"/>
   </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="832">
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlClose_1" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="TEXT" name="LABEL" value="SAS_ALT_CLOSE"/>
@@ -743,7 +743,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="832">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -780,14 +780,14 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_3"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="832">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du job : &quot;+jobName + &quot; - &quot;+ TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;System.out.println(&quot;-------------------------------------------------------------------------&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_7"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="832">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="java.io.PrintStream pwErr = System.err;&#xA;pwErr.close();&#xA;System.setErr((java.io.PrintStream) globalMap.get(&quot;FLUX_ERR&quot;)); &#xA;java.io.File fichier = new java.io.File((String)globalMap.get(&quot;CONTEXT_LOG_ERR_NAME&quot;));&#xA;if (fichier.length()==0) {&#xA;&#x9;fichier.delete();&#xA;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -795,7 +795,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_8"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="448">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -876,14 +876,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gSgOMXLBEeezorU47F1TZQ - ODS_APPEL" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ODS_APPEL&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.contrat,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.pret,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.rubrique,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.date_appel,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.montant&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.contrat,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.pret,&#xA;&#x9;&#x9;cast(\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.rubrique as varchar) rubrique ,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.date_appel,&#xA;&#x9;&#x9;cast(\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL.montant as varchar) montant&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_APPEL&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -906,26 +904,16 @@
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="ODS_APPEL" name="tMSSqlInput_2">
-      <column comment="" key="false" length="250" name="contrat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="250" name="pret" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="250" name="rubrique" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="250" name="date_appel" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="250" name="montant" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
+    <metadata connector="FLOW" name="tMSSqlInput_2">
+      <column comment="" key="false" length="250" name="contrat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="pret" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="rubrique" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="date_appel" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="montant" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="160">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1016,13 +1004,13 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_APPEL">
-        <mapperTableEntries name="C_REFDOS" expression="row1.contrat " type="id_String"/>
+        <mapperTableEntries name="C_REFDOS" expression="Ln_In_APPEL.contrat " type="id_String"/>
         <mapperTableEntries name="C_REFPROD" expression="Ln_In_COMBIPROD.C_REFPROD " type="id_String"/>
-        <mapperTableEntries name="N_MNTCAPITAL" expression="Relational.ISNULL(row1.montant) || &quot;&quot;.equals(row1.montant)? new BigDecimal(&quot;0&quot;):&quot;CAM&quot;.equals(row1.rubrique)? new BigDecimal(row1.montant.replace(&quot;,&quot;,&quot;.&quot;)): new BigDecimal(&quot;0&quot;) " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_MNTINTERET" expression="Relational.ISNULL(row1.montant ) || &quot;&quot;.equals(row1.montant)? new BigDecimal(&quot;0&quot;):(&quot;INT&quot;.equals(row1.rubrique)||&quot;INTBF&quot;.equals(row1.rubrique)||&quot;CR&quot;.equals(row1.rubrique))?new BigDecimal(row1.montant.replace(&quot;,&quot;,&quot;.&quot;))  : new BigDecimal(&quot;0&quot;) " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_MNTASS" expression="Relational.ISNULL(row1.montant ) || &quot;&quot;.equals(row1.montant)? new BigDecimal(&quot;0&quot;):(&quot;ASS&quot;.equals(row1.rubrique)||&quot;ASBDF&quot;.equals(row1.rubrique))? new BigDecimal(row1.montant.replace(&quot;,&quot;,&quot;.&quot;))  : new BigDecimal(&quot;0&quot;) " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_MNTFRAIS" expression="Relational.ISNULL(row1.montant ) || &quot;&quot;.equals(row1.montant)? new BigDecimal(&quot;0&quot;):&quot;FR&quot;.equals(row1.rubrique)||&quot;FRBDF&quot;.equals(row1.rubrique)? new BigDecimal(row1.montant.replace(&quot;,&quot;,&quot;.&quot;)) : new BigDecimal(&quot;0&quot;) " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="D_ECH" expression="Relational.ISNULL(row1.date_appel) || &quot;&quot;.equals(row1.date_appel) ? null : &#xD;&#xA;TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.date_appel) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="N_MNTCAPITAL" expression="Relational.ISNULL(Ln_In_APPEL.montant) || &quot;&quot;.equals(Ln_In_APPEL.montant)? new BigDecimal(&quot;0&quot;):&quot;CAM&quot;.equals(Ln_In_APPEL.rubrique)? new BigDecimal(Ln_In_APPEL.montant.replace(&quot;,&quot;,&quot;.&quot;)): new BigDecimal(&quot;0&quot;) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_MNTINTERET" expression="Relational.ISNULL(Ln_In_APPEL.montant ) || &quot;&quot;.equals(Ln_In_APPEL.montant)? new BigDecimal(&quot;0&quot;):(&quot;INT&quot;.equals(Ln_In_APPEL.rubrique)||&quot;INTBF&quot;.equals(Ln_In_APPEL.rubrique)||&quot;CR&quot;.equals(Ln_In_APPEL.rubrique))?new BigDecimal(Ln_In_APPEL.montant.replace(&quot;,&quot;,&quot;.&quot;))  : new BigDecimal(&quot;0&quot;) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_MNTASS" expression="Relational.ISNULL(Ln_In_APPEL.montant ) || &quot;&quot;.equals(Ln_In_APPEL.montant)? new BigDecimal(&quot;0&quot;):(&quot;ASS&quot;.equals(Ln_In_APPEL.rubrique)||&quot;ASBDF&quot;.equals(Ln_In_APPEL.rubrique))? new BigDecimal(Ln_In_APPEL.montant.replace(&quot;,&quot;,&quot;.&quot;))  : new BigDecimal(&quot;0&quot;) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_MNTFRAIS" expression="Relational.ISNULL(Ln_In_APPEL.montant ) || &quot;&quot;.equals(Ln_In_APPEL.montant)? new BigDecimal(&quot;0&quot;):&quot;FR&quot;.equals(Ln_In_APPEL.rubrique)||&quot;FRBDF&quot;.equals(Ln_In_APPEL.rubrique)? new BigDecimal(Ln_In_APPEL.montant.replace(&quot;,&quot;,&quot;.&quot;)) : new BigDecimal(&quot;0&quot;) " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="D_ECH" expression="Relational.ISNULL(Ln_In_APPEL.date_appel) || &quot;&quot;.equals(Ln_In_APPEL.date_appel) ? null : &#xD;&#xA;TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,Ln_In_APPEL.date_appel) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="D_PREL" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C_ORIG" type="id_String" nullable="true"/>
       </outputTables>
@@ -1031,9 +1019,9 @@
         <mapperTableEntries name="FIC_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="NUM_LIGNE" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NOM_COL_1" expression="&quot;Contrat&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_1" expression="row1.contrat " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_1" expression="Ln_In_APPEL.contrat " type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_2" expression="&quot;Pret&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VAL_COL_2" expression="row1.pret " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAL_COL_2" expression="Ln_In_APPEL.pret " type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_3" type="id_String" nullable="true"/>
         <mapperTableEntries name="VAL_COL_3" type="id_String" nullable="true"/>
         <mapperTableEntries name="NOM_COL_4" type="id_String" nullable="true"/>
@@ -1042,7 +1030,7 @@
         <mapperTableEntries name="VAL_COL_5" type="id_String" nullable="true"/>
         <mapperTableEntries name="MESSAGE" expression="&quot;Pas de jointure en APPEL et COMBIPROD&quot;" type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_APPEL" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="contrat" type="id_String" nullable="true"/>
         <mapperTableEntries name="pret" type="id_String" nullable="true"/>
         <mapperTableEntries name="rubrique" type="id_String" nullable="true"/>
@@ -1050,13 +1038,13 @@
         <mapperTableEntries name="montant" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="Ln_In_COMBIPROD" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="C_REFDOS" expression="row1.contrat " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_REFPRET" expression="row1.pret " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFDOS" expression="Ln_In_APPEL.contrat " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFPRET" expression="Ln_In_APPEL.pret " type="id_String" nullable="true"/>
         <mapperTableEntries name="C_REFPROD" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="160">
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_1" show="false"/>
     <elementParameter field="RADIO" name="CHECK_ALL" value="false"/>
     <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
@@ -1234,7 +1222,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="288">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1290,7 +1278,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="160">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1360,7 +1348,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="160">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_2" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_TEMP+&quot;ALT_SAS_APPEL&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -1402,7 +1390,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="288">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_1" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_TEMP+jobName+&quot;_ERREUR.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -1432,7 +1420,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="32">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_3" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -1475,7 +1463,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutputBulk_3" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP+&quot;PIV_&quot;+&quot;ALT_SAS_APPEL_DONNEES_FILTREES_1.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -1534,7 +1522,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="448">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
@@ -1620,13 +1608,13 @@
     <elementParameter field="TEXT" name="LABEL" value="ODS_CONNECTION"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="832">
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlClose_2" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
     <elementParameter field="TEXT" name="LABEL" value="ODS_CLOSE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="576">
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_2" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
@@ -1634,7 +1622,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_2"/>
   </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_3" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -1720,10 +1708,10 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSetGlobalVar_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk15" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tSetGlobalVar_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="-2" offsetLabelY="-22" source="tJava_2" target="tSetGlobalVar_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tJava_3">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_1" offsetLabelX="-1" offsetLabelY="-23" source="tSetGlobalVar_1" target="tJava_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tMSSqlInput_2">
@@ -1752,7 +1740,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_Categorie" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileInputDelimited_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="-21" source="tFixedFlowInput_1" target="tFileInputDelimited_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_In_Param_Db" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tContextLoad_2">
@@ -1767,7 +1755,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_Param_Db" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMSSqlConnection_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="-22" source="tFileInputDelimited_1" target="tMSSqlConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_In_SAS_P_Contextes_CTX" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
@@ -1825,7 +1813,7 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlConnection_1" target="tMSSqlConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlConnection_1" target="tMSSqlInput_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="4" offsetLabelY="-20" outputId="2" source="tMSSqlConnection_1" target="tMSSqlInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk17" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlRow_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_2" target="tMSSqlCommit_1">
@@ -1843,9 +1831,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlBulkExec_1" target="tMSSqlCommit_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_2">
+  <connection connectorName="FLOW" label="Ln_In_APPEL" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_APPEL" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMSSqlBulkExec_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk11" show="false"/>
@@ -2381,8 +2369,10 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Traitement Principal"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>

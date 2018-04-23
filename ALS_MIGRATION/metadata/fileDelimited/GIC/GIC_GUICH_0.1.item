@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_EIc-IVGiEeefq-zQ_Z_dug" name="GIC_GUICH" dataPackage="_EIc-IlGiEeefq-zQ_Z_dug" Server="Localhost 127.0.0.1" FilePath="//Vm-gfid01/partage_gfi/FichierCSV/Gic/GIC_GPEJ_GUICH_20170609203857.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;Ñ&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_EIc-IlGiEeefq-zQ_Z_dug" name="default" dataManager="_EIc-IVGiEeefq-zQ_Z_dug">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_EIc-I1GiEeefq-zQ_Z_dug" id="_9c3P4FGhEeefq-zQ_Z_dug" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-JFGiEeefq-zQ_Z_dug" label="OCBANQUEO" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-JVGiEeefq-zQ_Z_dug" label="OU__CGUICHETO" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-JlGiEeefq-zQ_Z_dug" label="OCGUICHETO" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-J1GiEeefq-zQ_Z_dug" label="OADR1O" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-KFGiEeefq-zQ_Z_dug" label="OADR2O" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-KVGiEeefq-zQ_Z_dug" label="OCPOSO" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-KlGiEeefq-zQ_Z_dug" label="OVILLEO" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-K1GiEeefq-zQ_Z_dug" label="OLGUICHETO" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-LFGiEeefq-zQ_Z_dug" label="ODDCREATO" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-LVGiEeefq-zQ_Z_dug" label="ODDMAJO" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-LlGiEeefq-zQ_Z_dug" label="OUTCREATO" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-L1GiEeefq-zQ_Z_dug" label="OUTMAJO" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EIc-MFGiEeefq-zQ_Z_dug" label="OPROGRESS_RECIDO" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

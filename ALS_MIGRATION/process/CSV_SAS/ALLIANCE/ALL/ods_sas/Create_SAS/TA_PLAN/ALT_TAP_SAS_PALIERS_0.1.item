@@ -132,8 +132,8 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms2048M -Xmx6G " show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="2944" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1472" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -677,14 +677,14 @@
       <column comment="" key="false" length="18" name="N_INT" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" originalLength="18" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="N_ASS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" originalLength="18" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="N_FRAIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" originalLength="18" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="N_TOTCAP" nullable="true" pattern="" precision="2" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="N_TOTINT" nullable="true" pattern="" precision="2" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="N_TOTASS" nullable="true" pattern="" precision="2" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="N_TOTFRAIS" nullable="true" pattern="" precision="2" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N_TOTCAP" nullable="true" pattern="" precision="8" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N_TOTINT" nullable="true" pattern="" precision="8" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N_TOTASS" nullable="true" pattern="" precision="8" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N_TOTFRAIS" nullable="true" pattern="" precision="8" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="I_PALIER" expression="Numeric.sequence(Ln_Out_Dossier_DateEcheance.C_REFDOS+&quot;_&quot;+Ln_Out_Dossier_DateEcheance.C_REFPROD+&quot;_&quot;+Ln_Out_Dossier_DateEcheance.C_REFPRET+&quot;_&quot;+Ln_Out_Dossier_DateEcheance.C_NUMTA, 1, 1) " type="id_Integer"/>
         <mapperTableEntries name="N_ASS" expression="Var.I_PALIER == 1 ? globalMap.put(&quot;N_ASS&quot;, Ln_Out_Dossier_DateEcheance.N_ASS) : globalMap.put(&quot;N_ASS&quot;, (BigDecimal)globalMap.get(&quot;N_ASS&quot;)) " type="id_Object"/>
@@ -773,10 +773,10 @@
       <column comment="" key="false" length="18" name="N_INT" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" originalLength="18" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="N_ASS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" originalLength="18" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="N_FRAIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" originalLength="18" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="N_TOTCAP" nullable="true" pattern="" precision="2" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="N_TOTINT" nullable="true" pattern="" precision="2" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="N_TOTASS" nullable="true" pattern="" precision="2" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="N_TOTFRAIS" nullable="true" pattern="" precision="2" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N_TOTCAP" nullable="true" pattern="" precision="8" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N_TOTINT" nullable="true" pattern="" precision="8" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N_TOTASS" nullable="true" pattern="" precision="8" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N_TOTFRAIS" nullable="true" pattern="" precision="8" sourceType="VARCHAR" type="id_BigDecimal" originalLength="15" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>

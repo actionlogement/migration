@@ -6,15 +6,25 @@
     <contextParameter comment="" name="CRI_SQL_Login" prompt="CRI_SQL_Login?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="talend_dev1"/>
     <contextParameter comment="" name="CRI_SQL_Password" prompt="CRI_SQL_Password?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
     <contextParameter comment="" name="CRI_SQL_Port" prompt="CRI_SQL_Port?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_DOS" prompt="CRI_SQL_Schema_DOS?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="DOS"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_GRC" prompt="CRI_SQL_Schema_GRC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="GRC"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_LOC" prompt="CRI_SQL_Schema_LOC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="LOCATIF"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_MDP" prompt="CRI_SQL_Schema_MDP?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="MDP"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_OGR" prompt="CRI_SQL_Schema_OGR?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="OGR"/>
     <contextParameter comment="" name="CRI_SQL_Schema_REC" prompt="CRI_SQL_Schema_REC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="REC"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_TIERS" prompt="CRI_SQL_Schema_TIERS?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="TIERS"/>
     <contextParameter comment="" name="CRI_SQL_Server" prompt="CRI_SQL_Server?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="STOL-SQLW-PR001"/>
-    <contextParameter comment="" name="V_FIC_CONTEXT_INIT_CRISTAL" prompt="V_FIC_CONTEXT_INIT_CRISTAL?" promptNeeded="false" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL.txt"/>
+    <contextParameter comment="" name="V_FIC_CONTEXT_INIT_CRISTAL" prompt="V_FIC_CONTEXT_INIT_CRISTAL?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL.txt"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_AdditionalParams" prompt="CRISTAL_SQL_CONTEXTE_AdditionalParams?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="INSTANCE=DEVE01"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Database" prompt="CRISTAL_SQL_CONTEXTE_Database?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Login" prompt="CRISTAL_SQL_CONTEXTE_Login?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="talend_dev1"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Password" prompt="CRISTAL_SQL_CONTEXTE_Password?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Port" prompt="CRISTAL_SQL_CONTEXTE_Port?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema" prompt="CRISTAL_SQL_CONTEXTE_Schema?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_FIL" prompt="CRISTAL_SQL_CONTEXTE_Schema_FIL?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="FIL"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_ODS" prompt="CRISTAL_SQL_CONTEXTE_Schema_ODS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="ODS"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_REF" prompt="CRISTAL_SQL_CONTEXTE_Schema_REF?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="REF"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_SAS" prompt="CRISTAL_SQL_CONTEXTE_Schema_SAS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Server" prompt="CRISTAL_SQL_CONTEXTE_Server?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="STOL-SQLW-PR001"/>
     <contextParameter comment="Nombre de lignes filtrées" name="NB_LIGNES_FIL" prompt="NB_LIGNES_FIL?" promptNeeded="false" repositoryContextId="_MgkfUHLCEeezorU47F1TZQ" type="id_Integer" value="0"/>
     <contextParameter comment="Nombre de lignes insérées" name="NB_LIGNES_INS" prompt="NB_LIGNES_INS?" promptNeeded="false" repositoryContextId="_MgkfUHLCEeezorU47F1TZQ" type="id_Integer" value="0"/>
@@ -111,7 +121,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/RIAZ/Desktop/workspace_ARI/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -439,7 +449,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
@@ -448,7 +458,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DOSSIER_SOLDES.C_REFDOS&quot;&#xA;+&quot; &#xA;FROM&#x9; \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DOSSIER_SOLDES&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_DOSSIER_SOLDES.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER_SOLDES.C_REFDOS&quot;&#xA;+&quot; &#xA;FROM&#x9; \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER_SOLDES&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_DOSSIER_SOLDES.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -987,7 +997,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
@@ -996,7 +1006,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select&#x9;a.C_REFDOS, &#xD;&#xA;&#x9;&#x9;a.C_VALCIBLE,&#xD;&#xA;&#x9;&#x9;cast( a.D_DIMP as datetime),&#xD;&#xA;&#x9;&#x9;cast( SUM(a.RES1) as decimal(18,8) )&#xD;&#xA;from (&#xD;&#xA;&#x9;&#x9;select&#x9;his.C_REFDOS C_REFDOS,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;C_VALCIBLE C_VALCIBLE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;his.D_DIMP D_DIMP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;sum(his.N_MTDEBIT)-sum(his.N_MTCREDIT) RES1&#xD;&#xA;&#x9;&#x9;from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.SAS_HISCRE his&#xD;&#xA;&#x9;&#x9;inner join REF.REF_CORRESPONDANCE cor on cor.C_VALSOURCE = his.C_JOURNAL and C_VALCIBLE &lt;> 'NON' and C_CODECORR='JAL_HISCRE'&#xD;&#xA;&#x9;&#x9;WHERE EXISTS &#xD;&#xA;&#x9;&#x9;(&#xD;&#xA; &#x9;&#x9;&quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and his.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;&#x9;&#x9;)&#x9;&#xD;&#xA;&#x9;&#x9;group by his.C_REFDOS,C_VALCIBLE,his.D_DIMP&#xD;&#xA;&#x9;&#x9;) a&#xD;&#xA;group by a.C_REFDOS,a.C_VALCIBLE,a.D_DIMP&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select&#x9;a.C_REFDOS, &#xD;&#xA;&#x9;&#x9;a.C_VALCIBLE,&#xD;&#xA;&#x9;&#x9;cast( a.D_DIMP as datetime),&#xD;&#xA;&#x9;&#x9;cast( SUM(a.RES1) as decimal(18,8) )&#xD;&#xA;from (&#xD;&#xA;&#x9;&#x9;select&#x9;his.C_REFDOS C_REFDOS,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;C_VALCIBLE C_VALCIBLE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;his.D_DIMP D_DIMP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;sum(his.N_MTDEBIT)-sum(his.N_MTCREDIT) RES1&#xD;&#xA;&#x9;&#x9;from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.SAS_HISCRE his&#xD;&#xA;&#x9;&#x9;inner join REF.REF_CORRESPONDANCE cor on cor.C_VALSOURCE = his.C_JOURNAL and C_VALCIBLE &lt;> 'NON' and C_CODECORR='JAL_HISCRE'&#xD;&#xA;&#x9;&#x9;WHERE EXISTS &#xD;&#xA;&#x9;&#x9;(&#xD;&#xA; &#x9;&#x9;&quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and his.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;&#x9;&#x9;)&#x9;&#xD;&#xA;&#x9;&#x9;group by his.C_REFDOS,C_VALCIBLE,his.D_DIMP&#xD;&#xA;&#x9;&#x9;) a&#xD;&#xA;group by a.C_REFDOS,a.C_VALCIBLE,a.D_DIMP&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1976,7 +1986,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
@@ -2091,7 +2101,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select a.C_REFDOS,a.C_REFPROD, d.C_PRODCODCRI,d.C_OBJCODCRI,d.C_NOSOC  &#xD;&#xA;from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.sas_produit a, sas_gic.ref.ref_correspondance b ,&#xD;&#xA;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.REF.REF_CORRPROD d&#xD;&#xA;where C_CODECORR='CGNF' and C_VALCIBLE=FONDS and C_NATFDS=c_valsource and C_OPESCE=C_TYPEPROD&#xD;&#xA;AND EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and a.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select a.C_REFDOS,a.C_REFPROD, d.C_PRODCODCRI,d.C_OBJCODCRI,d.C_NOSOC  &#xD;&#xA;from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.sas_produit a, sas_gic.ref.ref_correspondance b ,&#xD;&#xA;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.REF.REF_CORRPROD d&#xD;&#xA;where C_CODECORR='CGNF' and C_VALCIBLE=FONDS and C_NATFDS=c_valsource and C_OPESCE=C_TYPEPROD&#xD;&#xA;AND EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and a.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2137,7 +2147,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
@@ -2146,7 +2156,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.L_PREFIXE&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_PRODUIT.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.L_PREFIXE&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_PRODUIT.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2282,7 +2292,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -2360,7 +2370,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -2438,7 +2448,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -2699,7 +2709,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
@@ -2708,7 +2718,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_PK,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Categorie,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Key,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Value,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Desc,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_DateCreat,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_DateModif&#xA;FROM&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX&#xD;&#xA;WHERE &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Categorie IN (&quot; +&quot;'&quot;+ context.V_LIST_CATEGORIES +&quot;'&quot;+ &quot;)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_PK,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Categorie,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Key,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Value,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Desc,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_DateCreat,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_DateModif&#xA;FROM&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX&#xD;&#xA;WHERE &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Categorie IN (&quot; +&quot;'&quot;+ context.V_LIST_CATEGORIES +&quot;'&quot;+ &quot;)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2856,13 +2866,11 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
@@ -3014,12 +3022,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
@@ -3029,7 +3035,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.CRISTAL_ERREUR &#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.CRISTAL_ERREUR &#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -3054,12 +3060,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
@@ -3069,7 +3073,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.CRISTAL_DONNEES_FILTREES&#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.CRISTAL_DONNEES_FILTREES&#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -3092,7 +3096,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;SAS_DOSSIER_ACTIF&quot;,&quot;select * from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.SAS_DOSSIER_ACTIF  where ( b_evt='T' or b_solde='T' or b_engage='T' or b_plan='T' or b_solde='T' )&quot;); "/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;SAS_DOSSIER_ACTIF&quot;,&quot;select * from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.SAS_DOSSIER_ACTIF  where ( b_evt='T' or b_solde='T' or b_engage='T' or b_plan='T' or b_solde='T' )&quot;); "/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_8"/>
@@ -3919,7 +3923,7 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -3977,7 +3981,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>

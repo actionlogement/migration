@@ -6,15 +6,25 @@
     <contextParameter comment="" name="CRI_SQL_Login" prompt="CRI_SQL_Login?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="talend_dev1"/>
     <contextParameter comment="" name="CRI_SQL_Password" prompt="CRI_SQL_Password?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
     <contextParameter comment="" name="CRI_SQL_Port" prompt="CRI_SQL_Port?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_DOS" prompt="CRI_SQL_Schema_DOS?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="DOS"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_GRC" prompt="CRI_SQL_Schema_GRC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="GRC"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_LOC" prompt="CRI_SQL_Schema_LOC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="LOCATIF"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_MDP" prompt="CRI_SQL_Schema_MDP?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="MDP"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_OGR" prompt="CRI_SQL_Schema_OGR?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="OGR"/>
     <contextParameter comment="" name="CRI_SQL_Schema_REC" prompt="CRI_SQL_Schema_REC?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="REC"/>
+    <contextParameter comment="" name="CRI_SQL_Schema_TIERS" prompt="CRI_SQL_Schema_TIERS?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="TIERS"/>
     <contextParameter comment="" name="CRI_SQL_Server" prompt="CRI_SQL_Server?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="STOL-SQLW-PR001"/>
-    <contextParameter comment="" name="V_FIC_CONTEXT_INIT_CRISTAL" prompt="V_FIC_CONTEXT_INIT_CRISTAL?" promptNeeded="false" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL.txt"/>
+    <contextParameter comment="" name="V_FIC_CONTEXT_INIT_CRISTAL" prompt="V_FIC_CONTEXT_INIT_CRISTAL?" promptNeeded="false" repositoryContextId="_v2TzMPX7EeeQobPuLzsruA" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL.txt"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_AdditionalParams" prompt="CRISTAL_SQL_CONTEXTE_AdditionalParams?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="INSTANCE=DEVE01"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Database" prompt="CRISTAL_SQL_CONTEXTE_Database?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Login" prompt="CRISTAL_SQL_CONTEXTE_Login?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="talend_dev1"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Password" prompt="CRISTAL_SQL_CONTEXTE_Password?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Port" prompt="CRISTAL_SQL_CONTEXTE_Port?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema" prompt="CRISTAL_SQL_CONTEXTE_Schema?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_FIL" prompt="CRISTAL_SQL_CONTEXTE_Schema_FIL?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="FIL"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_ODS" prompt="CRISTAL_SQL_CONTEXTE_Schema_ODS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="ODS"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_REF" prompt="CRISTAL_SQL_CONTEXTE_Schema_REF?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="REF"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_SAS" prompt="CRISTAL_SQL_CONTEXTE_Schema_SAS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Server" prompt="CRISTAL_SQL_CONTEXTE_Server?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="STOL-SQLW-PR001"/>
     <contextParameter comment="Nombre de lignes filtrées" name="NB_LIGNES_FIL" prompt="NB_LIGNES_FIL?" promptNeeded="false" repositoryContextId="_MgkfUHLCEeezorU47F1TZQ" type="id_Integer" value="0"/>
     <contextParameter comment="Nombre de lignes insérées" name="NB_LIGNES_INS" prompt="NB_LIGNES_INS?" promptNeeded="false" repositoryContextId="_MgkfUHLCEeezorU47F1TZQ" type="id_Integer" value="0"/>
@@ -405,16 +415,18 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gSgOMXLBEeezorU47F1TZQ - SAS_PRODUIT" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_PRODUIT&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.I_PRODUIT_CRIS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.N_MNTPRET,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.N_DUREE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.N_TAUX_ENDET,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.D_RECEPTION,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.D_ACCPTCLT,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.D_OFFRE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.D_1DEBL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.D_EFFETUESL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_DECADM1,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_DECADM2,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_DECADM3,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_DECADM4,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_TYPEPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT.C_NATFDS&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_PRODUIT&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_PRODUIT.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.L_REFUESL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_TYPEPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_NATFDS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_SOCIETE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_ETAT,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_STATUT,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_MNTPRET,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_DUREE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_TOTDEBL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_RECEPTION,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_ACCPTCLT,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_OFFRE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_1DEBL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_ANNUL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_EFFETUESL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_FIN,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_MOTIFFIN,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_CODPRO,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_DECADM1,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_DECADM2,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_DECADM3,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_DECADM4,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.L_PHASEACT,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_DPHASEACT,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_NBDEBLOCAGE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_MODEREGLE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_ECHUDUMOIS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_TOTALECHUPAYE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_TOTALFRSAPPELE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_TOTALFRSPAYE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_TROPPERCU,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_D1DEBL_INI,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_DATEACCORD_INI,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_TOTALECHUSAPPELE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_CAPITALECHUAPPELE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_CAPITALECHUPAYE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.L_DOSSIER_GARANTI,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.L_ORG_GARANTIE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.L_REFPRET_PM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_LISTEROUGE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.D_LISTEROUGE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_REFPRET_PM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.B_CONVANAH,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.B_APL,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_TYPEHYPO,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_TAUX_ENDET,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.L_COM,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.I_PRODUIT_CRIS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.N_PALIER,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.L_PREFIXE,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.c_refdoscris,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT.C_URLGED&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PRODUIT&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_PRODUIT.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -428,13 +440,23 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="C_REFPROD"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_PRODUIT_CRIS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_REFUESL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPEPROD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_NATFDS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_SOCIETE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_ETAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STATUT"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="N_MNTPRET"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="N_DUREE"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="N_TAUX_ENDET"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_TOTDEBL"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="D_RECEPTION"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -444,7 +466,15 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="D_1DEBL"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_ANNUL"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="D_EFFETUESL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_FIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_MOTIFFIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CODPRO"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="C_DECADM1"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -454,21 +484,92 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="C_DECADM4"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPEPROD"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_PHASEACT"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_NATFDS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_DPHASEACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_NBDEBLOCAGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_MODEREGLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_ECHUDUMOIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_TOTALECHUPAYE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_TOTALFRSAPPELE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_TOTALFRSPAYE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_TROPPERCU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_D1DEBL_INI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_DATEACCORD_INI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_TOTALECHUSAPPELE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_CAPITALECHUAPPELE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_CAPITALECHUPAYE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_DOSSIER_GARANTI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_ORG_GARANTIE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_REFPRET_PM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_LISTEROUGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_LISTEROUGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFPRET_PM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_CONVANAH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_APL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPEHYPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_TAUX_ENDET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_COM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_PRODUIT_CRIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_PALIER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_PREFIXE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_refdoscris"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_URLGED"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlInput_3">
+    <metadata connector="FLOW" label="SAS_PRODUIT" name="tMSSqlInput_3">
       <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="true" length="50" name="C_REFPROD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="18" name="I_PRODUIT_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="8000" name="L_REFUESL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="C_TYPEPROD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_NATFDS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_SOCIETE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_ETAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_STATUT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="18" name="N_MNTPRET" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
@@ -477,7 +578,7 @@
       <column comment="" key="false" length="18" name="N_DUREE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="18" name="N_TAUX_ENDET" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="18" name="N_TOTDEBL" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="D_RECEPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -492,7 +593,19 @@
       <column comment="" key="false" length="23" name="D_1DEBL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="23" name="D_ANNUL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="23" name="D_EFFETUESL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_MOTIFFIN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_CODPRO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="8000" name="C_DECADM1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -507,10 +620,94 @@
       <column comment="" key="false" length="8000" name="C_DECADM4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="C_TYPEPROD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="8000" name="L_PHASEACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="8000" name="C_NATFDS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="23" name="D_DPHASEACT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_NBDEBLOCAGE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_MODEREGLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_ECHUDUMOIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_TOTALECHUPAYE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_TOTALFRSAPPELE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_TOTALFRSPAYE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_TROPPERCU" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_D1DEBL_INI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_DATEACCORD_INI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_TOTALECHUSAPPELE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_CAPITALECHUAPPELE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_CAPITALECHUPAYE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_DOSSIER_GARANTI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_ORG_GARANTIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_REFPRET_PM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_LISTEROUGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="D_LISTEROUGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_REFPRET_PM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_CONVANAH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_APL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_TYPEHYPO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_TAUX_ENDET" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_COM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="I_PRODUIT_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="N_PALIER" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="L_PREFIXE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="c_refdoscris" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="C_URLGED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -586,7 +783,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="vI_LGNPDT" expression="Numeric.sequence(Ln_In_PRD1.C_REFDOS ,1, 1) " type="id_Integer"/>
       </varTables>
@@ -611,23 +808,60 @@
         <mapperTableEntries name="C_NATFDS" expression="Ln_In_PRD1.C_NATFDS " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="Ln_In_PRD1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="C_REFDOS" expression="Ln_In_DOSSIER.C_REFDOS " type="id_String" operator="="/>
+        <mapperTableEntries name="C_REFDOS" type="id_String"/>
         <mapperTableEntries name="C_REFPROD" type="id_String"/>
-        <mapperTableEntries name="I_PRODUIT_CRIS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="L_REFUESL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_TYPEPROD" type="id_String"/>
+        <mapperTableEntries name="C_NATFDS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_SOCIETE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_ETAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_STATUT" type="id_String" nullable="true"/>
         <mapperTableEntries name="N_MNTPRET" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="N_DUREE" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="N_TAUX_ENDET" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_TOTDEBL" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="D_RECEPTION" type="id_Date" nullable="true"/>
         <mapperTableEntries name="D_ACCPTCLT" type="id_Date" nullable="true"/>
         <mapperTableEntries name="D_OFFRE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="D_1DEBL" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="D_ANNUL" type="id_Date" nullable="true"/>
         <mapperTableEntries name="D_EFFETUESL" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="D_FIN" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C_MOTIFFIN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CODPRO" type="id_String" nullable="true"/>
         <mapperTableEntries name="C_DECADM1" type="id_String" nullable="true"/>
         <mapperTableEntries name="C_DECADM2" type="id_String" nullable="true"/>
         <mapperTableEntries name="C_DECADM3" type="id_String" nullable="true"/>
         <mapperTableEntries name="C_DECADM4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C_TYPEPROD" type="id_String"/>
-        <mapperTableEntries name="C_NATFDS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_PHASEACT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="D_DPHASEACT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="N_NBDEBLOCAGE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="C_MODEREGLE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="N_ECHUDUMOIS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_TOTALECHUPAYE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_TOTALFRSAPPELE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_TOTALFRSPAYE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_TROPPERCU" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="D_D1DEBL_INI" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="D_DATEACCORD_INI" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="N_TOTALECHUSAPPELE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_CAPITALECHUAPPELE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_CAPITALECHUPAYE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="L_DOSSIER_GARANTI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_ORG_GARANTIE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_REFPRET_PM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_LISTEROUGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="D_LISTEROUGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFPRET_PM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_CONVANAH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_APL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_TYPEHYPO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="N_TAUX_ENDET" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="L_COM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I_PRODUIT_CRIS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_PALIER" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="L_PREFIXE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="c_refdoscris" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_URLGED" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -812,7 +1046,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="Relational.ISNULL(Ln_In_LIGNETA.N_MNTECH) ? new Double(&quot;0.0&quot;) : Ln_In_LIGNETA.N_MNTECH.doubleValue() " type="id_Double"/>
         <mapperTableEntries name="var2" expression="Relational.ISNULL(Ln_In_LIGNETA.N_ASS1) ? new Double(&quot;0.0&quot;) : Ln_In_LIGNETA.N_ASS1.doubleValue() " type="id_Double"/>
@@ -832,9 +1066,9 @@
         <mapperTableEntries name="D_OFFRE" expression="Ln_In_PRD.D_OFFRE " type="id_Date" nullable="true"/>
         <mapperTableEntries name="D_REALISATION" expression="Ln_In_PRD.D_1DEBL " type="id_Date" nullable="true"/>
         <mapperTableEntries name="D_1ERECH" expression="(Relational.ISNULL(Ln_In_PRD.D_EFFETUESL)||&quot;&quot;.equals(Ln_In_PRD.D_EFFETUESL))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,&quot;2099-01-01&quot;):Ln_In_PRD.D_EFFETUESL " type="id_Date"/>
-        <mapperTableEntries name="C_DECADM1" expression="/*Relational.ISNULL(Ln_In_PRD.C_TYPEPROD)||&quot;&quot;.equals(Ln_In_PRD.C_TYPEPROD)?&quot;&quot;:Ln_In_REF_CORPROD.ADM1  */Ln_In_PRD.C_DECADM1 " type="id_String"/>
-        <mapperTableEntries name="C_DECADM2" expression="/*Relational.ISNULL(Ln_In_PRD.C_TYPEPROD)||&quot;&quot;.equals(Ln_In_PRD.C_TYPEPROD)?&quot;&quot;:Ln_In_REF_CORPROD.ADM2 */&#xD;&#xA;Ln_In_PRD.C_DECADM2 " type="id_String"/>
-        <mapperTableEntries name="C_DECADM3" expression="/*Relational.ISNULL(Ln_In_PRD.C_TYPEPROD)||&quot;&quot;.equals(Ln_In_PRD.C_TYPEPROD)?&quot;&quot;:Ln_In_REF_CORPROD.ADM3 */&#xD;&#xA;Ln_In_PRD.C_DECADM3 " type="id_String"/>
+        <mapperTableEntries name="C_DECADM1" expression="Ln_In_PRD.C_DECADM1 " type="id_String"/>
+        <mapperTableEntries name="C_DECADM2" expression="Ln_In_PRD.C_DECADM2 " type="id_String"/>
+        <mapperTableEntries name="C_DECADM3" expression="Ln_In_PRD.C_DECADM3 " type="id_String"/>
         <mapperTableEntries name="C_DECADM4" expression="Relational.ISNULL(Ln_In_PRD.D_OFFRE)|| TalendDate.compareDate(TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, &quot;2017-01-01&quot;), Ln_In_PRD.D_OFFRE, &quot;yyyy-MM-dd&quot;) >= 1? ((String)globalMap.get(&quot;CODCIL&quot;)).substring(0, 2)+&quot;N&quot; : ((String)globalMap.get(&quot;CODCIL&quot;)).substring(0, 2)+&quot;O&quot; " type="id_String"/>
         <mapperTableEntries name="C_CTDOSS" expression="Relational.ISNULL(Ln_In_PRD.C_TYPEPROD)||&quot;&quot;.equals(Ln_In_PRD.C_TYPEPROD)?&quot;VIDE&quot;:&#xD;&#xA;Relational.ISNULL((String)globalMap.get(&quot;TYPEPROD_&quot;+Ln_In_PRD.C_TYPEPROD))||&quot;&quot;.equals((String)globalMap.get(&quot;TYPEPROD_&quot;+Ln_In_PRD.C_TYPEPROD))?&quot;VIDE2&quot;:((String)globalMap.get(&quot;TYPEPROD_&quot;+Ln_In_PRD.C_TYPEPROD)) " type="id_String"/>
         <mapperTableEntries name="C_MODINV" expression="" type="id_String" nullable="true"/>
@@ -906,7 +1140,7 @@
         <mapperTableEntries name="D_DATCRE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C_UTICRE" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_REF_CORPROD" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_REF_CORPROD" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="C_OPESCE" expression="Ln_In_PRD.C_TYPEPROD " type="id_String" operator="="/>
         <mapperTableEntries name="L_OPESCE" type="id_String" nullable="true"/>
         <mapperTableEntries name="C_COMPTE" type="id_String" nullable="true"/>
@@ -927,7 +1161,7 @@
         <mapperTableEntries name="c_prefixe" type="id_String" nullable="true"/>
         <mapperTableEntries name="C_CATEGORIE" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_CORRESPONDANCE" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_CORRESPONDANCE" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="C_CODECORR" type="id_String"/>
         <mapperTableEntries name="C_VALCIBLE" expression="Ln_In_REF_CORPROD.FONDS " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="C_VALSOURCE" expression="Ln_In_PRD.C_NATFDS " type="id_String" nullable="true" operator="="/>
@@ -1719,7 +1953,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
@@ -1851,13 +2085,13 @@
       </column>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="vI_DOS" expression="Numeric.sequence(&quot;I_DOS&quot;, ((Integer)globalMap.get(&quot;I_DOSSIER_CRIS&quot;)), 1)" type="id_Integer"/>
+        <mapperTableEntries name="vI_DOS" expression="Numeric.sequence(&quot;I_DOS3&quot;, ((Integer)globalMap.get(&quot;I_DOSSIER_CRIS&quot;)), 1)" type="id_Integer"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="Ln_In_DOSSIER">
         <mapperTableEntries name="C_REFDOS" expression="Ln_In_DOSSIER1.C_REFDOS " type="id_String"/>
-        <mapperTableEntries name="I_DOS" expression="Ln_In_DOSSIER1.I_DOSSIER_CRIS " type="id_BigDecimal"/>
+        <mapperTableEntries name="I_DOS" expression="new BigDecimal(Var.vI_DOS) " type="id_BigDecimal"/>
         <mapperTableEntries name="D_DATMAJ" expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, ((String)globalMap.get(&quot;REP_DATE&quot;)))" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C_UTIMAJ" expression="((String)globalMap.get(&quot;REP_USER&quot;)) " type="id_String" nullable="true"/>
         <mapperTableEntries name="D_DATCRE" expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, ((String)globalMap.get(&quot;REP_DATE&quot;)))" type="id_Date" nullable="true"/>
@@ -1865,7 +2099,78 @@
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="Ln_In_DOSSIER1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="C_REFDOS" type="id_String"/>
+        <mapperTableEntries name="C_REFEXTRA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFANCIEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_ADROP1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_ADROP2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_ADROP3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CODPOSOP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_VILLEOP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_INSEEOP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_PAYSOP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_ZONEGEOOP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="N_COUTOPE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="D_ENTREE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="D_EFFETBAIL" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="D_SORTIEPRV" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="N_LOYER" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_CHARGE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_LOYERPARKING" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="C_TYPLGT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="N_SURFACE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_SURFACEANNEXE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="C_NBPIECE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_TYPPARC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_TYPCLI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_LIBOBJET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="N_DUREEBAIL" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="L_REDACTEUR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_GESTIONNAIRE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_PRIMO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_MOBI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CPDEPART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_ZONEGEODEP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_MOBIOPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_DESTLOG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="D_SIGNPREV" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C_AGEOPE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="D_MUTATION" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="B_SORTANTHLM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_ACQUEREURHLM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_HANDICAPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_JEUNE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_TYPBENEFUESL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CARACTOPEUESL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_EVTPERSO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="D_EVTPERSO" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C_PRTSECU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="D_PRTSECU" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="N_DURSECU" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_BAISSREV" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_AUGCHA" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="B_COMMSURDENT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_INSEEDEPART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CODPAYDEP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_LIBCOMDEP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="N_DISTANCE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_MTVALVENAL" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_MTCRD" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="N_MTRELBANC" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="C_NATTRAV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_TYPSAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_PSLA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="N_TXEFFORT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="C_NATLOGMJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_STAOCCAPR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_STAOCCAVT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_TYPOLOG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_MEUBLE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_FSL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_CONFID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L_COM" type="id_String" nullable="true"/>
         <mapperTableEntries name="I_DOSSIER_CRIS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="C_ORIGDOS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_CATLOG" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -2160,7 +2465,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
@@ -2169,7 +2474,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT C_REFDOS,&#xD;&#xA;&#x9;&#x9;C_REFPROD,&#xD;&#xA;&#x9;&#x9;N_ECH,&#xD;&#xA;&#x9;&#x9;N_MNTECH,&#xD;&#xA;&#x9;&#x9;N_ASS1,&#xD;&#xA;&#x9;&#x9;N_ASS2&#xD;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_LIGNETA&#xD;&#xA;WHERE N_ECH = '1' or  N_ECH = '2' &#xD;&#xA;AND  EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_LIGNETA.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;order by N_ECH &#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT C_REFDOS,&#xD;&#xA;&#x9;&#x9;C_REFPROD,&#xD;&#xA;&#x9;&#x9;N_ECH,&#xD;&#xA;&#x9;&#x9;N_MNTECH,&#xD;&#xA;&#x9;&#x9;N_ASS1,&#xD;&#xA;&#x9;&#x9;N_ASS2&#xD;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_LIGNETA&#xD;&#xA;WHERE N_ECH = '1' or  N_ECH = '2' &#xD;&#xA;AND  EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_LIGNETA.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&#xD;&#xA;order by N_ECH &#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2268,50 +2573,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_DOSSIER&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DOSSIER.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DOSSIER.I_DOSSIER_CRIS&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_DOSSIER&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_DOSSIER.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOSSIER_CRIS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlInput_2">
-      <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="18" name="I_DOSSIER_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_11" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -2320,7 +2581,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
@@ -2329,7 +2590,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_TA.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_TA.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_TA.C_NUMTA,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_TA.N_TAUX&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.SAS_TA&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_TA.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA.C_NUMTA,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA.N_TAUX&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_TA.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#x9;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2361,6 +2622,407 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="18" name="N_TAUX" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gSgOMXLBEeezorU47F1TZQ - SAS_DOSSIER" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_DOSSIER&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_REFDOS,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_REFEXTRA,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_REFANCIEN,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_ADROP1,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_ADROP2,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_ADROP3,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_CODPOSOP,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_VILLEOP,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_INSEEOP,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_PAYSOP,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_ZONEGEOOP,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_COUTOPE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.D_ENTREE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.D_EFFETBAIL,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.D_SORTIEPRV,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_LOYER,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_CHARGE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_LOYERPARKING,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_TYPLGT,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_SURFACE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_SURFACEANNEXE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_NBPIECE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_TYPPARC,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_TYPCLI,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_LIBOBJET,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_DUREEBAIL,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_REDACTEUR,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_GESTIONNAIRE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_PRIMO,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_MOBI,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_CPDEPART,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_ZONEGEODEP,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_MOBIOPE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_DESTLOG,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.D_SIGNPREV,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_AGEOPE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.D_MUTATION,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_SORTANTHLM,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_ACQUEREURHLM,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_HANDICAPE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_JEUNE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_TYPBENEFUESL,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_CARACTOPEUESL,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_EVTPERSO,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.D_EVTPERSO,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_PRTSECU,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.D_PRTSECU,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_DURSECU,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_BAISSREV,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_AUGCHA,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_COMMSURDENT,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_INSEEDEPART,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_CODPAYDEP,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_LIBCOMDEP,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_DISTANCE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_MTVALVENAL,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_MTCRD,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_MTRELBANC,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_NATTRAV,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_TYPSAL,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_PSLA,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.N_TXEFFORT,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_NATLOGMJ,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_STAOCCAPR,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_STAOCCAVT,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_TYPOLOG,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_MEUBLE,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_FSL,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.B_CONFID,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.L_COM,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.I_DOSSIER_CRIS,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_ORIGDOS,&#xD;&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER.C_CATLOG&quot;&#xD;&#xA;+&quot;&#xD;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_DOSSIER&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_DOSSIER.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFEXTRA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFANCIEN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_ADROP1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_ADROP2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_ADROP3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CODPOSOP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_VILLEOP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_INSEEOP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_PAYSOP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_ZONEGEOOP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_COUTOPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_ENTREE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_EFFETBAIL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_SORTIEPRV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_LOYER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_CHARGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_LOYERPARKING"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPLGT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_SURFACE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_SURFACEANNEXE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_NBPIECE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPPARC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPCLI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_LIBOBJET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_DUREEBAIL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_REDACTEUR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_GESTIONNAIRE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_PRIMO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_MOBI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CPDEPART"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_ZONEGEODEP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_MOBIOPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_DESTLOG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_SIGNPREV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_AGEOPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_MUTATION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_SORTANTHLM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_ACQUEREURHLM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_HANDICAPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_JEUNE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPBENEFUESL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CARACTOPEUESL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_EVTPERSO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_EVTPERSO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_PRTSECU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_PRTSECU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_DURSECU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_BAISSREV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_AUGCHA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_COMMSURDENT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_INSEEDEPART"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CODPAYDEP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_LIBCOMDEP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_DISTANCE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_MTVALVENAL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_MTCRD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_MTRELBANC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_NATTRAV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPSAL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_PSLA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_TXEFFORT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_NATLOGMJ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STAOCCAPR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STAOCCAVT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_TYPOLOG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_MEUBLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_FSL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_CONFID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L_COM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOSSIER_CRIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_ORIGDOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CATLOG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SAS_DOSSIER" name="tMSSqlInput_2">
+      <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_REFEXTRA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_REFANCIEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_ADROP1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_ADROP2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_ADROP3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_CODPOSOP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_VILLEOP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_INSEEOP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_PAYSOP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_ZONEGEOOP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_COUTOPE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_ENTREE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_EFFETBAIL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_SORTIEPRV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_LOYER" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_CHARGE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_LOYERPARKING" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_TYPLGT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_SURFACE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_SURFACEANNEXE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_NBPIECE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_TYPPARC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_TYPCLI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_LIBOBJET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_DUREEBAIL" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_REDACTEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_GESTIONNAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_PRIMO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_MOBI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_CPDEPART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_ZONEGEODEP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_MOBIOPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_DESTLOG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_SIGNPREV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="C_AGEOPE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_MUTATION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_SORTANTHLM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_ACQUEREURHLM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_HANDICAPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_JEUNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_TYPBENEFUESL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_CARACTOPEUESL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_EVTPERSO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_EVTPERSO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_PRTSECU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_PRTSECU" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_DURSECU" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_BAISSREV" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_AUGCHA" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_COMMSURDENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_INSEEDEPART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_CODPAYDEP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_LIBCOMDEP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_DISTANCE" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_MTVALVENAL" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_MTCRD" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_MTRELBANC" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_NATTRAV" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_TYPSAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_PSLA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="N_TXEFFORT" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_NATLOGMJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_STAOCCAPR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_STAOCCAVT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="C_TYPOLOG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_MEUBLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_FSL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_CONFID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8000" name="L_COM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="I_DOSSIER_CRIS" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="C_ORIGDOS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="C_CATLOG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -2613,7 +3275,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
@@ -2874,7 +3536,7 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
@@ -2883,7 +3545,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_PK,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Categorie,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Key,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Value,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Desc,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_DateCreat,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_DateModif&#xA;FROM&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX&#xD;&#xA;WHERE &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.P_Contextes_CTX.CTX_Categorie IN (&quot; +&quot;'&quot;+ context.V_LIST_CATEGORIES +&quot;'&quot;+ &quot;)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_PK,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Categorie,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Key,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Value,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Desc,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_DateCreat,&#xA;&#x9;&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_DateModif&#xA;FROM&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX&#xD;&#xA;WHERE &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.P_Contextes_CTX.CTX_Categorie IN (&quot; +&quot;'&quot;+ context.V_LIST_CATEGORIES +&quot;'&quot;+ &quot;)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -3031,13 +3693,11 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
@@ -3138,12 +3798,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
@@ -3153,7 +3811,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.CRISTAL_ERREUR &#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.CRISTAL_ERREUR &#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -3178,12 +3836,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gSgOMXLBEeezorU47F1TZQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema_ODS"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
@@ -3193,7 +3849,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.CRISTAL_DONNEES_FILTREES&#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.CRISTAL_DONNEES_FILTREES&#xD;&#xA;    where NOM_JOB = '&quot;+jobName+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -3216,7 +3872,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;SAS_DOSSIER_ACTIF&quot;,&quot;select * from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.SAS_DOSSIER_ACTIF  where ( b_evt='T' or b_solde='T' or b_engage='T' or b_plan='T' or b_solde='T' )&quot;); "/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;SAS_DOSSIER_ACTIF&quot;,&quot;select * from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.SAS_DOSSIER_ACTIF  where ( b_evt='T' or b_solde='T' or b_engage='T' or b_plan='T' or b_solde='T' )&quot;); "/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_8"/>
@@ -3655,6 +4311,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_CORRESPONDANCE" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="Ln_In_TA" lineStyle="8" metaname="tMSSqlInput_11" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_11" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_TA" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="Ln_In_DOSSIER1" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="-2" source="tMSSqlInput_2" target="tMap_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="C_REFDOS"/>
@@ -3667,10 +4327,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_DOSSIER1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Ln_In_TA" lineStyle="8" metaname="tMSSqlInput_11" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_11" target="tMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_TA" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tJavaRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
@@ -3678,11 +4334,11 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tSetGlobalVar_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk19" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlBulkExec_1" target="tJava_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk21" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlBulkExec_1" target="tMSSqlBulkExec_2">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlBulkExec_1" target="tMSSqlBulkExec_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk20" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlBulkExec_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk21" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFixedFlowInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
@@ -3849,7 +4505,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -3890,7 +4546,7 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>

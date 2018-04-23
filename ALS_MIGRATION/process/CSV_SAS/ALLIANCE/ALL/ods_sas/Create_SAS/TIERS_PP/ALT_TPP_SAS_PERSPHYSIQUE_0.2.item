@@ -2036,7 +2036,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Tr_RG_All"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata comment="" connector="FLOW" label="SAS_PERSPHYSIQUE" name="Ln_Out_RG_All">
+    <metadata comment="" label="SAS_PERSPHYSIQUE" name="Ln_Out_RG_All">
       <column comment="" key="true" length="50" name="C_REFPP" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -2200,7 +2200,7 @@
       <column comment="" key="false" length="-1" name="var9" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="Relational.ISNULL(Ln_Out_Inner_7.todpp_codpos) || &quot;&quot;.equals(Ln_Out_Inner_7.todpp_codpos) ? Ln_Out_Inner_7.mgdep_cod : &#xD;&#xA;Ln_Out_Inner_7.todpp_codpos " type="id_String"/>
         <mapperTableEntries name="var3" expression="(Relational.ISNULL(Ln_Out_Inner_7.mgadr_numvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_numvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_numvoi ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgadr_comvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_comvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_comvoi ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgtvo_cod)||&quot;&quot;.equals(Ln_Out_Inner_7.mgtvo_cod)       ? &quot;&quot; : Ln_Out_Inner_7.mgtvo_cod    ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgadr_nomvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_nomvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_nomvoi ) " type="id_String"/>
@@ -2212,7 +2212,7 @@
         <mapperTableEntries name="var9" expression="Relational.ISNULL(Ln_Out_Inner_7.todpp_datnai) || &quot;&quot;.equals(Ln_Out_Inner_7.todpp_datnai) ? null : Integer.parseInt(Ln_Out_Inner_7.todpp_datnai.substring(0,4)) &lt; 1753 ? TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, &quot;1753&quot;+Ln_Out_Inner_7.todpp_datnai.substring(4, Ln_Out_Inner_7.todpp_datnai.length())) : TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, Ln_Out_Inner_7.todpp_datnai) " type="id_Date"/>
         <mapperTableEntries name="var2" expression="Relational.ISNULL(Ln_Out_Inner_7.torsm_dtd) || &quot;&quot;.equals(Ln_Out_Inner_7.torsm_dtd) ? null : Integer.parseInt(Ln_Out_Inner_7.torsm_dtd.substring(0,4)) &lt; 1753 ? TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, &quot;1753&quot;+Ln_Out_Inner_7.torsm_dtd.substring(4, Ln_Out_Inner_7.torsm_dtd.length())) : TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, Ln_Out_Inner_7.torsm_dtd) " type="id_Date"/>
         <mapperTableEntries name="var10" expression="Relational.ISNULL(Ln_Out_Inner_7.totad_mesatl) || &quot;&quot;.equals(Ln_Out_Inner_7.totad_mesatl) ? &quot;&quot; : (Character.isDigit(Ln_Out_Inner_7.totad_mesatl.charAt(0) )  ? Ln_Out_Inner_7.totad_mesatl : &quot;&quot;) " type="id_String"/>
-        <mapperTableEntries name="var11" expression="Relational.ISNULL(Ln_Out_Inner_7.caend_tem) || &quot;&quot;.equals(Ln_Out_Inner_7.caend_tem) ? &quot;&quot; : (&quot;T&quot;.equals(Ln_Out_Inner_7.caend_tem) ? &quot;O&quot; : &quot;N&quot;) " type="id_String"/>
+        <mapperTableEntries name="var11" expression="Relational.ISNULL(Ln_Out_Inner_7.caend_tem) || &quot;&quot;.equals(Ln_Out_Inner_7.caend_tem) ? &quot;0&quot; : (&quot;T&quot;.equals(Ln_Out_Inner_7.caend_tem) ? &quot;1&quot; : &quot;0&quot;) " type="id_String"/>
         <mapperTableEntries name="var12" type="id_String"/>
         <mapperTableEntries name="var13" type="id_String"/>
       </varTables>

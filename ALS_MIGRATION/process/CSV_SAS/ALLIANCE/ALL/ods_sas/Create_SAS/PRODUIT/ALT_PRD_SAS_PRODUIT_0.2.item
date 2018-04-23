@@ -555,7 +555,7 @@
       <column comment="" key="false" length="7" name="mgpro_cod" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="pecgp_durtab" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata comment="" connector="FLOW" label="SAS_DONNEES_FILTREES" name="Ln_Fil_Inner_1">
+    <metadata comment="" label="SAS_DONNEES_FILTREES" name="Ln_Fil_Inner_1">
       <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -601,7 +601,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_Inner_1">
         <mapperTableEntries name="acdos_num" expression="Ln_In_FI_ALT_ACDOS.acdos_num " type="id_String" nullable="true"/>
@@ -1628,7 +1628,7 @@
       <column comment="" key="false" length="7" name="acava_cod" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="pecgp_durtab" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata comment="" label="SAS_DONNEES_FILTREES" name="Ln_Fil_Inner_9">
+    <metadata comment="" connector="FLOW" label="SAS_DONNEES_FILTREES" name="Ln_Fil_Inner_9">
       <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1674,7 +1674,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_Inner_91">
         <mapperTableEntries name="acdos_num" expression="Ln_Out_Inner_8.acdos_num " type="id_String" nullable="true"/>
@@ -2351,7 +2351,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var0" expression="&quot;&quot;+Numeric.sequence(Ln_Out_Inner_10.acdos_num,1,1) " type="id_String"/>
         <mapperTableEntries name="var1" expression="(StringHandling.LEN(Var.var0)==1)?(&quot;0&quot; + Var.var0):(Var.var0) " type="id_String"/>
@@ -3218,7 +3218,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_PELIG.pepre_num,&#xA;&#x9;&#x9;cast(cast(\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_PELIG.pelig_datech as date) as varchar)&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;\&quot;.ODS_PELIG&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT&#x9;a.pepre_num,&#xD;&#xA;&#x9;&#x9;cast(cast(a.pelig_datech as date) as varchar)&#xD;&#xA;&#xD;&#xA;FROM&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.ODS_PELIG a&#xD;&#xA;WHERE EXISTS ( select * from &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.ODS_PEPRE b where a.pepre_num = b.pepre_num)&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -3353,7 +3353,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#x9;&#xD;&#xA;&#x9;&#x9;acdos_num,&#xD;&#xA;&#x9;&#x9;sum(isnull(cast (acdfo_mnt as decimal(18,8)),0))as acdfo_mnt,&#xD;&#xA;&#x9;&#x9;count(*) as acdfo_count,&#xD;&#xA;&#x9;&#x9;cast(min(acdfo_dat) as varchar) as acdfo_dat,&#xD;&#xA;&#x9;&#x9;max(mgmpa_cod) as mgmpa_cod&#xD;&#xA;FROM&#x9;SAS_ALI.ODS_ACDFO&#xD;&#xA;GROUP BY acdos_num&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#x9;&#xD;&#xA;&#x9;&#x9;acdos_num,&#xD;&#xA;&#x9;&#x9;sum(isnull(cast (acdfo_mnt as decimal(18,8)),0))as acdfo_mnt,&#xD;&#xA;&#x9;&#x9;count(*) as acdfo_count,&#xD;&#xA;&#x9;&#x9;cast(min(acdfo_dat) as varchar) as acdfo_dat,&#xD;&#xA;&#x9;&#x9;max(mgmpa_cod) as mgmpa_cod&#xD;&#xA;FROM&#x9;ODS.ODS_ACDFO&#xD;&#xA;GROUP BY acdos_num&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -3443,7 +3443,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_13" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value="&quot;context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP&quot;"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value="context.V_REP_RACINE_BIS+context.V_SS_REP_ALT+context.V_REP_TMP"/>
     <elementParameter field="IMAGE" name="PREVIEW" value="_cnUbUPXmEeeIQdWa2bcjSg-tMap_13-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
@@ -6519,6 +6519,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_2" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="COMMIT"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlCommit_2"/>
   </node>
