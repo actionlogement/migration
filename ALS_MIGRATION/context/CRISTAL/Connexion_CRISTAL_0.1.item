@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GWTrU0e_Eeiie_nSVIAy9Q" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_GWTrVEe_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Database" prompt="CRI_SQL_Database?" promptNeeded="false" type="id_String" value="CRISTAL_ALI"/>
-  <contextParameter xmi:id="_GWTrVUe_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Server" prompt="CRI_SQL_Server?" promptNeeded="false" type="id_String" value="STOL-SQLW-PR001"/>
-  <contextParameter xmi:id="_GWTrVke_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_AdditionalParams" prompt="CRI_SQL_AdditionalParams?" promptNeeded="false" type="id_String" value="INSTANCE=DEVE01"/>
-  <contextParameter xmi:id="_GWTrV0e_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Login" prompt="CRI_SQL_Login?" promptNeeded="false" type="id_String" value="talend_dev1"/>
-  <contextParameter xmi:id="_GWTrWEe_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Port" prompt="CRI_SQL_Port?" promptNeeded="false" type="id_String" value="1433"/>
-  <contextParameter xmi:id="_GWTrWUe_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Schema_REC" prompt="CRI_SQL_Schema_REC?" promptNeeded="false" type="id_String" value="REC"/>
-  <contextParameter xmi:id="_GWTrWke_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Password" prompt="CRI_SQL_Password?" promptNeeded="false" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
-  <contextParameter xmi:id="_GWTrW0e_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Schema_LOC" prompt="CRI_SQL_Schema_LOC?" promptNeeded="false" type="id_String" value="LOCATIF"/>
-  <contextParameter xmi:id="_GWTrXEe_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Schema_DOS" prompt="CRI_SQL_Schema_DOS?" promptNeeded="false" type="id_String" value="DOS"/>
-  <contextParameter xmi:id="_GWTrXUe_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Schema_GRC" prompt="CRI_SQL_Schema_GRC?" promptNeeded="false" type="id_String" value="GRC"/>
-  <contextParameter xmi:id="_GWTrXke_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Schema_TIERS" prompt="CRI_SQL_Schema_TIERS?" promptNeeded="false" type="id_String" value="TIERS"/>
-  <contextParameter xmi:id="_GWTrX0e_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Schema_OGR" prompt="CRI_SQL_Schema_OGR?" promptNeeded="false" type="id_String" value="OGR"/>
-  <contextParameter xmi:id="_GWTrYEe_Eeiie_nSVIAy9Q" comment="" name="CRI_SQL_Schema_MDP" prompt="CRI_SQL_Schema_MDP?" promptNeeded="false" type="id_String" value="MDP"/>
-  <contextParameter xmi:id="_GWTrYUe_Eeiie_nSVIAy9Q" comment="" name="V_FIC_CONTEXT_INIT_CRISTAL" prompt="V_FIC_CONTEXT_INIT_CRISTAL?" promptNeeded="false" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL.txt"/>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_HqfrgEfJEeiC0Y44SjqJ3Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_HqfrgUfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Database" prompt="CRI_SQL_Database?" promptNeeded="false" type="id_String" value="CRISTAL_ALI"/>
+  <contextParameter xmi:id="_HqfrgkfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Server" prompt="CRI_SQL_Server?" promptNeeded="false" type="id_String" value="STOL-SQLW-PR001"/>
+  <contextParameter xmi:id="_Hqfrg0fJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_AdditionalParams" prompt="CRI_SQL_AdditionalParams?" promptNeeded="false" type="id_String" value="INSTANCE=DEVE01"/>
+  <contextParameter xmi:id="_HqfrhEfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Login" prompt="CRI_SQL_Login?" promptNeeded="false" type="id_String" value="talend_dev1"/>
+  <contextParameter xmi:id="_HqfrhUfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Port" prompt="CRI_SQL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_HqfrhkfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Schema_REC" prompt="CRI_SQL_Schema_REC?" promptNeeded="false" type="id_String" value="REC"/>
+  <contextParameter xmi:id="_Hqfrh0fJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Password" prompt="CRI_SQL_Password?" promptNeeded="false" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
+  <contextParameter xmi:id="_HqfriEfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Schema_LOC" prompt="CRI_SQL_Schema_LOC?" promptNeeded="false" type="id_String" value="LOCATIF"/>
+  <contextParameter xmi:id="_HqfriUfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Schema_DOS" prompt="CRI_SQL_Schema_DOS?" promptNeeded="false" type="id_String" value="DOS"/>
+  <contextParameter xmi:id="_HqfrikfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Schema_GRC" prompt="CRI_SQL_Schema_GRC?" promptNeeded="false" type="id_String" value="GRC"/>
+  <contextParameter xmi:id="_Hqfri0fJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Schema_TIERS" prompt="CRI_SQL_Schema_TIERS?" promptNeeded="false" type="id_String" value="TIERS"/>
+  <contextParameter xmi:id="_HqfrjEfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Schema_OGR" prompt="CRI_SQL_Schema_OGR?" promptNeeded="false" type="id_String" value="OGR"/>
+  <contextParameter xmi:id="_HqfrjUfJEeiC0Y44SjqJ3Q" comment="" name="CRI_SQL_Schema_MDP" prompt="CRI_SQL_Schema_MDP?" promptNeeded="false" type="id_String" value="MDP"/>
+  <contextParameter xmi:id="_HqfrjkfJEeiC0Y44SjqJ3Q" comment="" name="V_FIC_CONTEXT_INIT_CRISTAL" prompt="V_FIC_CONTEXT_INIT_CRISTAL?" promptNeeded="false" type="id_String" value="C:\Cristal\Contextes\INIT_CTX_CRISTAL.txt"/>
 </talendfile:ContextType>

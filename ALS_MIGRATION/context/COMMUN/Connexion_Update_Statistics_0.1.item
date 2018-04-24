@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GWJ6ZUe_Eeiie_nSVIAy9Q" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_GWJ6Zke_Eeiie_nSVIAy9Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Port" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Port?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_GWJ6Z0e_Eeiie_nSVIAy9Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Server" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Server?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_GWJ6aEe_Eeiie_nSVIAy9Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Login" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Login?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_GWJ6aUe_Eeiie_nSVIAy9Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Database" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Database?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_GWJ6ake_Eeiie_nSVIAy9Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_AdditionalParams" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_GWJ6a0e_Eeiie_nSVIAy9Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Password" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Password?" promptNeeded="false" type="id_Password" value=""/>
-  <contextParameter xmi:id="_GWJ6bEe_Eeiie_nSVIAy9Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Schema" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Schema?" promptNeeded="false" type="id_String" value=""/>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_HpcioEfJEeiC0Y44SjqJ3Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_HpcioUfJEeiC0Y44SjqJ3Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Port" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HpciokfJEeiC0Y44SjqJ3Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Server" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Hpcio0fJEeiC0Y44SjqJ3Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Login" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Login?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HpcipEfJEeiC0Y44SjqJ3Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Database" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HpcipUfJEeiC0Y44SjqJ3Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_AdditionalParams" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HpcipkfJEeiC0Y44SjqJ3Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Password" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_Hpcip0fJEeiC0Y44SjqJ3Q" comment="" name="UPDATE_STATISTICS_SQL_CONTEXTE_Schema" prompt="UPDATE_STATISTICS_SQL_CONTEXTE_Schema?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
