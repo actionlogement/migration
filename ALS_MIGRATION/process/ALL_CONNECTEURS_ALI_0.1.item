@@ -157,7 +157,7 @@
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms4096M -Xmx8G " show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1920" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1440" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -323,7 +323,6 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="ALT_ODS_ALL_DOMAINE"/>
@@ -1030,7 +1029,6 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="ALT_SAS_ALL_DOMAINE"/>
@@ -1058,7 +1056,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_7">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFixedFlowInput_1">

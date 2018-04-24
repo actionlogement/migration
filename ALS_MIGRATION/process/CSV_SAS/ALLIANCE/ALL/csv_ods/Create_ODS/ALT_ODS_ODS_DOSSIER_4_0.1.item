@@ -6,6 +6,7 @@
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Login" prompt="CRISTAL_SQL_CONTEXTE_Login?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="talend_dev1"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Password" prompt="CRISTAL_SQL_CONTEXTE_Password?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Port" prompt="CRISTAL_SQL_CONTEXTE_Port?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema" prompt="CRISTAL_SQL_CONTEXTE_Schema?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="SAS_ALI"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_FIL" prompt="CRISTAL_SQL_CONTEXTE_Schema_FIL?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="FIL"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_ODS" prompt="CRISTAL_SQL_CONTEXTE_Schema_ODS?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="ODS"/>
     <contextParameter comment="" name="CRISTAL_SQL_CONTEXTE_Schema_REF" prompt="CRISTAL_SQL_CONTEXTE_Schema_REF?" promptNeeded="false" repositoryContextId="_3OG6kFWyEeeBpLqBktjAUg" type="id_String" value="REF"/>
@@ -133,8 +134,8 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms2048M -Xmx8192M " show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="43" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1707" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1280" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
