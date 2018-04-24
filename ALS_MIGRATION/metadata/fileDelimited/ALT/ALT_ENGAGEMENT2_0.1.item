@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_A3cRgRGeEeirU4h95QQg7g" name="ALT_ENGAGEMENT2" dataPackage="_A3cRghGeEeirU4h95QQg7g" Server="Localhost 127.0.0.1" FilePath="D:/ALIANCE/ALIANCE_ENGAGEMENT2.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_A3cRghGeEeirU4h95QQg7g" name="default" dataManager="_A3cRgRGeEeirU4h95QQg7g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_A3cRgxGeEeirU4h95QQg7g" id="_8PDxIBGdEeirU4h95QQg7g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A3cRhBGeEeirU4h95QQg7g" label="contrat" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A3cRhRGeEeirU4h95QQg7g" label="pret" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A3cRhhGeEeirU4h95QQg7g" label="operation" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A3cRhxGeEeirU4h95QQg7g" label="mt_accorde" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A3cRiBGeEeirU4h95QQg7g" label="mt_debloque" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

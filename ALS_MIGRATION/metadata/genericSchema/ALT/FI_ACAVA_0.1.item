@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_LOwIgXXrEeezorU47F1TZQ" name="repository.metadataGenericSchema" dataPackage="_LOwIgnXrEeezorU47F1TZQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_LOwIgnXrEeezorU47F1TZQ" name="repository.metadataGenericSchema" dataManager="_LOwIgXXrEeezorU47F1TZQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_LOwIg3XrEeezorU47F1TZQ" id="_J77OsHXrEeezorU47F1TZQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LOwIhHXrEeezorU47F1TZQ" name="acava_cod" label="acava_cod" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_LOwIhXXrEeezorU47F1TZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LOwIhnXrEeezorU47F1TZQ" name="acava_lib" label="acava_lib" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_LOwIh3XrEeezorU47F1TZQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

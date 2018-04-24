@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_uebUUPCXEeepo4ZwEjQ-tQ" name="ALT_BIDOS" dataPackage="_uebUUfCXEeepo4ZwEjQ-tQ" Server="Localhost 127.0.0.1" FilePath="D:/ALIANCE/ALIANCE_BIDOS.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;Ñ&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_uebUUfCXEeepo4ZwEjQ-tQ" name="default" dataManager="_uebUUPCXEeepo4ZwEjQ-tQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_uebUUvCXEeepo4ZwEjQ-tQ" id="_VKRvgPCXEeepo4ZwEjQ-tQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUU_CXEeepo4ZwEjQ-tQ" label="bidos_num" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUVPCXEeepo4ZwEjQ-tQ" label="u_version" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUVfCXEeepo4ZwEjQ-tQ" label="totie_cod" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUVvCXEeepo4ZwEjQ-tQ" label="totie_tpm" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUV_CXEeepo4ZwEjQ-tQ" label="bidos_dop" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUWPCXEeepo4ZwEjQ-tQ" label="bistk_cod" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUWfCXEeepo4ZwEjQ-tQ" label="biact_cod" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUWvCXEeepo4ZwEjQ-tQ" label="biodo_prg" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUW_CXEeepo4ZwEjQ-tQ" label="bidos_obj" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUXPCXEeepo4ZwEjQ-tQ" label="bidos_dat" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUXfCXEeepo4ZwEjQ-tQ" label="bidos_eta" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUXvCXEeepo4ZwEjQ-tQ" label="bidos_det" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUX_CXEeepo4ZwEjQ-tQ" label="bidos_ref" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUYPCXEeepo4ZwEjQ-tQ" label="bidos_arg" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uebUYfCXEeepo4ZwEjQ-tQ" label="bidos_obs" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

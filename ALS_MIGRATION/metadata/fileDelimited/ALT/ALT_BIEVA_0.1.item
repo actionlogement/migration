@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="__-seIeAlEeeXvu_CwIVz9g" name="ALT_BIEVA" dataPackage="__-seIuAlEeeXvu_CwIVz9g" Server="Localhost 127.0.0.1" FilePath="//Vm-gfid01/partage_gfi/FichierCSV/ALIANCE/2017_08_08/ALIANCE_BIEVA_20170807162955.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;Ñ&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="__-seIuAlEeeXvu_CwIVz9g" name="default" dataManager="__-seIeAlEeeXvu_CwIVz9g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__-seI-AlEeeXvu_CwIVz9g" id="_R4jtkOAkEeeXvu_CwIVz9g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seJOAlEeeXvu_CwIVz9g" label="bidos_num" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seJeAlEeeXvu_CwIVz9g" label="bipdo_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seJuAlEeeXvu_CwIVz9g" label="bieva_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seJ-AlEeeXvu_CwIVz9g" label="u_version" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seKOAlEeeXvu_CwIVz9g" label="mguti_cod" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seKeAlEeeXvu_CwIVz9g" label="bitev_cod" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seKuAlEeeXvu_CwIVz9g" label="biodo_prg" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seK-AlEeeXvu_CwIVz9g" label="bieva_obj" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seLOAlEeeXvu_CwIVz9g" label="bieva_dat" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seLeAlEeeXvu_CwIVz9g" label="bieva_eta" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seLuAlEeeXvu_CwIVz9g" label="bieva_dld" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seL-AlEeeXvu_CwIVz9g" label="bieva_utps" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seMOAlEeeXvu_CwIVz9g" label="bieva_cnd" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seMeAlEeeXvu_CwIVz9g" label="bieva_dtp" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seMuAlEeeXvu_CwIVz9g" label="bieva_dtr" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seM-AlEeeXvu_CwIVz9g" label="bieva_res" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seNOAlEeeXvu_CwIVz9g" label="bieva_arg" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__-seNeAlEeeXvu_CwIVz9g" label="bieva_obs" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

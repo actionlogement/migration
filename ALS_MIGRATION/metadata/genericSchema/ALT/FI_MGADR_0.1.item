@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_r3yLElzPEeemX5EPzo0lzA" comment="connectionComment" label="connectionLabel" dataPackage="_r3yLE1zPEeemX5EPzo0lzA"/>
+  <TalendMetadata:GenericPackage xmi:id="_r3yLE1zPEeemX5EPzo0lzA" dataManager="_r3yLElzPEeemX5EPzo0lzA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_r3yLFFzPEeemX5EPzo0lzA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLFVzPEeemX5EPzo0lzA" name="mgadr_num" id="82510" label="mgadr_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLFlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLF1zPEeemX5EPzo0lzA" name="mgadr_numvoi" id="82511" label="mgadr_numvoi" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLGFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLGVzPEeemX5EPzo0lzA" name="mgadr_comvoi" id="82512" label="mgadr_comvoi" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLGlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLG1zPEeemX5EPzo0lzA" name="mgtvo_cod" id="82513" label="mgtvo_cod" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLHFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLHVzPEeemX5EPzo0lzA" name="mgadr_nomvoi" id="82514" label="mgadr_nomvoi" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLHlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLH1zPEeemX5EPzo0lzA" name="mgadr_libco1" id="82515" label="mgadr_libco1" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLIFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLIVzPEeemX5EPzo0lzA" name="mgadr_libco2" id="82516" label="mgadr_libco2" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLIlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLI1zPEeemX5EPzo0lzA" name="mgadr_libco3" id="82517" label="mgadr_libco3" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLJFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLJVzPEeemX5EPzo0lzA" name="mgadr_codpos" id="82518" label="mgadr_codpos" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLJlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLJ1zPEeemX5EPzo0lzA" name="mgcom_cod" id="82519" label="mgcom_cod" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLKFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLKVzPEeemX5EPzo0lzA" name="mgadr_libcom" id="82520" label="mgadr_libcom" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLKlzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLK1zPEeemX5EPzo0lzA" name="mgadr_libced" id="82521" label="mgadr_libced" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLLFzPEeemX5EPzo0lzA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_r3yLLVzPEeemX5EPzo0lzA" name="mgnat_cod" id="82522" label="mgnat_cod" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_r3yLLlzPEeemX5EPzo0lzA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

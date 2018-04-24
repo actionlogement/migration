@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_QD5cIlzJEeeGxrV1EfHTUw" comment="connectionComment" label="connectionLabel" dataPackage="_QD5cI1zJEeeGxrV1EfHTUw"/>
+  <TalendMetadata:GenericPackage xmi:id="_QD5cI1zJEeeGxrV1EfHTUw" dataManager="_QD5cIlzJEeeGxrV1EfHTUw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QD5cJFzJEeeGxrV1EfHTUw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QD5cJVzJEeeGxrV1EfHTUw" name="caecr_num" id="315715" label="caecr_num" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_QD5cJlzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QD5cJ1zJEeeGxrV1EfHTUw" name="calig_mntd" id="315716" label="calig_mntd" length="6" precision="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_QD5cKFzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QD5cKVzJEeeGxrV1EfHTUw" name="calig_mntc" id="315717" label="calig_mntc" length="5" precision="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_QD5cKlzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rl08AHdvEee1MrVCWbLE3Q" name="caecr_ord" label="caecr_ord" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Rl08AXdvEee1MrVCWbLE3Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rl08AndvEee1MrVCWbLE3Q" name="calig_num" label="calig_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Rl08A3dvEee1MrVCWbLE3Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rl08BHdvEee1MrVCWbLE3Q" name="carub_cod" label="carub_cod" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Rl08BXdvEee1MrVCWbLE3Q"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

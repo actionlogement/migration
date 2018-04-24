@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GWJ6UEe_Eeiie_nSVIAy9Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GWJ6UUe_Eeiie_nSVIAy9Q" comment="Répertoire source des fichiers" name="V_REP_RACINE" prompt="V_REP_RACINE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6Uke_Eeiie_nSVIAy9Q" comment="Sous-répertoire des fichiers GIC" name="V_SS_REP_GIC" prompt="V_SS_REP_GIC?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6U0e_Eeiie_nSVIAy9Q" comment="Encodage du fichier" name="ENCODING" prompt="ENCODING?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6VEe_Eeiie_nSVIAy9Q" comment="Nombre de lignes en entête" name="HEADER" prompt="HEADER?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_GWJ6VUe_Eeiie_nSVIAy9Q" comment="Nombre de lignes en fin de fichier" name="FOOTER" prompt="FOOTER?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_GWJ6Vke_Eeiie_nSVIAy9Q" comment="Séparateur de champs" name="FIELD_SEPARATOR" prompt="FIELD_SEPARATOR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6V0e_Eeiie_nSVIAy9Q" comment="Séparateur de lignes" name="ROW_SEPARATOR" prompt="ROW_SEPARATOR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6WEe_Eeiie_nSVIAy9Q" comment="Entourage du texte" name="ROW_ENTOURAGE" prompt="ROW_ENTOURAGE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6WUe_Eeiie_nSVIAy9Q" comment="Caractère d'échappement" name="ROW_ECHAP" prompt="ROW_ECHAP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6Wke_Eeiie_nSVIAy9Q" comment="Répertoire des fichiers temporaires" name="V_REP_FICH_TMP" prompt="V_REP_FICH_TMP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6W0e_Eeiie_nSVIAy9Q" comment="" name="V_REP_TMP" prompt="V_REP_TMP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6XEe_Eeiie_nSVIAy9Q" comment="" name="V_REP_IN_LOCAL" prompt="V_REP_IN_LOCAL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6XUe_Eeiie_nSVIAy9Q" comment="" name="V_REP_OUT" prompt="V_REP_OUT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6Xke_Eeiie_nSVIAy9Q" comment="" name="V_REP_TR" prompt="V_REP_TR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6X0e_Eeiie_nSVIAy9Q" comment="" name="V_REP_IN_NETWORK" prompt="V_REP_IN_NETWORK?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6YEe_Eeiie_nSVIAy9Q" comment="" name="V_REP_RACINE_BIS" prompt="V_REP_RACINE_BIS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6YUe_Eeiie_nSVIAy9Q" comment="" name="V_SS_REP_ALT" prompt="V_SS_REP_ALT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6Yke_Eeiie_nSVIAy9Q" comment="" name="V_REP_REJ" prompt="V_REP_REJ?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GWJ6Y0e_Eeiie_nSVIAy9Q" comment="" name="V_REP_TEMP" prompt="V_REP_TEMP?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

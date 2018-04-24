@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_XPaAklzJEeeGxrV1EfHTUw" comment="connectionComment" label="connectionLabel" dataPackage="_XPaAk1zJEeeGxrV1EfHTUw"/>
+  <TalendMetadata:GenericPackage xmi:id="_XPaAk1zJEeeGxrV1EfHTUw" dataManager="_XPaAklzJEeeGxrV1EfHTUw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XPaAlFzJEeeGxrV1EfHTUw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XPaAlVzJEeeGxrV1EfHTUw" name="caecr_num" id="315192" label="caecr_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_XPaAllzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XPaAl1zJEeeGxrV1EfHTUw" name="caint_num" id="315193" label="caint_num" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_XPaAmFzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XPaAmVzJEeeGxrV1EfHTUw" name="icpcg_cod" id="315194" label="icpcg_cod" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_XPaAmlzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XPaAm1zJEeeGxrV1EfHTUw" name="catmv_cod" id="315195" label="catmv_cod" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_XPaAnFzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XPaAnVzJEeeGxrV1EfHTUw" name="caecr_datc" id="315196" label="caecr_datc" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_XPaAnlzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XPaAn1zJEeeGxrV1EfHTUw" name="caecr_lib1" id="315197" label="caecr_lib1" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_XPaAoFzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XPaAoVzJEeeGxrV1EfHTUw" name="caecr_lib2" id="315198" label="caecr_lib2" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_XPaAolzJEeeGxrV1EfHTUw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wyQN8HbOEee1MrVCWbLE3Q" name="cardc_cod" label="cardc_cod" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_wyQN8XbOEee1MrVCWbLE3Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sDJk0HduEee1MrVCWbLE3Q" name="caecr_mntd" label="caecr_mntd" length="-1" precision="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_sDJk0XduEee1MrVCWbLE3Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sDJk0nduEee1MrVCWbLE3Q" name="caecr_mntc" label="caecr_mntc" length="-1" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_sDJk03duEee1MrVCWbLE3Q"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
