@@ -933,7 +933,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out9">
         <mapperTableEntries name="C_REFDOS" expression="row13.C_REFDOS " type="id_String" nullable="true"/>
@@ -1320,7 +1320,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out10">
         <mapperTableEntries name="C_REFDOS" expression="row21.C_REFDOS " type="id_String" nullable="true"/>
@@ -1481,7 +1481,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out30">
         <mapperTableEntries name="C_REFDOS" expression="out10.C_REFDOS " type="id_String" nullable="true"/>
@@ -1642,7 +1642,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out31">
         <mapperTableEntries name="C_REFDOS" expression="out30.C_REFDOS " type="id_String" nullable="true"/>
@@ -1803,7 +1803,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out35">
         <mapperTableEntries name="C_REFDOS" expression="out31.C_REFDOS " type="id_String" nullable="true"/>
@@ -1936,7 +1936,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out11">
         <mapperTableEntries name="C_REFDOS" expression="out35.C_REFDOS " type="id_String" nullable="true"/>
@@ -2069,7 +2069,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out12">
         <mapperTableEntries name="C_REFDOS" expression="out11.C_REFDOS " type="id_String" nullable="true"/>
@@ -2376,6 +2376,7 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="copyOfout20" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="C_REFDOS" expression="out12.C_REFDOS " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="C_REFPP2" expression="out12.C_REFPP2 " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="C_ENTREP" expression="out12.C_ENTREP " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="I_RELPROF" type="id_BigDecimal" nullable="true"/>
       </inputTables>
@@ -2396,19 +2397,22 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfout20">
       <column comment="" key="false" length="-1" name="C_REFDOS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="C_REFPP2" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="C_ENTREP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="I_RELPROF" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout20">
         <mapperTableEntries name="C_REFDOS" expression="row26.C_REFDOS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFPP2" expression="row26.C_REFPP2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="C_ENTREP" expression="row26.C_ENTREP " type="id_String" nullable="true"/>
         <mapperTableEntries name="I_RELPROF" expression="new BigDecimal(Numeric.sequence(&quot;I_RELPROF&quot;, ((Integer)globalMap.get(&quot;I_RELPROF_CRIS&quot;)), 1) ) " type="id_BigDecimal" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row26" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="C_REFDOS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFPP2" type="id_String" nullable="true"/>
         <mapperTableEntries name="C_ENTREP" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -2463,7 +2467,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out50">
         <mapperTableEntries name="C_REFDOS" expression="out40.C_REFDOS " type="id_String" nullable="true"/>
@@ -2591,7 +2595,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out13">
         <mapperTableEntries name="C_REFDOS" expression="out50.C_REFDOS " type="id_String" nullable="true"/>
@@ -2756,7 +2760,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out55">
         <mapperTableEntries name="C_REFDOS" expression="out13.C_REFDOS " type="id_String" nullable="true"/>
@@ -2889,7 +2893,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out14">
         <mapperTableEntries name="C_REFDOS" expression="out55.C_REFDOS " type="id_String" nullable="true"/>
@@ -3023,7 +3027,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out15">
         <mapperTableEntries name="C_REFDOS" expression="out14.C_REFDOS " type="id_String" nullable="true"/>
@@ -3259,7 +3263,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out56">
         <mapperTableEntries name="C_REFDOS" expression="out15.C_REFDOS " type="id_String" nullable="true"/>
@@ -3428,7 +3432,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out57">
         <mapperTableEntries name="C_REFDOS" expression="out56.C_REFDOS " type="id_String" nullable="true"/>
@@ -3562,7 +3566,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out16">
         <mapperTableEntries name="C_REFDOS" expression="out57.C_REFDOS " type="id_String" nullable="true"/>
@@ -3701,7 +3705,7 @@
       <column comment="" key="false" length="-1" name="I_PLAN" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout23">
         <mapperTableEntries name="C_REFDOS" expression="row30.C_REFDOS " type="id_String" nullable="true"/>
@@ -3766,7 +3770,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out58">
         <mapperTableEntries name="C_REFDOS" expression="out16.C_REFDOS " type="id_String" nullable="true"/>
@@ -3935,7 +3939,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out59">
         <mapperTableEntries name="C_REFDOS" expression="out58.C_REFDOS " type="id_String" nullable="true"/>
@@ -4069,7 +4073,7 @@
       <column comment="" key="false" length="12" name="I_COO_SUB" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="12" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out25">
         <mapperTableEntries name="C_REFDOS" expression="out59.C_REFDOS " type="id_String" nullable="true"/>
@@ -4274,7 +4278,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out60">
         <mapperTableEntries name="C_REFDOS" expression="out25.C_REFDOS " type="id_String" nullable="true"/>
@@ -4378,7 +4382,7 @@
       <column comment="" key="false" length="-1" name="I_COO" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout24">
         <mapperTableEntries name="C_REFDOS" expression="row33.C_REFDOS " type="id_String" nullable="true"/>
@@ -4444,7 +4448,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out70">
         <mapperTableEntries name="C_REFDOS" expression="out60.C_REFDOS" type="id_String" nullable="true"/>
@@ -4598,7 +4602,7 @@
       <column comment="" key="false" length="-1" name="I_COO" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout24">
         <mapperTableEntries name="C_REFDOS" expression="row1.C_REFDOS " type="id_String" nullable="true"/>
@@ -4855,7 +4859,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct C_REFDOS,C_ENTREP&#xD;&#xA;from SAS_ALI.SAS_REFERENTIEL&#xD;&#xA;where I_RELPROF = 1&#xD;&#xA;order by C_REFDOS,C_ENTREP&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct C_REFDOS,C_REFPP2,C_ENTREP&#xD;&#xA;from SAS_ALI.SAS_REFERENTIEL&#xD;&#xA;where I_RELPROF = 1 and I_TIE = 1&#xD;&#xA;order by C_REFDOS,C_REFPP2,C_ENTREP&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -4867,6 +4871,8 @@
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFPP2"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="C_ENTREP"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
@@ -4874,6 +4880,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlInput_26">
       <column comment="" key="false" length="-1" name="C_REFDOS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="C_REFPP2" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="C_ENTREP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -5768,7 +5775,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_16" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_16" target="tMSSqlBulkExec_2">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_16" offsetLabelX="2" offsetLabelY="-7" source="tMSSqlInput_16" target="tMSSqlBulkExec_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out10" lineStyle="0" metaname="out10" offsetLabelX="0" offsetLabelY="0" source="tMap_20" target="tMap_29">
@@ -6338,6 +6345,9 @@
   <connection connectorName="FLOW" label="copyOfout20" lineStyle="8" metaname="copyOfout20" offsetLabelX="0" offsetLabelY="0" source="tMap_36" target="tMap_35">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="C_ENTREP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_REFPP2"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -7354,6 +7364,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="C_REFPP4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_REFPP2"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>

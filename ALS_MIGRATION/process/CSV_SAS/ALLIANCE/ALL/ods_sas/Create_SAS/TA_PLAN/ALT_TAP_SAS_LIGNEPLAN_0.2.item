@@ -447,7 +447,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/RIAZ/Desktop/workspace_ARI/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -628,7 +628,7 @@
     <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>
@@ -706,7 +706,7 @@
     <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>
@@ -1489,7 +1489,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_Table_2">
         <mapperTableEntries name="C_REFDOS" expression="row6.C_REFDOS " type="id_String"/>
@@ -2835,7 +2835,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_Inner_6">
         <mapperTableEntries name="acdos_num" expression="Ln_Out_Inner_5.acdos_num " type="id_String" nullable="true"/>
@@ -2913,7 +2913,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true">
         <mapperTableEntries name="var1" expression="" type="id_BigDecimal"/>
       </varTables>
@@ -3149,7 +3149,7 @@
     <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>
@@ -3227,7 +3227,7 @@
     <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>
@@ -3305,7 +3305,7 @@
     <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>
@@ -3383,7 +3383,7 @@
     <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>
@@ -4016,7 +4016,7 @@
     <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;OEM&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Sf_In_PIV_ALT_SAS_DONNEES_FILTREES"/>

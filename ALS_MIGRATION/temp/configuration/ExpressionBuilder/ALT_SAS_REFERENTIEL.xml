@@ -1,0 +1,6 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_36=>" expression="new BigDecimal(Numeric.sequence(&quot;I_RELPROF&quot;, ((Integer)globalMap.get(&quot;I_RELPROF_CRIS&quot;)), 1) )">
+  <variables name="row26.C_REFDOS" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.C_REFPP2" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.C_ENTREP" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>

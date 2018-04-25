@@ -1,0 +1,15 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_7=>" expression="&quot;&quot;.equals(Ln_Out_Init_Cpt_1.C_ENTREP_CRIS) || Relational.ISNULL(Ln_Out_Init_Cpt_1.C_ENTREP_CRIS) ? new BigDecimal(&quot;0&quot;) : new BigDecimal(Ln_Out_Init_Cpt_1.C_ENTREP_CRIS)">
+  <variables name="Ln_Out_Init_Cpt_1.I_RELPROF_CRIS" value="null" talendType="id_BigDecimal"/>
+  <variables name="Ln_Out_Init_Cpt_1.I_TIE" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="Ln_Out_Init_Cpt_1.C_REFPP" value="null" talendType="id_String"/>
+  <variables name="Ln_Out_Init_Cpt_1.L_ENTREP" value="null" talendType="id_String" nullable="true"/>
+  <variables name="Ln_Out_Init_Cpt_1.C_ENTREP_CRIS" value="null" talendType="id_String" nullable="true"/>
+  <variables name="Ln_Out_Init_Cpt_1.L_FONOCC" value="null" talendType="id_String" nullable="true"/>
+  <variables name="Ln_Out_Init_Cpt_1.C_CSP" value="null" talendType="id_String" nullable="true"/>
+  <variables name="Ln_Out_Init_Cpt_1.C_TYPTRA" value="null" talendType="id_String" nullable="true"/>
+  <variables name="Ln_Out_Init_Cpt_1.D_DEB" value="null" talendType="id_Date"/>
+  <variables name="Ln_Out_Init_Cpt_1.D_FIN" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="Ln_Out_Init_Cpt_2.I_TIE_CRIS" value="null" talendType="id_BigDecimal"/>
+  <variables name="Ln_Out_Init_Cpt_2.C_REFPP" value="null" talendType="id_String"/>
+</expression:EMFExpression>
