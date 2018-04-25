@@ -522,7 +522,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true">
         <mapperTableEntries name="vI_DOS" expression="&quot;&quot;+Numeric.sequence(&quot;I_DOS&quot;, ((Integer)globalMap.get(&quot;I_DOSSIER_CRIS&quot;)), 1)" type="id_String"/>
       </varTables>
@@ -1135,7 +1135,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_6" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -1770,6 +1770,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="-800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//sauvegarde du nom du fichier de log&#xA;&#xA;globalMap.put(&quot;CONTEXT_LOG_FILE_NAME&quot;,context.V_PATH_LOG+&quot;LOG_AUTRES_&quot;+jobName+&quot;_&quot;+TalendDate.formatDate(&quot;yyyyMMdd_HHmmss&quot;, TalendDate.getCurrentDate())+&quot;.log&quot;); &#xA;//context.CONTEXT_LOG_FILE_NAME=context.CONTEXT_PATH_LOG+&quot;LOG_&quot;+jobName+&quot;_&quot;+TalendDate.formatDate(&quot;yyyyMMdd_HHmmss&quot;, TalendDate.getCurrentDate())+&quot;.log&quot;;&#xA;&#xA;&#x9;&#xA;//Sauvegarde du System.out&#xA;java.io.PrintStream out = System.out;&#xA;globalMap.put(&quot;FLUX_OUT&quot;,out);&#xA;&#xA;//Création d'un nouveau PrintStream pointant sur le fichier log&#xA;java.io.PrintStream pw = new java.io.PrintStream(new java.io.FileOutputStream((String)globalMap.get(&quot;CONTEXT_LOG_FILE_NAME&quot;)));&#xA;//Utilisation du PrintStream pour la sortie out&#xA;System.setOut(pw);&#xA;&#xA;//sauvegarde du nom du fichier des erreurs&#xA;globalMap.put(&quot;CONTEXT_LOG_ERR_NAME&quot;,context.V_PATH_LOG+&quot;LOG_AUTRES_&quot;+jobName+&quot;_&quot;+TalendDate.formatDate(&quot;yyyyMMdd_HHmmss&quot;, TalendDate.getCurrentDate())+&quot;.err&quot;);&#xA;//context.CONTEXT_LOG_ERR_NAME=context.CONTEXT_PATH_LOG+&quot;LOG_&quot;+jobName+&quot;_&quot;+TalendDate.formatDate(&quot;yyyyMMdd_HHmmss&quot;, TalendDate.getCurrentDate())+&quot;.err&quot;;&#xA;&#xA;&#x9;&#xA;//Sauvegarde du System.err&#x9;&#xA;java.io.PrintStream err = System.err;&#xA;globalMap.put(&quot;FLUX_ERR&quot;,err);&#x9;&#xA;&#xA;//Création d'un nouveau PrintStream pointant sur le fichier err&#xA;java.io.PrintStream pw_err = new java.io.PrintStream(new java.io.FileOutputStream((String)globalMap.get(&quot;CONTEXT_LOG_ERR_NAME&quot;)));&#xA;//Utilisation du PrintStream pour la sortie err&#xA;System.setErr(pw_err);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="CHANGE SYSTEM.OUT"/>
@@ -1793,6 +1794,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du job : &quot;+jobName + &quot; - &quot;+ TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;System.out.println(&quot;-------------------------------------------------------------------------&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1800,6 +1802,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="java.io.PrintStream pwErr = System.err;&#xA;pwErr.close();&#xA;System.setErr((java.io.PrintStream) globalMap.get(&quot;FLUX_ERR&quot;)); &#xA;java.io.File fichier = new java.io.File((String)globalMap.get(&quot;CONTEXT_LOG_ERR_NAME&quot;));&#xA;if (fichier.length()==0) {&#xA;&#x9;fichier.delete();&#xA;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="CHECK_LOG"/>
@@ -2136,7 +2139,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_SAS_P_Contextes_CTX" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_1" offsetLabelX="4" offsetLabelY="-27" source="tMSSqlInput_1" target="tJava_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlInput_1" target="tSetGlobalVar_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk23" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_1" offsetLabelX="4" offsetLabelY="-27" outputId="2" source="tMSSqlInput_1" target="tJava_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ln_Out_Get_KeyValue" lineStyle="0" metaname="Ln_Out_Get_KeyValue" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tContextLoad_4">
@@ -2176,10 +2183,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlClose_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlClose_2" target="tJava_5">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSetGlobalVar_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk23" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tSetGlobalVar_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
@@ -2191,6 +2196,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tJava_6">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" source="tJava_7" target="tMSSqlRow_1">
