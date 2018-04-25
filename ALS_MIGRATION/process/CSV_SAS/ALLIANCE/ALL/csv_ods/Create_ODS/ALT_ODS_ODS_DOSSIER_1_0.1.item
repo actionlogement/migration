@@ -1880,9 +1880,9 @@
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="solde_balance" expression="Ln_Out_DOSSIER_SOLDES.solde_balance.equals(&quot;&quot;) || Ln_Out_DOSSIER_SOLDES.solde_balance.equals(null)?&quot;0&quot;:Ln_Out_DOSSIER_SOLDES.solde_balance " type="id_String"/>
+        <mapperTableEntries name="solde_balance" expression="&quot;&quot;.equals(Ln_Out_DOSSIER_SOLDES.solde_balance) || Relational.ISNULL(Ln_Out_DOSSIER_SOLDES.solde_balance)?&quot;0&quot;:Ln_Out_DOSSIER_SOLDES.solde_balance " type="id_String"/>
       </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="Ln_out_table" expressionFilter="!(Double.parseDouble(Var.solde_balance) >= 0.0 &amp;&amp;  Ln_Out_DOSSIER_SOLDES.compte_balance.equals(&quot;xxxxxxxxxxxxxxxxx&quot;))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Ln_out_table" expressionFilter="!(Double.parseDouble(Var.solde_balance) >= 0.0 &amp;&amp;  &quot;xxxxxxxxxxxxxxxxx&quot;.equals(Ln_Out_DOSSIER_SOLDES.compte_balance))" activateExpressionFilter="true">
         <mapperTableEntries name="acdos_num" expression="Ln_Out_DOSSIER_SOLDES.acdos_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="caint_num" expression="Ln_Out_DOSSIER_SOLDES.caint_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="n_krdu" expression="Ln_Out_DOSSIER_SOLDES.n_krdu" type="id_String" nullable="true"/>

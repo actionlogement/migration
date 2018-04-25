@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZEfcAkhzEeiiFqiaCDeWbg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_ZEfcA0hzEeiiFqiaCDeWbg" comment="La date de reprise pour les mogs LOANS" name="V_FICH_CONTEXT_DATEPARAM" prompt="V_FICH_CONTEXT_DATEPARAM?" promptNeeded="false" type="id_String" value="C:\Cristal\Contextes\FICH_CONTEXT_DATE_PARAM_ALI.txt"/>
+  <contextParameter xmi:id="_ZEfcBEhzEeiiFqiaCDeWbg" comment="Paramètre sur le numéro de dossier" name="PARAM_DOSSIER" prompt="PARAM_DOSSIER?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_ZEfcBUhzEeiiFqiaCDeWbg" comment="Paramètre d'option de Chargement de SAS_MOG" name="PARAM_CHARGESASMOG" prompt="PARAM_CHARGESASMOG?" promptNeeded="true" type="id_String" value="O"/>
+  <contextParameter xmi:id="_ZEfcBkhzEeiiFqiaCDeWbg" comment="" name="V_REP_ES_LOANS" prompt="V_REP_ES_LOANS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_ZEfcB0hzEeiiFqiaCDeWbg" comment="Suffixe du fichier CSV" name="PARAM_NOMREPCSV" prompt="PARAM_NOMREPCSV?" promptNeeded="true" type="id_String" value="TEST"/>
+</talendfile:ContextType>

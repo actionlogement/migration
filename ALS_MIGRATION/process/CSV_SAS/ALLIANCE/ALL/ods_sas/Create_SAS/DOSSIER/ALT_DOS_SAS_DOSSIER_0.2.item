@@ -429,7 +429,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/HANABLI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace_talend/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -2172,7 +2172,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT [mgadr_num],&#xD;&#xA;[mgadr_numvoi],&#xD;&#xA;[mgadr_comvoi],&#xD;&#xA;[mgtvo_cod],&#xD;&#xA;[mgadr_nomvoi],&#xD;&#xA;[mgadr_libco1],&#xD;&#xA;[mgadr_libco2],&#xD;&#xA;[mgadr_libco3],&#xD;&#xA;[mgadr_codpos],&#xD;&#xA;[mgcom_cod],&#xD;&#xA;[mgadr_libcom],&#xD;&#xA;[mgadr_libced],&#xD;&#xA;[mgnat_cod]&#xD;&#xA;  FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_SAS+&quot;.ODS_MGADR&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT [mgadr_num],&#xD;&#xA;[mgadr_numvoi],&#xD;&#xA;[mgadr_comvoi],&#xD;&#xA;[mgtvo_cod],&#xD;&#xA;[mgadr_nomvoi],&#xD;&#xA;[mgadr_libco1],&#xD;&#xA;[mgadr_libco2],&#xD;&#xA;[mgadr_libco3],&#xD;&#xA;[mgadr_codpos],&#xD;&#xA;[mgcom_cod],&#xD;&#xA;[mgadr_libcom],&#xD;&#xA;[mgadr_libced],&#xD;&#xA;[mgnat_cod]&#xD;&#xA;  FROM &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;.ODS_MGADR&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2929,7 +2929,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Tr_RG_All"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata comment="" label="SAS_DOSSIER" name="Ln_Out_RG_All">
+    <metadata comment="" connector="FLOW" label="SAS_DOSSIER" name="Ln_Out_RG_All">
       <column comment="" key="true" length="50" name="C_REFDOS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -3152,7 +3152,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="(Relational.ISNULL(Ln_Out_Inner_7.mgadr_numvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_numvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_numvoi ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgadr_comvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_comvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_comvoi ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgtvo_cod)||&quot;&quot;.equals(Ln_Out_Inner_7.mgtvo_cod)       ? &quot;&quot; : Ln_Out_Inner_7.mgtvo_cod    ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgadr_nomvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_nomvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_nomvoi ) " type="id_String"/>
         <mapperTableEntries name="var2" expression="(Relational.ISNULL(Ln_Out_Inner_7.mgadr_libco1)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_libco1) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_libco1 ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgadr_libco2)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_libco2) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_libco2 ) " type="id_String"/>

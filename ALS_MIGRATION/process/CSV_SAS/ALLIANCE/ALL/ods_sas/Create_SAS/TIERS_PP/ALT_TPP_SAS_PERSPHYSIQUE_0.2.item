@@ -2036,7 +2036,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Tr_RG_All"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata comment="" label="SAS_PERSPHYSIQUE" name="Ln_Out_RG_All">
+    <metadata comment="" connector="FLOW" label="SAS_PERSPHYSIQUE" name="Ln_Out_RG_All">
       <column comment="" key="true" length="50" name="C_REFPP" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -2200,7 +2200,7 @@
       <column comment="" key="false" length="-1" name="var9" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="Relational.ISNULL(Ln_Out_Inner_7.todpp_codpos) || &quot;&quot;.equals(Ln_Out_Inner_7.todpp_codpos) ? Ln_Out_Inner_7.mgdep_cod : &#xD;&#xA;Ln_Out_Inner_7.todpp_codpos " type="id_String"/>
         <mapperTableEntries name="var3" expression="(Relational.ISNULL(Ln_Out_Inner_7.mgadr_numvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_numvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_numvoi ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgadr_comvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_comvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_comvoi ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgtvo_cod)||&quot;&quot;.equals(Ln_Out_Inner_7.mgtvo_cod)       ? &quot;&quot; : Ln_Out_Inner_7.mgtvo_cod    ) +&quot; &quot;+&#xD;&#xA;(Relational.ISNULL(Ln_Out_Inner_7.mgadr_nomvoi)||&quot;&quot;.equals(Ln_Out_Inner_7.mgadr_nomvoi) ? &quot;&quot; : Ln_Out_Inner_7.mgadr_nomvoi ) " type="id_String"/>
@@ -3955,7 +3955,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select res.totie_cod,res.mgadr_num,res.totad_numtel,res.totad_mesatl&#xD;&#xA;from  (    &#xD;&#xA;        select  totie_cod,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;mgadr_num,&#xD;&#xA;                totad_numtel,&#xD;&#xA;                totad_mesatl,&#xD;&#xA;                '1' as ord&#xD;&#xA;        from    sas_ali.sas_ali.ODS_TOTAD &#xD;&#xA;        where    (totad_numtel is not null and totad_mesatl is not null )&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and totad_dtf is null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and totad_rngpri='1'&#xD;&#xA;        union&#xD;&#xA;        select  totie_cod,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;mgadr_num,&#xD;&#xA;                totad_numtel,&#xD;&#xA;                totad_mesatl,&#xD;&#xA;                '2' as ord&#xD;&#xA;        from    sas_ali.sas_ali.ODS_TOTAD &#xD;&#xA;        where    (totad_numtel is not null  or totad_mesatl is not null )&#xD;&#xA;                and totad_dtf is null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and totad_rngpri='1'&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and not(totad_numtel is not null  and totad_mesatl is not null )&#xD;&#xA;        ) res&#xD;&#xA;order by res.ord asc&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select res.totie_cod,res.mgadr_num,res.totad_numtel,res.totad_mesatl&#xD;&#xA;from  (    &#xD;&#xA;        select  totie_cod,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;mgadr_num,&#xD;&#xA;                totad_numtel,&#xD;&#xA;                totad_mesatl,&#xD;&#xA;                '1' as ord&#xD;&#xA;        from    &quot;+context.CRISTAL_SQL_CONTEXTE_Schema_ODS+&quot;ODS_TOTAD &#xD;&#xA;        where    (totad_numtel is not null and totad_mesatl is not null )&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and totad_dtf is null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and totad_rngpri='1'&#xD;&#xA;        union&#xD;&#xA;        select  totie_cod,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;mgadr_num,&#xD;&#xA;                totad_numtel,&#xD;&#xA;                totad_mesatl,&#xD;&#xA;                '2' as ord&#xD;&#xA;        from    sas_ali.sas_ali.ODS_TOTAD &#xD;&#xA;        where    (totad_numtel is not null  or totad_mesatl is not null )&#xD;&#xA;                and totad_dtf is null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and totad_rngpri='1'&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;and not(totad_numtel is not null  and totad_mesatl is not null )&#xD;&#xA;        ) res&#xD;&#xA;order by res.ord asc&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>

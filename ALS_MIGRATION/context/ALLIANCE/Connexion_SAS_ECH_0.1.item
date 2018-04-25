@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GWAJUEe_Eeiie_nSVIAy9Q" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_GWAJUUe_Eeiie_nSVIAy9Q" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Port" prompt="CRISTAL_ECH_SQL_CONTEXTE_Port?" promptNeeded="false" type="id_String" value="1433"/>
-  <contextParameter xmi:id="_GWAJUke_Eeiie_nSVIAy9Q" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Server" prompt="CRISTAL_ECH_SQL_CONTEXTE_Server?" promptNeeded="false" type="id_String" value="STOL-SQLW-PR001"/>
-  <contextParameter xmi:id="_GWAJU0e_Eeiie_nSVIAy9Q" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Login" prompt="CRISTAL_ECH_SQL_CONTEXTE_Login?" promptNeeded="false" type="id_String" value="talend_dev1"/>
-  <contextParameter xmi:id="_GWAJVEe_Eeiie_nSVIAy9Q" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Database" prompt="CRISTAL_ECH_SQL_CONTEXTE_Database?" promptNeeded="false" type="id_String" value="SAS_ECH"/>
-  <contextParameter xmi:id="_GWAJVUe_Eeiie_nSVIAy9Q" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_AdditionalParams" prompt="CRISTAL_ECH_SQL_CONTEXTE_AdditionalParams?" promptNeeded="false" type="id_String" value="INSTANCE=DEVE01"/>
-  <contextParameter xmi:id="_GWAJVke_Eeiie_nSVIAy9Q" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Password" prompt="CRISTAL_ECH_SQL_CONTEXTE_Password?" promptNeeded="false" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
-  <contextParameter xmi:id="_GWAJV0e_Eeiie_nSVIAy9Q" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Schema" prompt="CRISTAL_ECH_SQL_CONTEXTE_Schema?" promptNeeded="false" type="id_String" value="SAS_ECH"/>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZECwDUhzEeiiFqiaCDeWbg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_ZECwDkhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Port" prompt="CRISTAL_ECH_SQL_CONTEXTE_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_ZECwD0hzEeiiFqiaCDeWbg" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Server" prompt="CRISTAL_ECH_SQL_CONTEXTE_Server?" promptNeeded="false" type="id_String" value="STOL-SQLW-PR001"/>
+  <contextParameter xmi:id="_ZECwEEhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Login" prompt="CRISTAL_ECH_SQL_CONTEXTE_Login?" promptNeeded="false" type="id_String" value="talend_dev1"/>
+  <contextParameter xmi:id="_ZECwEUhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Database" prompt="CRISTAL_ECH_SQL_CONTEXTE_Database?" promptNeeded="false" type="id_String" value="SAS_ECH"/>
+  <contextParameter xmi:id="_ZECwEkhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_AdditionalParams" prompt="CRISTAL_ECH_SQL_CONTEXTE_AdditionalParams?" promptNeeded="false" type="id_String" value="INSTANCE=DEVE01"/>
+  <contextParameter xmi:id="_ZECwE0hzEeiiFqiaCDeWbg" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Password" prompt="CRISTAL_ECH_SQL_CONTEXTE_Password?" promptNeeded="false" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
+  <contextParameter xmi:id="_ZECwFEhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_ECH_SQL_CONTEXTE_Schema" prompt="CRISTAL_ECH_SQL_CONTEXTE_Schema?" promptNeeded="false" type="id_String" value="SAS_ECH"/>
 </talendfile:ContextType>

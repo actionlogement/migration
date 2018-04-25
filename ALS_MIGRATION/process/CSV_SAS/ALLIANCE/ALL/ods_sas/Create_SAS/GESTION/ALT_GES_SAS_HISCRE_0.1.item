@@ -125,7 +125,8 @@
     <contextParameter comment="" name="V_DELETE" prompt="V_DELETE?" promptNeeded="false" repositoryContextId="_k3DOsAUBEeiTIoMnIi5eAg" type="id_String" value="&quot;Y&quot;"/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms8191M -Xmx30G " show="false"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms2048M -Xmx8G " show="false"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="1504" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
@@ -180,7 +181,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/HANABLI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace_talend/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -580,7 +581,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="OUT">
         <mapperTableEntries name="icpcg_cod" expression="Ln_In_CAECR.icpcg_cod " type="id_String" nullable="true"/>
@@ -619,7 +620,7 @@
         <mapperTableEntries name="caecr_mntd" type="id_String" nullable="true"/>
         <mapperTableEntries name="caecr_mntc" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In__CACTR" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true" persistent="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In__CACTR" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="caint_num" expression="Ln_In_CAECR.caint_num " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="cactr_num" type="id_String" nullable="true"/>
       </inputTables>
@@ -751,7 +752,7 @@
         <mapperTableEntries name="catmv_cod" type="id_String" nullable="true"/>
         <mapperTableEntries name="cactr_num" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_ACDOS" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true" persistent="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_ACDOS" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="acdos_num" expression="OUT.cactr_num " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="u_version" type="id_String" nullable="true"/>
         <mapperTableEntries name="sit" type="id_String" nullable="true"/>
@@ -1025,7 +1026,7 @@
         <mapperTableEntries name="cactr_num" type="id_String" nullable="true"/>
         <mapperTableEntries name="acdos_num" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Ln_In_SAS_DOSSIER_SOLDE" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true" persistent="true">
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_SAS_DOSSIER_SOLDE" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="acdos_num" expression="out2.acdos_num " type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>

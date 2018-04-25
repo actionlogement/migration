@@ -169,609 +169,6 @@
     <routinesParameter id="_y8xqsEteEeen64JV69Y7UQ" name="TalendDate"/>
     <routinesParameter id="_y83xUEteEeen64JV69Y7UQ" name="TalendString"/>
   </parameters>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
-    <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;I_DOSSIER_CRIS&quot;"/>
-      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;I_DOS&quot;))+1"/>
-      <elementValue elementRef="KEY" value="&quot;I_PRODUIT_CRIS&quot;"/>
-      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;I_LGNPDT&quot;))+1"/>
-      <elementValue elementRef="KEY" value="&quot;I_RIBPRDPP_CRIS&quot;"/>
-      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;I_PAYEUR&quot;))+1"/>
-      <elementValue elementRef="KEY" value="&quot;I_BQPRL&quot;"/>
-      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;I_BQPRL&quot;))+1"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="Var_Compteur"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSetGlobalVar_2"/>
-  </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_4" show="false"/>
-    <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;DATE_DEBUT_JOB&quot;"/>
-      <elementValue elementRef="VALUE" value="TalendDate.getCurrentDate()"/>
-      <elementValue elementRef="KEY" value="&quot;NB_LIGNES_FILTREES&quot;"/>
-      <elementValue elementRef="VALUE" value="new Integer(&quot;0&quot;)"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="Var_Debut"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSetGlobalVar_4"/>
-  </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="12" offsetLabelY="0" posX="128" posY="-96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_6" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REF&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REF_PARAMGEN&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT REF.REF_PARAMGEN.C_CODE,&#xA;&#x9;&#x9;REF.REF_PARAMGEN.C_VALEUR,&#xA;&#x9;&#x9;REF.REF_PARAMGEN.C_DESCRIPTION&#xA;FROM&#x9;REF.REF_PARAMGEN&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_VALEUR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_DESCRIPTION"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="REF_PARAMGEN" name="tMSSqlInput_6">
-      <column comment="" key="false" length="50" name="C_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="250" name="C_VALEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="250" name="C_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(input_row.C_CODE,input_row.C_VALEUR);&#xD;&#xA;//System.out.println(input_row.C_CODE+&quot;_&quot;+input_row.C_VALEUR);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="Var_Key_Value"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="REF_PARAMGEN" name="tJavaRow_1">
-      <column comment="" key="false" length="50" name="C_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="250" name="C_VALEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="250" name="C_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_7" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REF&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REF_COMPTEUR&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT REF.REF_COMPTEUR.C_CODECPT,&#xA;&#x9;&#x9;REF.REF_COMPTEUR.N_COMPTEUR,&#xA;&#x9;&#x9;REF.REF_COMPTEUR.C_DESCPT&#xA;FROM&#x9;REF.REF_COMPTEUR&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_CODECPT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="N_COMPTEUR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_DESCPT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="REF_COMPTEUR" name="tMSSqlInput_7">
-      <column comment="" key="false" length="50" name="C_CODECPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="N_COMPTEUR" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="C_DESCPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(input_row.C_CODECPT,input_row.N_COMPTEUR);&#xD;&#xA;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="Var_Key_Value"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="REF_COMPTEUR" name="tJavaRow_2">
-      <column comment="" key="false" length="50" name="C_CODECPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="N_COMPTEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="C_DESCPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1504">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du chargement de la table cible - &quot;+TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;&#xA;context.NB_LIGNES_LUES=(((Integer)globalMap.get(&quot;tMSSqlInput_11_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_11_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;)));&#xA;&#xA;context.NB_LIGNES_INS= ((Integer)globalMap.get(&quot;tMSSqlOutputBulk_2_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_2_NB_LINE&quot;));&#xA;&#xA;context.NB_LIGNES_REJ=(((Integer)globalMap.get(&quot;tMSSqlOutput_5_NB_LINE_INSERTED&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutput_5_NB_LINE_INSERTED&quot;)));&#xA;&#xA;context.NB_LIGNES_FIL=(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;)));&#xA;&#xA;&#xA;System.out.println(&quot;   Nombre de lignes lues :&quot;+context.NB_LIGNES_LUES);&#xA;System.out.println(&quot;   Nombre de lignes insérées :&quot;+context.NB_LIGNES_INS);&#xA;System.out.println(&quot;   Nombre de lignes rejetées :&quot;+context.NB_LIGNES_REJ);&#xA;System.out.println(&quot;   Nombre de lignes filtrées :&quot;+context.NB_LIGNES_FIL);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_2"/>
-  </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1504">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_5" show="false"/>
-    <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;ERROR&quot;"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="ERROR"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSetGlobalVar_5"/>
-  </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1632">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_6" show="false"/>
-    <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;SUCCESS&quot;"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="SUCCESS"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSetGlobalVar_6"/>
-  </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="11" offsetLabelY="0" posX="128" posY="1760">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="1760">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_7" show="false"/>
-    <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;DATE_FIN_EXECUTION&quot;"/>
-      <elementValue elementRef="VALUE" value="TalendDate.getCurrentDate()"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="Var_Finalisation"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSetGlobalVar_7"/>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1760">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="MAJ_SUIVI_EXECUTION_FIN"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_fBodMFpMEeexZ_9Dmewfzg"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_DDEB_EXECUTION"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Date)globalMap.get(&quot;DATE_DEBUT_EXECUTION&quot;)"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_DFIN_EXECUTION"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Date)globalMap.get(&quot;DATE_FIN_EXECUTION&quot;)"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NOM_JOB"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName+&quot;&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_ETAT"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String)globalMap.get(&quot;ETAT_JOB&quot;)"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NB_LIGNES_SOURCE"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.NB_LIGNES_LUES"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NB_LIGNES_INSEREES"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.NB_LIGNES_INS"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NB_LIGNES_FILTREES"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.NB_LIGNES_FIL"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NB_LIGNES_ERREUR"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.NB_LIGNES_REJ"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Suivi_Execution"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_2"/>
-  </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1344">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRI_SQL_Server"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRI_SQL_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REC&quot;"/>
-    <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRI_SQL_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRI_SQL_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudF/ccsLlQZCKWLqmQc9sKZVuQdNUVbzr0="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REC_HISBQPRL&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before bulk insert" show="false"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM TABLE&quot;" show="false"/>
-    <elementParameter field="FILE" name="REMOTE_FILENAME" value="context.V_REP_TEMP+&quot;GIC_REC_HISBQPRL.csv&quot;"/>
-    <elementParameter field="FILE" name="OUTPUT_FILE_NAME" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/mssql_bulk.txt&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACTION" value="INSERT"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRI_SQL_AdditionalParams"/>
-    <elementParameter field="TEXT" name="FIELDS_TERMINATED_BY" value="&quot;-|-&quot;"/>
-    <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
-    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Sf_In_REC_HISBQPRL"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="REC_HISBQPRL" name="tMSSqlBulkExec_1">
-      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_LGNPDT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_PAYEUR" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_BQPRL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="6" name="C_CODBAN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2" name="N_JOURPRL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="C_EMETTEUR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="B_RGPPIB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DEB" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DATMAJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="C_UTIMAJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DATCRE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="C_UTICRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1344">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
-    <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CRISTAL_DONNEES_FILTREES&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before bulk insert" show="false"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM TABLE&quot;" show="false"/>
-    <elementParameter field="FILE" name="REMOTE_FILENAME" value="context.V_REP_TEMP+&quot;GIC_DONNEES_REC_HISBQPRL.csv&quot;"/>
-    <elementParameter field="FILE" name="OUTPUT_FILE_NAME" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/mssql_bulk.txt&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACTION" value="INSERT"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams"/>
-    <elementParameter field="TEXT" name="FIELDS_TERMINATED_BY" value="&quot;-|-&quot;"/>
-    <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
-    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
-    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="&quot;CRISTAL_DONNEES_FILTREES&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="CRISTAL_DONNEES_FILTREES" name="tMSSqlBulkExec_2">
-      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
-    <elementParameter field="TEXT" name="HOST" value="context.CRI_GIC_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.CRI_GIC_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REC&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.CRI_GIC_Database"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="context.CRI_GIC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufb/w0rtZttVpEa9l8dUU4KsmgFg8wJMhQ="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REC_HISBQPRL&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="I_DOS" show="false"/>
-    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
-    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRI_GIC_AdditionalParams"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOS"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_LGNPDT"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_PAYEUR"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="I_BQPRL"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_CODBAN"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="N_JOURPRL"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_EMETTEUR"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="B_RGPPIB"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="D_DEB"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="D_FIN"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="D_DATMAJ"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_UTIMAJ"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="D_DATCRE"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_UTICRE"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata comment="" connector="FLOW" label="REC_HISBQPRL" name="REC_HISBQPRL" type="TABLE">
-      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_LGNPDT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_PAYEUR" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_BQPRL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="6" name="C_CODBAN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2" name="N_JOURPRL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="C_EMETTEUR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="B_RGPPIB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DEB" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DATMAJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="C_UTIMAJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DATCRE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="C_UTICRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-    <metadata connector="REJECT" label="REC_HISBQPRL" name="REJECT">
-      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_LGNPDT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_PAYEUR" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="3" name="I_BQPRL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="6" name="C_CODBAN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2" name="N_JOURPRL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="C_EMETTEUR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="B_RGPPIB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DEB" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DATMAJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="C_UTIMAJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="D_DATCRE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="C_UTICRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -931,7 +328,7 @@
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_GIC_CRI_HISBQPRL" activateCondensedTool="true">
         <mapperTableEntries name="I_DOS" expression="Ln_In_DOSSIER.I_DOS" type="id_BigDecimal"/>
         <mapperTableEntries name="I_LGNPDT" expression="Ln_In_PRD.I_LGNPDT" type="id_BigDecimal"/>
-        <mapperTableEntries name="I_PAYEUR" expression="Ln_In_RIBPRDPP.I_PAYEUR" type="id_BigDecimal"/>
+        <mapperTableEntries name="I_PAYEUR" expression="Ln_In_REC_PAYEUR.I_PAYEUR " type="id_BigDecimal"/>
         <mapperTableEntries name="I_BQPRL" expression="BigDecimal.valueOf(Double.parseDouble(Integer.toString( &#xD;&#xA;Numeric.sequence(Integer.toString(Ln_In_DOSSIER.I_DOS.intValue())+'_'+Integer.toString(Ln_In_PRD.I_LGNPDT.intValue())+'_'+Integer.toString(Ln_In_RIBPRDPP.I_PAYEUR.intValue()),1, 1)))) " type="id_BigDecimal"/>
         <mapperTableEntries name="C_CODBAN" expression="((String)globalMap.get(&quot;CODQBPRL&quot;))" type="id_String"/>
         <mapperTableEntries name="N_JOURPRL" expression="Relational.ISNULL(Ln_In_TA.N_JOUR) ? new BigDecimal(&quot;5&quot;) :  Ln_In_TA.N_JOUR " type="id_BigDecimal"/>
@@ -982,9 +379,13 @@
         <mapperTableEntries name="I_RIBPRDPP_CRIS" type="id_BigDecimal" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="Ln_In_TA" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="C_REFDOS" expression="Ln_In_DOSSIER.C_REFDOS " type="id_String"/>
+        <mapperTableEntries name="C_REFDOS" expression="Ln_In_PRD.C_REFDOS " type="id_String"/>
         <mapperTableEntries name="C_REFPROD" expression="Ln_In_PRD.C_REFPROD " type="id_String"/>
         <mapperTableEntries name="N_JOUR" type="id_BigDecimal" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_REC_PAYEUR" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="I_DOS" expression="Ln_In_DOSSIER.I_DOS" type="id_BigDecimal"/>
+        <mapperTableEntries name="I_PAYEUR" type="id_BigDecimal"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1503,7 +904,7 @@
       <outputTables sizeState="INTERMEDIATE" name="copyOfLn_Out_GIC_CRI_HISBQPRL" activateCondensedTool="true">
         <mapperTableEntries name="I_DOS" expression="Ln_In_DOSSIER2.I_DOS" type="id_BigDecimal"/>
         <mapperTableEntries name="I_LGNPDT" expression="Ln_In_PRD2.I_LGNPDT" type="id_BigDecimal"/>
-        <mapperTableEntries name="I_PAYEUR" expression="Ln_In_RIBPRDPP2.I_PAYEUR" type="id_BigDecimal"/>
+        <mapperTableEntries name="I_PAYEUR" expression="Ln_In_REC_PAYEUR2.I_PAYEUR " type="id_BigDecimal"/>
         <mapperTableEntries name="I_BQPRL" expression="BigDecimal.valueOf(Double.parseDouble(Integer.toString( &#xD;&#xA;Numeric.sequence(Integer.toString(Ln_In_DOSSIER2.I_DOS.intValue())+'_'+Integer.toString(Ln_In_PRD2.I_LGNPDT.intValue())+'_'+Integer.toString(Ln_In_RIBPRDPP2.I_PAYEUR.intValue()),1, 1)))) " type="id_BigDecimal"/>
         <mapperTableEntries name="C_CODBAN" expression="((String)globalMap.get(&quot;CODQBPRL&quot;))" type="id_String"/>
         <mapperTableEntries name="N_JOURPRL" expression="Ln_In_PLAN.N_JOUR " type="id_BigDecimal"/>
@@ -1557,7 +958,10 @@
         <mapperTableEntries name="C_REFDOS" expression="Ln_In_PRD2.C_REFDOS " type="id_String" operator="="/>
         <mapperTableEntries name="C_REFPROD" expression="Ln_In_PRD2.C_REFPROD " type="id_String" operator="="/>
         <mapperTableEntries name="N_JOUR" expression="" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="C_PREL" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Ln_In_REC_PAYEUR2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="I_DOS" expression="Ln_In_DOSSIER2.I_DOS" type="id_BigDecimal"/>
+        <mapperTableEntries name="I_PAYEUR" type="id_BigDecimal"/>
       </inputTables>
     </nodeData>
   </node>
@@ -2361,12 +1765,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_TA&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_RIBPP_TA&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA.N_JOUR&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_TA&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_TA.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_RIBPP_TA.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_RIBPP_TA.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_RIBPP_TA.N_JOUR&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_RIBPP_TA&#xD;&#xA;WHERE (SAS_RIBPP_TA.L_RUM IS NOT NULL or SAS_RIBPP_TA.L_RUM &lt;>'')&#xD;&#xA;AND EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_RIBPP_TA.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2410,12 +1814,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_PLAN&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_RIBPP_PLAN&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PLAN.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PLAN.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PLAN.N_JOUR,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PLAN.C_PREL&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_PLAN&#xD;&#xA;WHERE EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_PLAN.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_RIBPP_PLAN.C_REFDOS,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_RIBPP_PLAN.C_REFPROD,&#xA;&#x9;&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_RIBPP_PLAN.N_JOUR&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;\&quot;.SAS_RIBPP_PLAN&#xD;&#xA;WHERE  (SAS_RIBPP_PLAN.L_RUM IS NOT NULL or SAS_RIBPP_PLAN.L_RUM &lt;>'') &#xD;&#xA;AND EXISTS &#xD;&#xA;(&#xD;&#xA; &quot;+  ((String)globalMap.get(&quot;SAS_DOSSIER_ACTIF&quot;)) +&quot; &#xD;&#xA;&#x9;&#x9;and SAS_RIBPP_PLAN.C_REFDOS = SAS_DOSSIER_ACTIF.C_REFDOS&#xD;&#xA;)&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2431,8 +1835,6 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="N_JOUR"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C_PREL"/>
-      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -2446,7 +1848,490 @@
       <column comment="" key="false" length="16" name="N_JOUR" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="C_PREL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRI_SQL_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRI_SQL_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REC&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRI_SQL_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRI_SQL_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudF/ccsLlQZCKWLqmQc9sKZVuQdNUVbzr0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REC_PAYEUR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT REC.REC_PAYEUR.I_DOS,&#xD;&#xA;&#x9;&#x9;REC.REC_PAYEUR.I_PAYEUR&#xD;&#xA;FROM&#x9;\&quot;&quot;+context.CRI_SQL_Database+&quot;\&quot;.REC.REC_PAYEUR&#xD;&#xA;WHERE C_TYPPAY='PAYECH'&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRI_SQL_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_PAYEUR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="REC_PAYEUR" name="tMSSqlInput_8">
+      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="3" name="I_PAYEUR" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="992">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_13" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRI_SQL_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRI_SQL_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REC&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRI_SQL_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRI_SQL_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudF/ccsLlQZCKWLqmQc9sKZVuQdNUVbzr0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REC_PAYEUR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT REC.REC_PAYEUR.I_DOS,&#xD;&#xA;&#x9;&#x9;REC.REC_PAYEUR.I_PAYEUR&#xD;&#xA;FROM&#x9;\&quot;&quot;+context.CRI_SQL_Database+&quot;\&quot;.REC.REC_PAYEUR&#xD;&#xA;WHERE C_TYPPAY='PAYECH'&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRI_SQL_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_PAYEUR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="REC_PAYEUR" name="tMSSqlInput_13">
+      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="3" name="I_PAYEUR" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;I_DOSSIER_CRIS&quot;"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;I_DOS&quot;))+1"/>
+      <elementValue elementRef="KEY" value="&quot;I_PRODUIT_CRIS&quot;"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;I_LGNPDT&quot;))+1"/>
+      <elementValue elementRef="KEY" value="&quot;I_RIBPRDPP_CRIS&quot;"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;I_PAYEUR&quot;))+1"/>
+      <elementValue elementRef="KEY" value="&quot;I_BQPRL&quot;"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;I_BQPRL&quot;))+1"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Var_Compteur"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_2"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_4" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;DATE_DEBUT_JOB&quot;"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getCurrentDate()"/>
+      <elementValue elementRef="KEY" value="&quot;NB_LIGNES_FILTREES&quot;"/>
+      <elementValue elementRef="VALUE" value="new Integer(&quot;0&quot;)"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Var_Debut"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_4"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="12" offsetLabelY="0" posX="128" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REF&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REF_PARAMGEN&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT REF.REF_PARAMGEN.C_CODE,&#xA;&#x9;&#x9;REF.REF_PARAMGEN.C_VALEUR,&#xA;&#x9;&#x9;REF.REF_PARAMGEN.C_DESCRIPTION&#xA;FROM&#x9;REF.REF_PARAMGEN&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_VALEUR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_DESCRIPTION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="REF_PARAMGEN" name="tMSSqlInput_6">
+      <column comment="" key="false" length="50" name="C_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="C_VALEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="C_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(input_row.C_CODE,input_row.C_VALEUR);&#xD;&#xA;//System.out.println(input_row.C_CODE+&quot;_&quot;+input_row.C_VALEUR);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Var_Key_Value"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="REF_PARAMGEN" name="tJavaRow_1">
+      <column comment="" key="false" length="50" name="C_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="C_VALEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="C_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_7" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REF&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REF_COMPTEUR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT REF.REF_COMPTEUR.C_CODECPT,&#xA;&#x9;&#x9;REF.REF_COMPTEUR.N_COMPTEUR,&#xA;&#x9;&#x9;REF.REF_COMPTEUR.C_DESCPT&#xA;FROM&#x9;REF.REF_COMPTEUR&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CODECPT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_COMPTEUR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_DESCPT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="REF_COMPTEUR" name="tMSSqlInput_7">
+      <column comment="" key="false" length="50" name="C_CODECPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="N_COMPTEUR" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="C_DESCPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(input_row.C_CODECPT,input_row.N_COMPTEUR);&#xD;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Var_Key_Value"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="REF_COMPTEUR" name="tJavaRow_2">
+      <column comment="" key="false" length="50" name="C_CODECPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="N_COMPTEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="C_DESCPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1504">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Fin du chargement de la table cible - &quot;+TalendDate.formatDate(&quot;yyyy/MM/dd HH:mm:ss&quot;,TalendDate.getCurrentDate()));&#xA;&#xA;context.NB_LIGNES_LUES=(((Integer)globalMap.get(&quot;tMSSqlInput_11_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_11_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;)));&#xA;&#xA;context.NB_LIGNES_INS= ((Integer)globalMap.get(&quot;tMSSqlOutputBulk_2_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_2_NB_LINE&quot;));&#xA;&#xA;context.NB_LIGNES_REJ=(((Integer)globalMap.get(&quot;tMSSqlOutput_5_NB_LINE_INSERTED&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutput_5_NB_LINE_INSERTED&quot;)));&#xA;&#xA;context.NB_LIGNES_FIL=(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_1_NB_LINE&quot;)))+(((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;))==null?0:((Integer)globalMap.get(&quot;tMSSqlOutputBulk_4_NB_LINE&quot;)));&#xA;&#xA;&#xA;System.out.println(&quot;   Nombre de lignes lues :&quot;+context.NB_LIGNES_LUES);&#xA;System.out.println(&quot;   Nombre de lignes insérées :&quot;+context.NB_LIGNES_INS);&#xA;System.out.println(&quot;   Nombre de lignes rejetées :&quot;+context.NB_LIGNES_REJ);&#xA;System.out.println(&quot;   Nombre de lignes filtrées :&quot;+context.NB_LIGNES_FIL);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1504">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_5" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;ERROR&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="ERROR"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_5"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1632">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_6" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;ETAT_JOB&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;SUCCESS&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="SUCCESS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_6"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="11" offsetLabelY="0" posX="128" posY="1760">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="1760">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_7" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;DATE_FIN_EXECUTION&quot;"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getCurrentDate()"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Var_Finalisation"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_7"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1760">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="MAJ_SUIVI_EXECUTION_FIN"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_fBodMFpMEeexZ_9Dmewfzg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_DDEB_EXECUTION"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Date)globalMap.get(&quot;DATE_DEBUT_EXECUTION&quot;)"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_DFIN_EXECUTION"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Date)globalMap.get(&quot;DATE_FIN_EXECUTION&quot;)"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NOM_JOB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName+&quot;&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_ETAT"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String)globalMap.get(&quot;ETAT_JOB&quot;)"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NB_LIGNES_SOURCE"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.NB_LIGNES_LUES"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NB_LIGNES_INSEREES"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.NB_LIGNES_INS"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NB_LIGNES_FILTREES"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.NB_LIGNES_FIL"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="V_NB_LIGNES_ERREUR"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.NB_LIGNES_REJ"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Suivi_Execution"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1344">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRI_SQL_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRI_SQL_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;REC&quot;"/>
+    <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRI_SQL_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRI_SQL_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudF/ccsLlQZCKWLqmQc9sKZVuQdNUVbzr0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REC_HISBQPRL&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before bulk insert" show="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM TABLE&quot;" show="false"/>
+    <elementParameter field="FILE" name="REMOTE_FILENAME" value="context.V_REP_TEMP+&quot;GIC_REC_HISBQPRL.csv&quot;"/>
+    <elementParameter field="FILE" name="OUTPUT_FILE_NAME" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/mssql_bulk.txt&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION" value="INSERT"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRI_SQL_AdditionalParams"/>
+    <elementParameter field="TEXT" name="FIELDS_TERMINATED_BY" value="&quot;-|-&quot;"/>
+    <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Sf_In_REC_HISBQPRL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="REC_HISBQPRL" name="tMSSqlBulkExec_1">
+      <column comment="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="3" name="I_LGNPDT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="3" name="I_PAYEUR" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="3" name="I_BQPRL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="C_CODBAN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="N_JOURPRL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="C_EMETTEUR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="B_RGPPIB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_DEB" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_DATMAJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="C_UTIMAJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="D_DATCRE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="C_UTICRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1344">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema"/>
+    <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CRISTAL_DONNEES_FILTREES&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before bulk insert" show="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM TABLE&quot;" show="false"/>
+    <elementParameter field="FILE" name="REMOTE_FILENAME" value="context.V_REP_TEMP+&quot;GIC_DONNEES_REC_HISBQPRL.csv&quot;"/>
+    <elementParameter field="FILE" name="OUTPUT_FILE_NAME" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/mssql_bulk.txt&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION" value="INSERT"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams"/>
+    <elementParameter field="TEXT" name="FIELDS_TERMINATED_BY" value="&quot;-|-&quot;"/>
+    <elementParameter field="TEXT" name="ROW_TERMINATED_BY" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="ROW_TERMINATED_EXPORT" value="&quot;\\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_ROW" value="&quot;1&quot;"/>
+    <elementParameter field="TEXT" name="CODE_PAGE" value="&quot;65001&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&quot;CRISTAL_DONNEES_FILTREES&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CRISTAL_DONNEES_FILTREES" name="tMSSqlBulkExec_2">
+      <column comment="" key="false" length="50" name="NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FIC_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUM_LIGNE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="NOM_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="NOM_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="NOM_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="NOM_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="NOM_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="VAL_COL_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="MESSAGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -2984,49 +2869,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_8"/>
   </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_2" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_2" target="tMSSqlInput_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk15" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_4" offsetLabelX="-1" offsetLabelY="-24" source="tSetGlobalVar_4" target="tMSSqlInput_6">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Ln_In_ParamGen" lineStyle="0" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tJavaRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_ParamGen" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tMSSqlInput_7">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Ln_In_Compteur" lineStyle="0" metaname="tMSSqlInput_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_7" target="tJavaRow_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_Compteur" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_7" target="tSetGlobalVar_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16" show="false"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_2" target="tJava_5">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.NB_LIGNES_REJ > 0"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_2" target="tSetGlobalVar_6">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.NB_LIGNES_REJ == 0"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If4" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tSetGlobalVar_7">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_7" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_7" target="tRunJob_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tMSSqlClose_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk14" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlBulkExec_1" target="tMSSqlBulkExec_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk19" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlBulkExec_1" target="tJava_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk20" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="Ln_In_DOSSIER1" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="C_REFDOS"/>
@@ -3375,6 +3217,57 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_PLAN" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="Ln_In_REC_PAYEUR" lineStyle="8" metaname="tMSSqlInput_8" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_8" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_REC_PAYEUR" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_In_REC_PAYEUR2" lineStyle="8" metaname="tMSSqlInput_13" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_13" target="tMap_12">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_REC_PAYEUR2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_2" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_2" target="tMSSqlInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk15" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_4" offsetLabelX="-1" offsetLabelY="-24" source="tSetGlobalVar_4" target="tMSSqlInput_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_In_ParamGen" lineStyle="0" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_ParamGen" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tMSSqlInput_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Ln_In_Compteur" lineStyle="0" metaname="tMSSqlInput_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_7" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_Compteur" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_7" target="tSetGlobalVar_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_2" target="tJava_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.NB_LIGNES_REJ > 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_2" target="tSetGlobalVar_6">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.NB_LIGNES_REJ == 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tSetGlobalVar_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_7" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_7" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tMSSqlClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk14" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlBulkExec_1" target="tMSSqlBulkExec_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk19" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlBulkExec_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlBulkExec_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk20" show="false"/>
+  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFixedFlowInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
@@ -3491,6 +3384,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Initialisation des compteurs"/>
@@ -3566,16 +3464,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlBulkExec_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
