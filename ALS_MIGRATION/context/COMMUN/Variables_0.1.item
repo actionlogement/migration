@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZEWSDUhzEeiiFqiaCDeWbg" confirmationNeeded="false" name="Default">
   <contextParameter xmi:id="_ZEWSDkhzEeiiFqiaCDeWbg" comment="" name="V_DELETE" prompt="V_DELETE?" promptNeeded="false" type="id_String" value="&quot;Y&quot;"/>
+=======
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_HqMJgEfJEeiC0Y44SjqJ3Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_HqMJgUfJEeiC0Y44SjqJ3Q" comment="" name="V_DELETE" prompt="V_DELETE?" promptNeeded="false" type="id_String" value="&quot;Y&quot;"/>
+>>>>>>> refs/remotes/origin/master
 </talendfile:ContextType>

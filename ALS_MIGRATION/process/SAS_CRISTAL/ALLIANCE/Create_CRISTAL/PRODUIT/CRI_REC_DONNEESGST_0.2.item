@@ -121,7 +121,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/anziz.ADSOLENDI/Desktop/TOS_DI-20161216_1026-V6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/RIAZ/Desktop/workspace_ARI/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -733,6 +733,7 @@
       <column comment="" key="true" length="50" name="C_REFPROD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" defaultValue="" key="true" length="12" name="I_DOS" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="true" length="18" name="I_LGNPDT" nullable="false" pattern="" precision="8" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -790,7 +791,8 @@
       <outputTables sizeState="INTERMEDIATE" name="Ln_In_PRD">
         <mapperTableEntries name="C_REFDOS" expression="Ln_In_PRD1.C_REFDOS " type="id_String"/>
         <mapperTableEntries name="C_REFPROD" expression="Ln_In_PRD1.C_REFPROD " type="id_String"/>
-        <mapperTableEntries name="I_LGNPDT" expression="new BigDecimal(Var.vI_LGNPDT) " type="id_BigDecimal"/>
+        <mapperTableEntries name="I_DOS" expression="row1.I_DOS " type="id_BigDecimal"/>
+        <mapperTableEntries name="I_LGNPDT" expression="row1.I_LGNPDT " type="id_BigDecimal"/>
         <mapperTableEntries name="I_PRODUIT_CRIS" expression="Ln_In_PRD1.I_PRODUIT_CRIS " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="N_MNTPRET" expression="Ln_In_PRD1.N_MNTPRET " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="N_DUREE" expression="Ln_In_PRD1.N_DUREE " type="id_BigDecimal" nullable="true"/>
@@ -862,6 +864,12 @@
         <mapperTableEntries name="L_PREFIXE" type="id_String" nullable="true"/>
         <mapperTableEntries name="c_refdoscris" type="id_String" nullable="true"/>
         <mapperTableEntries name="C_URLGED" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="C_REFDOS" expression="Ln_In_PRD1.C_REFDOS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C_REFPROD" expression="Ln_In_PRD1.C_REFPROD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="I_DOS" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="I_LGNPDT" type="id_BigDecimal" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1055,7 +1063,7 @@
         <mapperTableEntries name="var5" expression="new BigDecimal(&quot;&quot;+Var.var4) " type="id_BigDecimal"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="Ln_Out_DONNEESGST" activateCondensedTool="true">
-        <mapperTableEntries name="I_DOS" expression="Ln_In_DOSSIER.I_DOS" type="id_BigDecimal"/>
+        <mapperTableEntries name="I_DOS" expression="Ln_In_PRD.I_DOS " type="id_BigDecimal"/>
         <mapperTableEntries name="I_LGNPDT" expression="Ln_In_PRD.I_LGNPDT" type="id_BigDecimal"/>
         <mapperTableEntries name="N_NOMINAL" expression="Ln_In_PRD.N_MNTPRET " type="id_BigDecimal"/>
         <mapperTableEntries name="N_DURPRT" expression="Relational.ISNULL(Ln_In_PRD.N_DUREE)||&quot;&quot;.equals(Ln_In_PRD.N_DUREE)? new BigDecimal(&quot;0&quot;): Ln_In_PRD.N_DUREE " type="id_BigDecimal"/>
@@ -1115,6 +1123,7 @@
       <inputTables sizeState="INTERMEDIATE" name="Ln_In_PRD" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="C_REFDOS" expression="Ln_In_DOSSIER.C_REFDOS " type="id_String" operator="="/>
         <mapperTableEntries name="C_REFPROD" type="id_String"/>
+        <mapperTableEntries name="I_DOS" type="id_BigDecimal"/>
         <mapperTableEntries name="I_LGNPDT" type="id_BigDecimal"/>
         <mapperTableEntries name="I_PRODUIT_CRIS" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="N_MNTPRET" type="id_BigDecimal" nullable="true"/>
@@ -2085,7 +2094,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="vI_DOS" expression="Numeric.sequence(&quot;I_DOS3&quot;, ((Integer)globalMap.get(&quot;I_DOSSIER_CRIS&quot;)), 1)" type="id_Integer"/>
       </varTables>
@@ -2627,7 +2636,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="480">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
@@ -3025,6 +3034,52 @@
       <column comment="" key="false" length="200" name="C_CATLOG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_9" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CRISTAL_SQL_CONTEXTE_Server" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CRISTAL_SQL_CONTEXTE_Port" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CRISTAL_SQL_CONTEXTE_Schema" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CRISTAL_SQL_CONTEXTE_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CRISTAL_SQL_CONTEXTE_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucRsviOp0MUdESBwhoi0M31nh9lAlEOSpsg0DjpAMKkqw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAS_REFERENTIEL&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT  &#x9;DISTINCT C_REFDOS, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;C_REFPROD, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; I_DOS,&#xD;&#xA;I_LGNPDT&#xA;FROM&#x9;&quot;+context.CRISTAL_SQL_CONTEXTE_Schema+&quot;.SAS_REFERENTIEL&#xD;&#xA;WHERE I_DOS is not NULL &#xD;&#xA;and I_LGNPDT is not NULL&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CRISTAL_SQL_CONTEXTE_AdditionalParams" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFDOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_REFPROD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_DOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="I_LGNPDT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_9">
+      <column comment="" key="false" length="50" name="C_REFDOS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="C_REFPROD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="I_DOS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="I_LGNPDT" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
@@ -3970,6 +4025,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="C_REFPROD"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="I_DOS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_PRD" show="false"/>
@@ -4326,6 +4384,10 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ln_In_DOSSIER1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="8" metaname="tMSSqlInput_9" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_9" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tJavaRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>

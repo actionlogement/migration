@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZEMhAEhzEeiiFqiaCDeWbg" confirmationNeeded="false" name="Default">
   <contextParameter xmi:id="_ZEMhAUhzEeiiFqiaCDeWbg" comment="Nom du fichier ACBAI" name="V_FIC_ACBAI" prompt="V_FIC_ACBAI?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_ZEMhAkhzEeiiFqiaCDeWbg" comment="Nom du fichier ACDAA" name="V_FIC_ACDAA" prompt="V_FIC_ACDAA?" promptNeeded="false" type="id_String" value=""/>
@@ -82,4 +83,89 @@
   <contextParameter xmi:id="_ZEMhUEhzEeiiFqiaCDeWbg" comment="Nom du fichier GPRAP" name="V_FIC_GPRAP" prompt="V_FIC_GPRAP?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_ZEMhUUhzEeiiFqiaCDeWbg" comment="Nom du fichier MGCUT" name="V_FIC_MGCUT" prompt="V_FIC_MGCUT?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_ZEMhUkhzEeiiFqiaCDeWbg" comment="Nom du fichier CXEXT" name="V_FIC_CXEXT" prompt="V_FIC_CXEXT?" promptNeeded="false" type="id_String" value=""/>
+=======
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_HojKwEfJEeiC0Y44SjqJ3Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_HojKwUfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACBAI" name="V_FIC_ACBAI" prompt="V_FIC_ACBAI?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKwkfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACDAA" name="V_FIC_ACDAA" prompt="V_FIC_ACDAA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKw0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACDAA" name="V_FIC_ACDFI" prompt="V_FIC_ACDFI?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKxEfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACDFO" name="V_FIC_ACDFO" prompt="V_FIC_ACDFO?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKxUfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACDOS" name="V_FIC_ACDOS" prompt="V_FIC_ACDOS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKxkfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACLCH" name="V_FIC_ACLCH" prompt="V_FIC_ACLCH?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKx0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACOFF" name="V_FIC_ACOFF" prompt="V_FIC_ACOFF?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKyEfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACPAR" name="V_FIC_ACPAR" prompt="V_FIC_ACPAR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKyUfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ASCAP" name="V_FIC_ASCAP" prompt="V_FIC_ASCAP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKykfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ASCAS" name="V_FIC_ASCAS" prompt="V_FIC_ASCAS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKy0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier ASGAR" name="V_FIC_ASGAR" prompt="V_FIC_ASGAR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKzEfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ASRIS" name="V_FIC_ASRIS" prompt="V_FIC_ASRIS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKzUfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CAADP" name="V_FIC_CAADP" prompt="V_FIC_CAADP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKzkfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CAECR" name="V_FIC_CAECR" prompt="V_FIC_CAECR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojKz0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier CAGES" name="V_FIC_CAGES" prompt="V_FIC_CAGES?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK0EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CALIG" name="V_FIC_CALIG" prompt="V_FIC_CALIG?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK0UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CANOB" name="V_FIC_CANOB" prompt="V_FIC_CANOB?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK0kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CARUM" name="V_FIC_CARUM" prompt="V_FIC_CARUM?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK00fJEeiC0Y44SjqJ3Q" comment="Nom du fichier CXECH" name="V_FIC_CXECH" prompt="V_FIC_CXECH?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK1EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CXPLA" name="V_FIC_CXPLA" prompt="V_FIC_CXPLA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK1UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier MGADR" name="V_FIC_MGADR" prompt="V_FIC_MGADR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK1kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier PEAMP" name="V_FIC_PEAMP" prompt="V_FIC_PEAMP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK10fJEeiC0Y44SjqJ3Q" comment="Nom du fichier PELIG" name="V_FIC_PELIG" prompt="V_FIC_PELIG?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK2EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier PEPRE" name="V_FIC_PEPRE" prompt="V_FIC_PEPRE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK2UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier PERAP" name="V_FIC_PERAP" prompt="V_FIC_PERAP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK2kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOCRE" name="V_FIC_TOCRE" prompt="V_FIC_TOCRE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK20fJEeiC0Y44SjqJ3Q" comment="Nom du fichier TODBA" name="V_FIC_TODBA" prompt="V_FIC_TODBA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK3EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TODBI" name="V_FIC_TODBI" prompt="V_FIC_TODBI?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK3UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TODFO" name="V_FIC_TODFO" prompt="V_FIC_TODFO?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK3kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TODPM" name="V_FIC_TODPM" prompt="V_FIC_TODPM?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK30fJEeiC0Y44SjqJ3Q" comment="Nom du fichier TODPP" name="V_FIC_TODPP" prompt="V_FIC_TODPP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK4EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOGDO" name="V_FIC_TOGDO" prompt="V_FIC_TOGDO?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK4UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOPSP" name="V_FIC_TOPSP" prompt="V_FIC_TOPSP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK4kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOSFI" name="V_FIC_TOSFI" prompt="V_FIC_TOSFI?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK40fJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOSIR" name="V_FIC_TOSIR" prompt="V_FIC_TOSIR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK5EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOTAD" name="V_FIC_TOTAD" prompt="V_FIC_TOTAD?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK5UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOTDB" name="V_FIC_TOTDB" prompt="V_FIC_TOTDB?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK5kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOTIE" name="V_FIC_TOTIE" prompt="V_FIC_TOTIE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK50fJEeiC0Y44SjqJ3Q" comment="Nom du fichier UGBAI" name="V_FIC_UGBAI" prompt="V_FIC_UGBAI?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK6EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOFOP" name="V_FIC_TOFOP" prompt="V_FIC_TOFOP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK6UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOESF" name="V_FIC_TOESF" prompt="V_FIC_TOESF?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK6kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CACTR" name="V_FIC_CACTR" prompt="V_FIC_CACTR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK60fJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACECH" name="V_FIC_ACECH" prompt="V_FIC_ACECH?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK7EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CXICT" name="V_FIC_CXICT" prompt="V_FIC_CXICT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK7UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier MGINS" name="V_FIC_MGINS" prompt="V_FIC_MGINS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK7kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOMEL" name="V_FIC_TOMEL" prompt="V_FIC_TOMEL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK70fJEeiC0Y44SjqJ3Q" comment="Nom du fichier TORSM" name="V_FIC_TORSM" prompt="V_FIC_TORSM?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK8EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CAEND" name="V_FIC_CAEND" prompt="V_FIC_CAEND?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK8UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier UGDEB" name="V_FIC_UGDEB" prompt="V_FIC_UGDEB?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK8kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier PELIG_CRISTAL" name="V_FIC_PELIG_CRISTAL" prompt="V_FIC_PELIG_CRISTAL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK80fJEeiC0Y44SjqJ3Q" comment="Nom du fichier UGCMJ" name="V_FIC_UGCMJ" prompt="V_FIC_UGCMJ?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK9EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACIUU" name="V_FIC_ACIUU" prompt="V_FIC_ACIUU?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK9UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACNCP" name="V_FIC_ACNCP" prompt="V_FIC_ACNCP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK9kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier PECGP" name="V_FIC_PECGP" prompt="V_FIC_PECGP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK90fJEeiC0Y44SjqJ3Q" comment="Nom du fichier CARUI" name="V_FIC_CARUI" prompt="V_FIC_CARUI?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK-EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACAVA" name="V_FIC_ACAVA" prompt="V_FIC_ACAVA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK-UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACSLO" name="V_FIC_ACSLO" prompt="V_FIC_ACSLO?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK-kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACHYP" name="V_FIC_ACHYP" prompt="V_FIC_ACHYP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK-0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier DOSSIER_SOLDES" name="V_FIC_DOSSIER_SOLDES" prompt="V_FIC_DOSSIER_SOLDES?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK_EfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CXALE" name="V_FIC_CXALE" prompt="V_FIC_CXALE?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK_UfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACNTA" name="V_FIC_ACNTA" prompt="V_FIC_ACNTA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK_kfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACXFER" name="V_FIC_ACXFER" prompt="V_FIC_ACXFER?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojK_0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier BIDOS" name="V_FIC_BIDOS" prompt="V_FIC_BIDOS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLAEfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CAINT" name="V_FIC_CAINT" prompt="V_FIC_CAINT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLAUfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CAOBS" name="V_FIC_CAOBS" prompt="V_FIC_CAOBS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLAkfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOESO" name="V_FIC_TOESO" prompt="V_FIC_TOESO?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLA0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACDSP" name="V_FIC_ACDSP" prompt="V_FIC_ACDSP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLBEfJEeiC0Y44SjqJ3Q" comment="Nom du fichier TOPHR" name="V_FIC_TOPHR" prompt="V_FIC_TOPHR?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLBUfJEeiC0Y44SjqJ3Q" comment="Nom fu fichier ACPFI" name="V_FIC_ACPFI" prompt="V_FIC_ACPFI?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLBkfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACARC" name="V_FIC_ACARC" prompt="V_FIC_ACARC?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLB0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier APPEL" name="V_FIC_APPEL" prompt="V_FIC_APPEL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLCEfJEeiC0Y44SjqJ3Q" comment="Nom du fichier PRELEVEMENT" name="V_FIC_PREL" prompt="V_FIC_PREL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLCUfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ENGAGEMENT1" name="V_FIC_ENGAGEMENT1" prompt="V_FIC_ENGAGEMENT1?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLCkfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ENGAGEMENT2" name="V_FIC_ENGAGEMENT2" prompt="V_FIC_ENGAGEMENT2?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLC0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACNOB" name="V_FIC_ACNOB" prompt="V_FIC_ACNOB?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLDEfJEeiC0Y44SjqJ3Q" comment="Nom du fichier ACOBS" name="V_FIC_ACOBS" prompt="V_FIC_ACOBS?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLDUfJEeiC0Y44SjqJ3Q" comment="Nom du fichier BIEVA" name="V_FIC_BIEVA" prompt="V_FIC_BIEVA?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLDkfJEeiC0Y44SjqJ3Q" comment="Nom du fichier BITEV" name="V_FIC_BITEV" prompt="V_FIC_BITEV?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLD0fJEeiC0Y44SjqJ3Q" comment="Nom du fichier GPRAN" name="V_FIC_GPRAN" prompt="V_FIC_GPRAN?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLEEfJEeiC0Y44SjqJ3Q" comment="Nom du fichier GPRAP" name="V_FIC_GPRAP" prompt="V_FIC_GPRAP?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLEUfJEeiC0Y44SjqJ3Q" comment="Nom du fichier MGCUT" name="V_FIC_MGCUT" prompt="V_FIC_MGCUT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HojLEkfJEeiC0Y44SjqJ3Q" comment="Nom du fichier CXEXT" name="V_FIC_CXEXT" prompt="V_FIC_CXEXT?" promptNeeded="false" type="id_String" value=""/>
+>>>>>>> refs/remotes/origin/master
 </talendfile:ContextType>

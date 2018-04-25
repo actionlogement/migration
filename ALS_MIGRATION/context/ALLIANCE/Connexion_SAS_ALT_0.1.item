@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZECwAEhzEeiiFqiaCDeWbg" confirmationNeeded="false" name="Default">
   <contextParameter xmi:id="_ZECwAUhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_SQL_CONTEXTE_Port" prompt="CRISTAL_SQL_CONTEXTE_Port?" promptNeeded="false" type="id_String" value="1433"/>
   <contextParameter xmi:id="_ZECwAkhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_SQL_CONTEXTE_Server" prompt="CRISTAL_SQL_CONTEXTE_Server?" promptNeeded="false" type="id_String" value="STOL-SQLW-PR001"/>
@@ -11,4 +12,18 @@
   <contextParameter xmi:id="_ZECwCUhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_SQL_CONTEXTE_Schema_REF" prompt="CRISTAL_SQL_CONTEXTE_Schema_REF?" promptNeeded="false" type="id_String" value="REF"/>
   <contextParameter xmi:id="_ZECwCkhzEeiiFqiaCDeWbg" comment="" name="CRISTAL_SQL_CONTEXTE_Schema_FIL" prompt="CRISTAL_SQL_CONTEXTE_Schema_FIL?" promptNeeded="false" type="id_String" value="FIL"/>
   <contextParameter xmi:id="_ZECwC0hzEeiiFqiaCDeWbg" comment="" name="CRISTAL_SQL_CONTEXTE_Schema" prompt="CRISTAL_SQL_CONTEXTE_Schema?" promptNeeded="false" type="id_String" value="SAS_ALI"/>
+=======
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Hnzj4EfJEeiC0Y44SjqJ3Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Hnzj4UfJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Port" prompt="CRISTAL_SQL_CONTEXTE_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_Hnzj4kfJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Server" prompt="CRISTAL_SQL_CONTEXTE_Server?" promptNeeded="false" type="id_String" value="STOL-SQLW-PR001"/>
+  <contextParameter xmi:id="_Hnzj40fJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Login" prompt="CRISTAL_SQL_CONTEXTE_Login?" promptNeeded="false" type="id_String" value="talend_dev1"/>
+  <contextParameter xmi:id="_Hnzj5EfJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Database" prompt="CRISTAL_SQL_CONTEXTE_Database?" promptNeeded="false" type="id_String" value="SAS_ALI"/>
+  <contextParameter xmi:id="_Hnzj5UfJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_AdditionalParams" prompt="CRISTAL_SQL_CONTEXTE_AdditionalParams?" promptNeeded="false" type="id_String" value="INSTANCE=DEVE01"/>
+  <contextParameter xmi:id="_Hnzj5kfJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Password" prompt="CRISTAL_SQL_CONTEXTE_Password?" promptNeeded="false" type="id_Password" value="KsjyDIz84iECgLElxuwRNA=="/>
+  <contextParameter xmi:id="_Hnzj50fJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Schema_ODS" prompt="CRISTAL_SQL_CONTEXTE_Schema_ODS?" promptNeeded="false" type="id_String" value="ODS"/>
+  <contextParameter xmi:id="_Hnzj6EfJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Schema_SAS" prompt="CRISTAL_SQL_CONTEXTE_Schema_SAS?" promptNeeded="false" type="id_String" value="SAS_ALI"/>
+  <contextParameter xmi:id="_Hnzj6UfJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Schema_REF" prompt="CRISTAL_SQL_CONTEXTE_Schema_REF?" promptNeeded="false" type="id_String" value="REF"/>
+  <contextParameter xmi:id="_Hnzj6kfJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Schema_FIL" prompt="CRISTAL_SQL_CONTEXTE_Schema_FIL?" promptNeeded="false" type="id_String" value="FIL"/>
+  <contextParameter xmi:id="_Hnzj60fJEeiC0Y44SjqJ3Q" comment="" name="CRISTAL_SQL_CONTEXTE_Schema" prompt="CRISTAL_SQL_CONTEXTE_Schema?" promptNeeded="false" type="id_String" value="SAS_ALI"/>
+>>>>>>> refs/remotes/origin/master
 </talendfile:ContextType>
